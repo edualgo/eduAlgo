@@ -1,7 +1,7 @@
 from setuptools import setup
 
 # reading long description from file
-with open('README.md','r') as file:
+with open('DESCRIPTION.txt') as file:
     long_description = file.read()
 
 

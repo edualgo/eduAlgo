@@ -8,37 +8,10 @@ Author-email: abhijittripathy99@gmail.com
 License: MIT
 Description: 
         eduAlgo
-        ======
         
-        A simple python module to use different algorithms in educational purposes.
-        
-        Installation
-        ------------
-        
-        Fast install:
-        
-        ::
-        
-            pip install eduAlgo
-        
-        Example
-        --------
-        
-        ```python
-        
-            from edualgo import algorithm.sort
-        
-            arr = [5,4,3,2,1]
-            obj = sort()
-            sorted_arr = obj.bubble_sort(arr)
-            print(sorted_arr)
-        ```
-        
-        
-        
-        Here is the output:
-        
-        [1,2,3,4,5]
+        A simple python module to use different algorithms for educational purposes.
+        This package is under development and planning process and it aims to hold many algorithms
+        along with their implementations and complexities that can be used in educational purpose for all.
         
 Keywords: algorithms
 Platform: UNKNOWN

@@ -9,7 +9,6 @@ Installation
 
 Fast install:
 
-::
 
     pip install eduAlgo
 
