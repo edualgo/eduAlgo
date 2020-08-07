@@ -1,0 +1,49 @@
+Metadata-Version: 1.1
+Name: eduAlgo
+Version: 1.0.1
+Summary: An educational Algorithmic Library
+Home-page: https://github.com/nikhilkumarsingh/mygmap
+Author: Abhijit Tripathy
+Author-email: abhijittripathy99@gmail.com
+License: MIT
+Description: 
+        eduAlgo
+        ======
+        
+        A simple python module to use different algorithms in educational purposes.
+        
+        Installation
+        ------------
+        
+        Fast install:
+        
+        ::
+        
+            pip install eduAlgo
+        
+        Example
+        --------
+        
+        .. code:: python
+        
+            from edualgo import algorithm.sort
+        
+            arr = [5,4,3,2,1]
+            obj = sort()
+            sorted_arr = obj.bubble_sort(arr)
+            print(sorted_arr)
+        
+        
+        
+        
+        Here is the output:
+        
+        [1,2,3,4,5]
+        
+Keywords: algorithms
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Beta
+Classifier: Intended Audience :: Student Developers/ Developers
+Classifier: Topic :: Algorithms
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python 3
