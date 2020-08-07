@@ -25,7 +25,7 @@ This is a very simple python package made with python script to study different 
 * Bubble sort
 * Selection sort
 
-# Algorithms Yet to Publish
+## Algorithms Yet to Publish
 
 * Searching Algorithms and Visualizations
 * Sorting Algorithms and Visualizations
