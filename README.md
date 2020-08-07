@@ -3,9 +3,9 @@
 
 # eduAlgo
 
-<img src = "https://img.shields.io/badge/-python-orange" height ="30"> &nbsp; <img src = "https://img.shields.io/badge/-OpenSource-blue" height = "30">&nbsp; <img src = "https://img.shields.io/badge/-PyPi-green" height = "30">&nbsp; <img src = "https://img.shields.io/badge/-eduAlgo-violet" height = "30">&nbsp;
+<img src = "https://img.shields.io/badge/-python-orange" height ="30"> &nbsp; <img src = "https://img.shields.io/badge/-OpenSource-blue" height = "30">&nbsp; <img src = "https://img.shields.io/badge/-PyPi-green" height = "30">&nbsp; <img src = "https://img.shields.io/badge/-eduAlgo-violet" height = "30">&nbsp;<img src = "https://img.shields.io/github/v/release/Abhijit2505/eduAlgo?style=for-the-badge" height ="30">
 
-<img src="https://img.shields.io/badge/version-v1.0.1-orange" height = "30">&nbsp;<img src="https://img.shields.io/github/license/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/languages/code-size/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src = "https://img.shields.io/github/contributors/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/last-commit/Abhijit2505/eduAlgo?style=for-the-badge">
+<img src="https://img.shields.io/github/license/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/languages/code-size/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src = "https://img.shields.io/github/contributors/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/last-commit/Abhijit2505/eduAlgo?style=for-the-badge">
 
 ## Objective 
 A python package published at [PyPi](https://pypi.org/)
