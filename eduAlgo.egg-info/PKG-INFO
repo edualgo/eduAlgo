@@ -42,8 +42,8 @@ Description:
         
 Keywords: algorithms
 Platform: UNKNOWN
-Classifier: Development Status :: 1 - Beta
-Classifier: Intended Audience :: Student Developers/ Developers
-Classifier: Topic :: Algorithms
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education
 Classifier: License :: OSI Approved :: MIT License
-Classifier: Programming Language :: Python 3
+Classifier: Programming Language :: Python :: 3.7

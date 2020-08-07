@@ -10,11 +10,11 @@ REQUIREMENTS = ['requests']
 
 # some more details
 CLASSIFIERS = [
-    'Development Status :: 1 - Beta',
-    'Intended Audience :: Student Developers/ Developers',
-    'Topic :: Algorithms',
+    'Development Status :: 1 - Planning',
+    'Intended Audience :: Education',
+    'Topic :: Education',
     'License :: OSI Approved :: MIT License',
-    'Programming Language :: Python 3',
+    'Programming Language :: Python :: 3.7',
     ]
 
 # calling the setup function
