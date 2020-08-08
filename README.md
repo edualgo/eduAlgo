@@ -10,7 +10,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)   [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
-## Objective 
+## Objective
 A python package published at [PyPi](https://pypi.org/). The project can be viewed here - [PyPi - eduAlgo](https://pypi.org/project/eduAlgo/).
 
 ## Aim Of The Package
@@ -120,7 +120,7 @@ Here is the output:
 
 ## License
 
-This package is under **MIT License** copyright @Abhijit Tripathy
+This package is under **MIT License** copyright @<a href = "https://github.com/Abhijit2505">Abhijit Tripathy</a>
 
 ## About The Contributors
 
@@ -135,13 +135,3 @@ This package is under **MIT License** copyright @Abhijit Tripathy
         </td>
         </tr>
     </table>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    

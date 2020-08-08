@@ -1,7 +1,7 @@
 from setuptools import setup
 
 # reading long description from file
-with open('DESCRIPTION.txt') as file:
+with open('README.md', encoding='utf-8') as file:
     long_description = file.read()
 
 
@@ -19,9 +19,10 @@ CLASSIFIERS = [
 
 # calling the setup function
 setup(name='eduAlgo',
-      version='1.0.1',
+      version='1.0.3',
       description='An educational Algorithmic Library',
       long_description=long_description,
+      long_description_content_type = 'text/markdown',
       url='https://github.com/Abhijit2505/eduAlgo',
       author='Abhijit Tripathy',
       author_email='abhijittripathy99@gmail.com',
