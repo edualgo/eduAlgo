@@ -68,7 +68,7 @@ for i in arr1:
 
 for i in arr2:
     llist2.append(i)
-    
+
 sol = ll.list_algorithms()
 
 llist3 = ll.linkedlist()
@@ -76,13 +76,13 @@ llist3.head = sol.mergeTwoLists(llist1.head,llist2.head)
 llist3.printLL()
 ```
 Input:
-   
+
       1 2 3
       2 3 4
-   
+
 Output:
 
-      1 2 2 3 3 4 
+      1 2 2 3 3 4
 
 ## License
 

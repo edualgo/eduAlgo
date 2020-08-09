@@ -10,7 +10,7 @@ REQUIREMENTS = ['requests']
 
 # some more details
 CLASSIFIERS = [
-    'Development Status :: 1 - Planning',
+    'Development Status :: 3 - Alpha',
     'Intended Audience :: Education',
     'Topic :: Education',
     'License :: OSI Approved :: MIT License',
@@ -19,7 +19,7 @@ CLASSIFIERS = [
 
 # calling the setup function
 setup(name='eduAlgo',
-      version='1.1.0',
+      version='1.1.1',
       description='An educational Algorithmic Library',
       long_description=long_description,
       long_description_content_type = 'text/markdown',
