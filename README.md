@@ -56,17 +56,33 @@ Example
 
 ```python
 
-    from edualgo import algorithm as al
+from edualgo import LinkedList as ll
+llist1 = ll.linkedlist()
+llist2 = ll.linkedlist()
 
-    arr = [5,4,3,2,1]
-    obj = al.sort()
-    sorted_arr = obj.bubble_sort(arr)
-    print(sorted_arr)
+arr1 = list(map(int,input().split()))
+arr2 = list(map(int,input().split()))
+
+for i in arr1:
+    llist1.append(i)
+
+for i in arr2:
+    llist2.append(i)
+    
+sol = ll.list_algorithms()
+
+llist3 = ll.linkedlist()
+llist3.head = sol.mergeTwoLists(llist1.head,llist2.head)
+llist3.printLL()
 ```
-Here is the output:
+Input:
+   
+      1 2 3
+      2 3 4
+   
+Output:
 
-    Bubble Sort Runtime = 0.0
-    [1, 2, 3, 4, 5]
+      1 2 2 3 3 4 
 
 ## License
 
