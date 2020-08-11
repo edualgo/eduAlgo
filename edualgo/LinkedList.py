@@ -137,3 +137,53 @@ class list_algorithms:
         else:
             head.next = small_head
         return head
+
+    def getIntersectionNode(self,headA,headB):
+        tempA = headA
+        tempB = headB
+
+        lengthA = 0
+        lengthB = 0
+
+        while(tempA):
+            lengthA += 1
+            tempA = tempA.next
+        while(tempB):
+            lengthB += 1
+            tempB = tempB.next
+
+        tempA = headA
+        tempB = headB
+
+        while(lengthA > lengthB):
+            tempA = tempA.next
+            lengthA -= 1
+        while(lengthB > lengthA):
+            tempB = tempB.next
+            lengthB -= 1
+
+        while((tempA != tempB) and (tempA != None)):
+            tempA = tempA.next
+            tempB = tempB.next
+
+        if((tempA == tempB) and (tempA != None)):
+            return tempA
+        else:
+            return None
+
+    def getDecimalValue(self,head):
+        temp = head
+        length = 0
+        while(temp):
+            length += 1
+            temp = temp.next
+
+        num = 0
+        temp = head
+
+        while(temp):
+            num += temp.val * (2**(length-1))
+            length -= 1
+            temp = temp.next
+
+        return num
