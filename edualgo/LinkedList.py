@@ -187,3 +187,24 @@ class list_algorithms:
             temp = temp.next
 
         return num
+
+    def nextLargerNodes(self,head):
+        result = []
+        temp = head
+        while(temp):
+            result.append(temp.val)
+            temp = temp.next
+
+        stack = []
+        n = len(result)
+        i = n-1
+        while(i >= 0):
+            next = 0
+            while(len(stack)!=0 and stack[-1] <= result[i]):
+                stack.pop()
+            if(len(stack)!=0 and stack[-1] > result[i]):
+                next = stack[-1]
+            stack.append(result[i])
+            result[i] = next
+            i-=1
+        return result
