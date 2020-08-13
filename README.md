@@ -1,5 +1,5 @@
 
-<img src ="https://github.com/Abhijit2505/eduAlgo/blob/master/images/eduAlgo.png" height = "250">
+<img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "250">
 
 # eduAlgo
 
@@ -23,20 +23,8 @@ This is a very simple python package made with python script to study different 
 * Getting resources, articles etc to study about python and Algorithms
 * Become a handy tool for the programmers while using different algorithms on daily basis
 
-## Current Algorithms
-
-* Module Name : **algorithm**
-    * Bubble sort - <img src ="https://img.shields.io/badge/-implemented-green">
-    * Selection sort - <img src ="https://img.shields.io/badge/-implemented-green">
-* Module Name : **LinkedList**
-    * Palindromic Linked List - <img src ="https://img.shields.io/badge/-implemented-green">
-    * Remove Linked List Elements - <img src ="https://img.shields.io/badge/-implemented-green">
-    * Remove Duplicates From a Sorted List - <img src ="https://img.shields.io/badge/-implemented-green">
-    * Merge Two Sorted List - <img src ="https://img.shields.io/badge/-implemented-green">
-    * Reverse Linked List - <img src ="https://img.shields.io/badge/-implemented-green">
-    * Delete Node In a Linked List - <img src ="https://img.shields.io/badge/-implemented-green">
-    * Middle Of the Linked List - <img src ="https://img.shields.io/badge/-implemented-green">
-
+## Documentation
+The documentation for the included methods and their implementations can be found here - <a href = "https://edualgo.github.io/documentation/index.html">eduAlgo-Documentation</a>
 
 ## Algorithms Yet to Publish
 
@@ -93,7 +81,7 @@ This package is under **MIT License** copyright @<a href = "https://github.com/A
 <table>
     <tr>
         <td>
-            <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/images/Abhijit23.jpeg" height = "100">
+            <img src = "https://edualgo.github.io/documentation/assets/images/Abhijit23.jpeg" height = "100">
         </td>
             <td>
                 <a href="https://github.com/Abhijit2505">Abhijit Tripathy</a></br>
