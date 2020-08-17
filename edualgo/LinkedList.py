@@ -1,7 +1,7 @@
 
 class Node:
-    def __init__(self,data):
-        self.data = data
+    def __init__(self,val):
+        self.val = val
         self.next = None
 
 class linkedlist:
@@ -9,19 +9,19 @@ class linkedlist:
         self.head = None
         self.tail = None
 
-    def append(self,data):
+    def append(self,val):
         if self.tail is None:
-            self.head = Node(data)
+            self.head = Node(val)
             self.tail = self.head
 
         else:
-            self.tail.next = Node(data)
+            self.tail.next = Node(val)
             self.tail = self.tail.next
 
     def printLL(self):
         temp = self.head
         while(temp):
-            print(temp.data, end =" ")
+            print(temp.val, end =" ")
             temp = temp.next
 
 class list_algorithms:
@@ -62,11 +62,11 @@ class list_algorithms:
         stack = []
         temp = head
         while(temp):
-            stack.append(temp.data)
+            stack.append(temp.val)
             temp = temp.next
         temp = head
         while(temp):
-            if(stack[-1] != temp.data):
+            if(stack[-1] != temp.val):
                 return False
             else:
                 stack.pop()
@@ -91,7 +91,7 @@ class list_algorithms:
         if(len % 2 == 1):
             head = head.next
         while((head2 != None) and (head != None)):
-            if(head2.data != head.data):
+            if(head2.val != head.val):
                 return False
             head = head.next
             head2 = head2.next
@@ -101,7 +101,7 @@ class list_algorithms:
         if(head == None or head.next == None):
             return head
         small_head = self.delete_sorted_duplicate(head.next)
-        while((small_head != None) and (head.data == small_head.data)):
+        while((small_head != None) and (head.val == small_head.val)):
             temp = small_head
             small_head = small_head.next
             temp.next = None
@@ -110,7 +110,7 @@ class list_algorithms:
         return head
 
     def delete_node(self,node):
-        node.data = node.next.data
+        node.val = node.next.val
         node.next = node.next.next
 
     def middleNode(self,head):
@@ -123,7 +123,7 @@ class list_algorithms:
     def mergeTwoLists(self, l1, l2):
         if(l1==None):
             return l2
-        if((l2 != None) and (l2.data < l1.data)):
+        if((l2 != None) and (l2.val < l1.val)):
             l1,l2 = l2,l1
         l1.next = self.mergeTwoLists(l1.next,l2)
         return l1
@@ -132,7 +132,7 @@ class list_algorithms:
         if(head == None):
             return head
         small_head = self.removeElements(head.next,val)
-        if(head.data == val):
+        if(head.val == val):
             head = small_head
         else:
             head.next = small_head
