@@ -19,7 +19,7 @@ CLASSIFIERS = [
 
 # calling the setup function
 setup(name='eduAlgo',
-      version='1.1.2',
+      version='1.1.3',
       description='An educational Algorithmic Library',
       long_description=long_description,
       long_description_content_type = 'text/markdown',
