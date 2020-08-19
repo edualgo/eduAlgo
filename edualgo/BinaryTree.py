@@ -58,7 +58,7 @@ class BinaryTreeAlgorithms:
         t1.right = self.mergeTrees(t1.right,t2.right)
         return t1
 
-    def sumOfLeftLeaves(self, root: TreeNode) -> int:
+    def sumOfLeftLeaves(self, root):
         if(root == None):
             return 0
         sum = 0
@@ -66,14 +66,14 @@ class BinaryTreeAlgorithms:
             sum = root.left.val
         return sum + self.sumOfLeftLeaves(root.left)+self.sumOfLeftLeaves(root.right)
 
-    def isSameTree(self, p: TreeNode, q: TreeNode) -> bool:
+    def isSameTree(self, p, q):
         if(p == None and q == None):
             return True
         if(p == None or q == None):
             return False
         return (p.val == q.val) and (self.isSameTree(p.left,q.left)) and (self.isSameTree(p.right,q.right))
 
-    def isCousins(self, root: TreeNode, x: int, y: int) -> bool:
+    def isCousins(self, root, x, y):
         if not root:
             return root
         queue = collections.deque([root])
