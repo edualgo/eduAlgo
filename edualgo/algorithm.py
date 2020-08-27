@@ -83,3 +83,62 @@ class string_algorithms:
             if(mapp[i] %2 == 1):
                 flag+=1
         return flag<=1
+
+    def oneEditAwayInsert(self,input1,input2):
+        index1 = 0
+        index2 = 0
+        while((index2 < len(input2)) and (index1 < len(input1))):
+            if(input1[index1] != input2[index2]):
+                if(index1 != index2):
+                    return False
+                index2+=1
+            else:
+                index1+=1
+                index2+=1
+        return True
+
+    def oneEditAwayReplace(self,input1,input2):
+        flag = False
+        for i in range(len(input1)):
+            if(input2[i]!=input1[i]):
+                if(flag):
+                    return False
+                flag = True
+        return True
+
+    def oneEditAway(self,input1,input2):
+        if(len(input1)==len(input2)):
+            return self.oneEditAwayReplace(input1,input2)
+        elif(len(input1)+1==len(input2)):
+            return self.oneEditAwayInsert(input1,input2)
+        elif(len(input1)-1==len(input2)):
+            return self.oneEditAwayInsert(input2,input1)
+        return False
+
+    def compressedString(self,input1):
+        mapp = {}
+        output = ""
+        for i in range(len(input1)):
+            key = input1[i]
+            if(key in mapp.keys()):
+                mapp[key]+=1
+            else:
+                mapp.update({key:1})
+        for key in mapp.keys():
+            output = output + key + str(mapp[key])
+        if(len(output) <= len(input1)):
+            return output
+        else:
+            return input1
+
+    def rotateImage(self,img_arr,n):
+        for layer in range(int(n/2)):
+            first = layer
+            last = n-1-layer
+            for i in range(first,last):
+                offset = i - first
+                top = img_arr[first][i]
+                img_arr[first][i] = img_arr[last - offset][first]
+                img_arr[last - offset][first] = img_arr[last][last - offset]
+                img_arr[last][last - offset] = img_arr[i][last]
+                img_arr[i][last] = top
