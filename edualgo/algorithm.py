@@ -236,10 +236,11 @@ class string_algorithms:
          ----------------
         |     a b c      |
          ----------------
-         
+
         size = 3 which is not equal to length of "aabcc"
 
-        Learn More about Lists Here - https://docs.python.org/3/tutorial/datastructures.html
+        Learn More about Lists Below - 
+        https://docs.python.org/3/tutorial/datastructures.html
         """
         print_msg_box(message)
 
