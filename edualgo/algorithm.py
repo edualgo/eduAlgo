@@ -167,12 +167,80 @@ class sort:
 
 class string_algorithms:
 
-    def isUnique(self,input_string):
+    def isUnique(self,input_string,hint=False):
         mapp = []
         for i in input_string:
             if i not in mapp:
                 mapp.append(i)
+        if(hint == True):
+            self.isUnique_hint()
         return len(mapp) == len(input_string)
+
+    def isUnique_hint(self):
+        message ="""
+        Unique Character Checking
+        ------------------------------------
+
+        Purpose : checking if all the characters in a given string are unique
+        Method : list comprehension
+
+        Time Complexity: Worst Case - O(n), n = length of the input string
+
+        Hint :
+        How about using the inbuilt list data structure ?
+
+        Pseudocode:
+        --> create an empty list named mapp
+        --> for i in input string
+                if i not in mapp
+                    add i to the empty list
+        --> The string is unique only when the
+            length of the map after the total
+            iterations is same as that of the
+            length of the input string
+
+        Visualization:
+
+        Given String :
+
+        "aabcc"
+
+        Empty List:
+
+         ----------------
+        |                |
+         ----------------
+
+        after first iteration :
+
+         ----------------
+        |       a        |
+         ----------------
+
+        after second iteration :
+
+         ----------------
+        |       a        |
+         ----------------
+
+        [because a was already in the list]
+
+        after third iteration :
+
+         ----------------
+        |      a b       |
+         ----------------
+
+        Finally :
+
+         ----------------
+        |     a b c      |    size = 3 which is not equal to length of "aabcc"
+         ----------------
+
+        Learn More about Lists Here - https://docs.python.org/3/tutorial/datastructures.html
+        """
+        print_msg_box(message)
+
 
     def isPermutation(self,input1,input2):
         mapp1 = []
@@ -271,7 +339,5 @@ class string_algorithms:
                 img_arr[last][last - offset] = img_arr[i][last]
                 img_arr[i][last] = top
 
-s = sort()
-arr = [5,4,3]
-arr2 = s.selection_sort(arr,True)
-print(arr2)
+s = string_algorithms()
+a = s.isUnique("aabbccdd",True)
