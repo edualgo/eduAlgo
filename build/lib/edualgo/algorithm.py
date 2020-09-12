@@ -1,31 +1,87 @@
 import time
 
-# 'sort' class contains the following algorithms:
-#     1 - Bubble sort
-#     2 - Selection sort
-#     3 - Insertion sort
-#     4 - Merge sort
-#     5 - Quick sort
-#     6 - Counting sort
-#     7 - Radix sort
-#     8 - Heap sort
-#     9 - Bucket sort
+def print_msg_box(msg, indent=1, width=None, title=None):
+    """Print message-box with optional title."""
+    lines = msg.split('\n')
+    space = " " * indent
+    if not width:
+        width = max(map(len, lines))
+    box = f'╔{"═" * (width + indent * 2)}╗\n'  # upper_border
+    if title:
+        box += f'║{space}{title:<{width}}{space}║\n'  # title
+        box += f'║{space}{"-" * len(title):<{width}}{space}║\n'  # underscore
+    box += ''.join([f'║{space}{line:<{width}}{space}║\n' for line in lines])
+    box += f'╚{"═" * (width + indent * 2)}╝'  # lower_border
+    print(box)
 
 class sort:
 
     # bubble sort algorithm
-    def bubble_sort(self,arr):
+    def bubble_sort(self,arr,hint=False):
         start = time.time()
         for i in range(len(arr)-1):
             for j in range(len(arr)-i-1):
                 if arr[j] > arr[j+1] :
                     arr[j],arr[j+1] = arr[j+1],arr[j]
+                print(arr)
         end = time.time()
         print("Bubble Sort Runtime = {}".format(end-start))
+        if(hint == True):
+            self.bubble_sort_hint()
         return arr
 
+    def bubble_sort_hint(self):
+        message ="""
+        Bubble Sort
+        ------------------------------------
+
+        Purpose : sorting in increasing order
+        Method : Bubble Making, Swapping
+
+        Time Complexity: Worst Case - O(n^2)
+
+        Hint :
+        Try to kick out the greater value to the rightmost position by using loops
+        and value swapping.
+
+        Pseudocode:
+        --> for i in [0,length of array]
+                for j in [0,length of array - 1]
+                    if(array[j] > array[i])
+                        swap array[j] & array[i]
+
+        Visualization:
+
+        Given Array :
+
+        +-----+-----+-----+
+        |  5  |  4  |  3  |
+        +-----+-----+-----+
+
+        First Iteration :
+
+        +-----+-----+-----+
+        |  4  |  5  |  3  |
+        +-----+-----+-----+
+
+        Second Iteration :
+
+        +-----+-----+-----+
+        |  4  |  3  |  5  |
+        +-----+-----+-----+
+
+        Third Iteration :
+
+        +-----+-----+-----+
+        |  3  |  4  |  5  |
+        +-----+-----+-----+
+
+        Learn More Here - https://en.wikipedia.org/wiki/Bubble_sort
+        """
+        print_msg_box(message)
+
     # selection Sort Algorithm
-    def selection_sort(self,arr):
+    def selection_sort(self,arr,hint=False):
         start = time.time()
         for i in range(len(arr)-1):
             minimum = i
@@ -33,31 +89,244 @@ class sort:
                 if arr[j] < arr[minimum]:
                     minimum = j
             arr[minimum],arr[i] = arr[i],arr[minimum]
+            print(arr)
         end = time.time()
         print("Selection Sort Runtime = {}".format(end-start))
+        if(hint==True):
+            self.selection_sort_hint()
         return arr
+
+    def selection_sort_hint(self):
+        message ="""
+        selection Sort
+        ------------------------------------
+
+        Purpose : sorting in increasing order
+        Method : Pick Up minimum, swap with minimum
+
+        Time Complexity: Worst Case - O(n^2)
+
+        Hint :
+        In every iteration the minimum element from the unsorted subarray is picked and
+        moved to the sorted subarray.
+
+        Pseudocode:
+        --> for i in [0,length of array]
+                minimum = i
+                for j in [i+1,length of array]
+                    if arr[j] < arr[minimum]
+                        minimum = j
+                swap arr[i] & arr[minimum]
+
+        Visualization:
+
+        Given Array :
+
+        +-----+-----+-----+
+        |  5  |  4  |  3  |
+        +-----+-----+-----+
+
+        We have two buckets,
+
+        |              |        |              |
+        |   Unsorted   |        |    sorted    |
+        |              |        |              |
+        |    5,4,3     |        |     empty    |
+         --------------          --------------
+
+        Select the minimum from the unsorted bucket and put that in sorted bucket
+
+        |              |        |              |
+        |   Unsorted   |        |    sorted    |
+        |              |        |              |
+        |     5,4      |        |      3       |
+         --------------          --------------
+
+        Again select the minimum from the unsorted bucket and put that in
+        sorted bucket
+
+        |              |        |              |
+        |   Unsorted   |        |    sorted    |
+        |              |        |              |
+        |      5       |        |     3,4      |
+         --------------          --------------
+
+        Repeat the same till the unsorted bucket is empty
+
+        |              |        |              |
+        |   Unsorted   |        |    sorted    |
+        |              |        |              |
+        |              |        |     3,4,5    |
+         --------------          --------------
+
+        Finally you have the sorted array.
+
+        Learn More Here - https://en.wikipedia.org/wiki/Selection_sort
+        """
+        print_msg_box(message)
 
 class string_algorithms:
 
-    def isUnique(self,input_string):
+    def isUnique(self,input_string,hint=False):
         mapp = []
         for i in input_string:
             if i not in mapp:
                 mapp.append(i)
+        if(hint == True):
+            self.isUnique_hint()
         return len(mapp) == len(input_string)
 
-    def isPermutation(self,input1,input2):
+    def isUnique_hint(self):
+        message ="""
+        Unique Character Checking
+        ------------------------------------
+
+        Purpose : checking if all the characters in a given string are unique
+        Method : list comprehension
+
+        Time Complexity: Worst Case - O(n), n = length of the input string
+
+        Hint :
+        How about using the inbuilt list data structure ?
+
+        Pseudocode:
+        --> create an empty list named mapp
+        --> for i in input string
+                if i not in mapp
+                    add i to the empty list
+        --> The string is unique only when the
+            length of the map after the total
+            iterations is same as that of the
+            length of the input string
+
+        Visualization:
+
+        Given String :
+
+        "aabcc"
+
+        Empty List:
+
+         ----------------
+        |                |
+         ----------------
+
+        after first iteration :
+
+         ----------------
+        |       a        |
+         ----------------
+
+        after second iteration :
+
+         ----------------
+        |       a        |
+         ----------------
+
+        [because a was already in the list]
+
+        after third iteration :
+
+         ----------------
+        |      a b       |
+         ----------------
+
+        Finally :
+
+         ----------------
+        |     a b c      |
+         ----------------
+
+        size = 3 which is not equal to length of "aabcc"
+
+        Learn More about Lists Below -
+        https://docs.python.org/3/tutorial/datastructures.html
+        """
+        print_msg_box(message)
+
+
+    def isPermutation(self,input1,input2,hint=False):
+        if(hint == True):
+            self.isPermutation_hint()
+        if(len(input1)!=len(input2)):
+            return False
         mapp1 = []
         mapp2 = []
         for i in input1:
-            if i not in mapp1:
-                mapp1.append(i)
+            mapp1.append(i)
         for j in input2:
-            if j not in mapp2:
-                mapp2.append(j)
+            mapp2.append(j)
         mapp1.sort()
         mapp2.sort()
+
         return mapp1==mapp2
+
+    def isPermutation_hint(self):
+        message = """
+        Two String Permutations
+        ------------------------------------
+
+        Purpose : checking if one string is consisting of the permutation of
+        the characters in the other string
+        Method : list comprehension
+
+        Time Complexity: Worst Case - O(n), n = length of the strings
+
+        Hint :
+        How about using two inbuilt list data structure ?
+
+        Pseudocode:
+        --> check if length(string1) != len(string2)
+                return False
+        --> create two empty lists named mapp1 & mapp2
+        --> for i in input string 1
+                add i to mapp1
+        --> for i in input string 2
+                add i to mapp2
+        --> sort mapp1
+        --> sort mapp2
+        --> return true if mapp1 and mapp2 are equal
+
+        Visualization:
+
+        Given Two String :
+
+        "aabcc"
+
+        "abcac"
+
+        Two Empty List:
+
+             List 1                       List 2
+         ----------------            ----------------
+        |                |          |                |
+         ----------------            ----------------
+
+        After Filling Lists :
+
+             List 1                       List 2
+         ----------------            ----------------
+        |    a a b c c   |          |    a b c a c   |
+         ----------------            ----------------
+
+        Applying sort function :
+
+             List 1                       List 2
+         ----------------            ----------------
+        |    a a b c c   |          |   a a b c c    |
+         ----------------            ----------------
+
+        Final check :
+
+         ------------------            +------+
+        | List 1 == List 2 |  -------> | True |
+         ------------------            +------+
+
+
+        Learn More about Lists Below -
+        https://docs.python.org/3/tutorial/datastructures.html
+        """
+        print_msg_box(message)
 
     def URLify(self,input_str,key):
         input2 = ""
@@ -69,6 +338,64 @@ class string_algorithms:
             elif((input_str[i]==' ') and (input_str[i+1] != ' ')):
                 input2 += key
         return input2
+
+    def URLify_hint(self):
+        message = """
+        Making a URL From a String
+        ------------------------------------
+
+        Purpose : Making a URL by replacing the spaces with a key value entered
+        by the user
+        Method : string manipulation
+
+        Time Complexity : Worst Case - O(n), n = length of the string
+
+        Hint :
+        Take a blank string, and add data from the input string to the blank
+        string to prepare the final URL
+
+        Pseudocode :
+        --> Take a blank string s2
+        --> for i in [0,length of input string]
+                if(not a whitespace)
+                    add to s2
+                elif(whitespace and next place is also whitespace)
+                    return s2
+                elif(whitespace and next place not whitespace)
+                    add the key value to the blank string
+
+        Visualization:
+
+        Given String To Make URL :
+
+        "Python is love"
+
+        Key : "%20"
+
+        Break The Given String :  /*/ ----> whitespace
+
+        +--------+-------+----+-------+------+
+        | Python |  /*/  | is |  /*/  | love |
+        +--------+-------+----+-------+------+
+            ^              ^             ^
+            ^              ^             ^
+            ^              ^             ^
+
+            1              2             3
+
+        We will take 1, 2 and 3 sucessively and in place of whitespaces we will
+        concatenate the key value.
+
+        Empty String Addition :
+
+        +-+    +--------+   +-------+   +----+   +-------+   +------+
+        | |  + | Python | + |  %20  | + | is | + |  %20  | + | love |
+        +-+    +--------+   +-------+   +----+   +-------+   +------+
+
+        Learn More about String Concatenation Below -
+        https://en.wikipedia.org/wiki/Concatenation
+        """
+        print_msg_box(message)
 
     def isPalindromicPermutation(self,input1):
         mapp = {}
@@ -142,3 +469,6 @@ class string_algorithms:
                 img_arr[last - offset][first] = img_arr[last][last - offset]
                 img_arr[last][last - offset] = img_arr[i][last]
                 img_arr[i][last] = top
+
+s = string_algorithms()
+s.URLify_hint()
