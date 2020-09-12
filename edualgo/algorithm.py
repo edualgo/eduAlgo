@@ -262,7 +262,7 @@ class string_algorithms:
         return mapp1==mapp2
 
     def isPermutation_hint(self):
-        message ="""
+        message = """
         Two String Permutations
         ------------------------------------
 
@@ -339,6 +339,64 @@ class string_algorithms:
                 input2 += key
         return input2
 
+    def URLify_hint(self):
+        message = """
+        Making a URL From a String
+        ------------------------------------
+
+        Purpose : Making a URL by replacing the spaces with a key value entered
+        by the user
+        Method : string manipulation
+
+        Time Complexity : Worst Case - O(n), n = length of the string
+
+        Hint :
+        Take a blank string, and add data from the input string to the blank
+        string to prepare the final URL
+
+        Pseudocode :
+        --> Take a blank string s2
+        --> for i in [0,length of input string]
+                if(not a whitespace)
+                    add to s2
+                elif(whitespace and next place is also whitespace)
+                    return s2
+                elif(whitespace and next place not whitespace)
+                    add the key value to the blank string
+
+        Visualization:
+
+        Given String To Make URL :
+
+        "Python is love"
+
+        Key : "%20"
+
+        Break The Given String :  /*/ ----> whitespace
+
+        +--------+-------+----+-------+------+
+        | Python |  /*/  | is |  /*/  | love |
+        +--------+-------+----+-------+------+
+            ^              ^             ^
+            ^              ^             ^
+            ^              ^             ^
+
+            1              2             3
+
+        We will take 1, 2 and 3 sucessively and in place of whitespaces we will
+        concatenate the key value.
+
+        Empty String Addition :
+
+        +-+    +--------+   +-------+   +----+   +-------+   +------+
+        | |  + | Python | + |  %20  | + | is | + |  %20  | + | love |
+        +-+    +--------+   +-------+   +----+   +-------+   +------+
+
+        Learn More about String Concatenation Below -
+        https://en.wikipedia.org/wiki/Concatenation
+        """
+        print_msg_box(message)
+
     def isPalindromicPermutation(self,input1):
         mapp = {}
         for i in range(len(input1)):
@@ -413,5 +471,4 @@ class string_algorithms:
                 img_arr[i][last] = top
 
 s = string_algorithms()
-a = s.isPermutation("aabbccdd","abcbccdd",True)
-print(a)
+s.URLify_hint()
