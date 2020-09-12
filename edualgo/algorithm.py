@@ -328,7 +328,9 @@ class string_algorithms:
         """
         print_msg_box(message)
 
-    def URLify(self,input_str,key):
+    def URLify(self,input_str,key,hint=False):
+        if(hint==True):
+            self.URLify_hint()
         input2 = ""
         for i in range(len(input_str)):
             if(input_str[i] != ' '):
@@ -469,6 +471,3 @@ class string_algorithms:
                 img_arr[last - offset][first] = img_arr[last][last - offset]
                 img_arr[last][last - offset] = img_arr[i][last]
                 img_arr[i][last] = top
-
-s = string_algorithms()
-s.URLify_hint()
