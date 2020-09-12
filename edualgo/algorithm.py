@@ -239,24 +239,94 @@ class string_algorithms:
 
         size = 3 which is not equal to length of "aabcc"
 
-        Learn More about Lists Below - 
+        Learn More about Lists Below -
         https://docs.python.org/3/tutorial/datastructures.html
         """
         print_msg_box(message)
 
 
-    def isPermutation(self,input1,input2):
+    def isPermutation(self,input1,input2,hint=False):
+        if(hint == True):
+            self.isPermutation_hint()
+        if(len(input1)!=len(input2)):
+            return False
         mapp1 = []
         mapp2 = []
         for i in input1:
-            if i not in mapp1:
-                mapp1.append(i)
+            mapp1.append(i)
         for j in input2:
-            if j not in mapp2:
-                mapp2.append(j)
+            mapp2.append(j)
         mapp1.sort()
         mapp2.sort()
+
         return mapp1==mapp2
+
+    def isPermutation_hint(self):
+        message ="""
+        Two String Permutations
+        ------------------------------------
+
+        Purpose : checking if one string is consisting of the permutation of
+        the characters in the other string
+        Method : list comprehension
+
+        Time Complexity: Worst Case - O(n), n = length of the strings
+
+        Hint :
+        How about using two inbuilt list data structure ?
+
+        Pseudocode:
+        --> check if length(string1) != len(string2)
+                return False
+        --> create two empty lists named mapp1 & mapp2
+        --> for i in input string 1
+                add i to mapp1
+        --> for i in input string 2
+                add i to mapp2
+        --> sort mapp1
+        --> sort mapp2
+        --> return true if mapp1 and mapp2 are equal
+
+        Visualization:
+
+        Given Two String :
+
+        "aabcc"
+
+        "abcac"
+
+        Two Empty List:
+
+             List 1                       List 2
+         ----------------            ----------------
+        |                |          |                |
+         ----------------            ----------------
+
+        After Filling Lists :
+
+             List 1                       List 2
+         ----------------            ----------------
+        |    a a b c c   |          |    a b c a c   |
+         ----------------            ----------------
+
+        Applying sort function :
+
+             List 1                       List 2
+         ----------------            ----------------
+        |    a a b c c   |          |   a a b c c    |
+         ----------------            ----------------
+
+        Final check :
+
+         ------------------            +------+
+        | List 1 == List 2 |  -------> | True |
+         ------------------            +------+
+
+
+        Learn More about Lists Below -
+        https://docs.python.org/3/tutorial/datastructures.html
+        """
+        print_msg_box(message)
 
     def URLify(self,input_str,key):
         input2 = ""
@@ -343,4 +413,5 @@ class string_algorithms:
                 img_arr[i][last] = top
 
 s = string_algorithms()
-a = s.isUnique("aabbccdd",True)
+a = s.isPermutation("aabbccdd","abcbccdd",True)
+print(a)
