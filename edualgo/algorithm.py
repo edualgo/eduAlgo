@@ -1,31 +1,87 @@
 import time
 
-# 'sort' class contains the following algorithms:
-#     1 - Bubble sort
-#     2 - Selection sort
-#     3 - Insertion sort
-#     4 - Merge sort
-#     5 - Quick sort
-#     6 - Counting sort
-#     7 - Radix sort
-#     8 - Heap sort
-#     9 - Bucket sort
+def print_msg_box(msg, indent=1, width=None, title=None):
+    """Print message-box with optional title."""
+    lines = msg.split('\n')
+    space = " " * indent
+    if not width:
+        width = max(map(len, lines))
+    box = f'╔{"═" * (width + indent * 2)}╗\n'  # upper_border
+    if title:
+        box += f'║{space}{title:<{width}}{space}║\n'  # title
+        box += f'║{space}{"-" * len(title):<{width}}{space}║\n'  # underscore
+    box += ''.join([f'║{space}{line:<{width}}{space}║\n' for line in lines])
+    box += f'╚{"═" * (width + indent * 2)}╝'  # lower_border
+    print(box)
 
 class sort:
 
     # bubble sort algorithm
-    def bubble_sort(self,arr):
+    def bubble_sort(self,arr,hint=False):
         start = time.time()
         for i in range(len(arr)-1):
             for j in range(len(arr)-i-1):
                 if arr[j] > arr[j+1] :
                     arr[j],arr[j+1] = arr[j+1],arr[j]
+                print(arr)
         end = time.time()
         print("Bubble Sort Runtime = {}".format(end-start))
+        if(hint == True):
+            self.bubble_sort_hint()
         return arr
 
+    def bubble_sort_hint(self):
+        message ="""
+        Bubble Sort
+        ------------------------------------
+
+        Purpose : sorting in increasing order
+        Method : Bubble Making, Swapping
+
+        Time Complexity: Worst Case - O(n^2)
+
+        Hint :
+        Try to kick out the greater value to the rightmost position by using loops
+        and value swapping.
+
+        Pseudocode:
+        --> for i in [0,length of array]
+                for j in [0,length of array - 1]
+                    if(array[j] > array[i])
+                        swap array[j] & array[i]
+
+        Visualization:
+
+        Given Array :
+
+        +-----+-----+-----+
+        |  5  |  4  |  3  |
+        +-----+-----+-----+
+
+        First Iteration :
+
+        +-----+-----+-----+
+        |  4  |  5  |  3  |
+        +-----+-----+-----+
+
+        Second Iteration :
+
+        +-----+-----+-----+
+        |  4  |  3  |  5  |
+        +-----+-----+-----+
+
+        Third Iteration :
+
+        +-----+-----+-----+
+        |  3  |  4  |  5  |
+        +-----+-----+-----+
+
+        Learn More Here - https://en.wikipedia.org/wiki/Bubble_sort
+        """
+        print_msg_box(message)
+
     # selection Sort Algorithm
-    def selection_sort(self,arr):
+    def selection_sort(self,arr,hint=False):
         start = time.time()
         for i in range(len(arr)-1):
             minimum = i
@@ -33,9 +89,81 @@ class sort:
                 if arr[j] < arr[minimum]:
                     minimum = j
             arr[minimum],arr[i] = arr[i],arr[minimum]
+            print(arr)
         end = time.time()
         print("Selection Sort Runtime = {}".format(end-start))
+        if(hint==True):
+            self.selection_sort_hint()
         return arr
+
+    def selection_sort_hint(self):
+        message ="""
+        selection Sort
+        ------------------------------------
+
+        Purpose : sorting in increasing order
+        Method : Pick Up minimum, swap with minimum
+
+        Time Complexity: Worst Case - O(n^2)
+
+        Hint :
+        In every iteration the minimum element from the unsorted subarray is picked and
+        moved to the sorted subarray.
+
+        Pseudocode:
+        --> for i in [0,length of array]
+                minimum = i
+                for j in [i+1,length of array]
+                    if arr[j] < arr[minimum]
+                        minimum = j
+                swap arr[i] & arr[minimum]
+
+        Visualization:
+
+        Given Array :
+
+        +-----+-----+-----+
+        |  5  |  4  |  3  |
+        +-----+-----+-----+
+
+        We have two buckets,
+
+        |              |        |              |
+        |   Unsorted   |        |    sorted    |
+        |              |        |              |
+        |    5,4,3     |        |     empty    |
+         --------------          --------------
+
+        Select the minimum from the unsorted bucket and put that in sorted bucket
+
+        |              |        |              |
+        |   Unsorted   |        |    sorted    |
+        |              |        |              |
+        |     5,4      |        |      3       |
+         --------------          --------------
+
+        Again select the minimum from the unsorted bucket and put that in
+        sorted bucket
+
+        |              |        |              |
+        |   Unsorted   |        |    sorted    |
+        |              |        |              |
+        |      5       |        |     3,4      |
+         --------------          --------------
+
+        Repeat the same till the unsorted bucket is empty
+
+        |              |        |              |
+        |   Unsorted   |        |    sorted    |
+        |              |        |              |
+        |              |        |     3,4,5    |
+         --------------          --------------
+
+        Finally you have the sorted array.
+
+        Learn More Here - https://en.wikipedia.org/wiki/Selection_sort
+        """
+        print_msg_box(message)
 
 class string_algorithms:
 
@@ -142,3 +270,8 @@ class string_algorithms:
                 img_arr[last - offset][first] = img_arr[last][last - offset]
                 img_arr[last][last - offset] = img_arr[i][last]
                 img_arr[i][last] = top
+
+s = sort()
+arr = [5,4,3]
+arr2 = s.selection_sort(arr,True)
+print(arr2)
