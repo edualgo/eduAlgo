@@ -234,8 +234,10 @@ class string_algorithms:
         Finally :
 
          ----------------
-        |     a b c      |    size = 3 which is not equal to length of "aabcc"
+        |     a b c      |
          ----------------
+         
+        size = 3 which is not equal to length of "aabcc"
 
         Learn More about Lists Here - https://docs.python.org/3/tutorial/datastructures.html
         """
