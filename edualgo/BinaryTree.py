@@ -73,7 +73,7 @@ class BinaryTreeAlgorithms:
 
         Visualization:
 
-        Given Binart Tree :
+        Given Binary Tree :
 
                             +------+
                             |  12  |         <-- root

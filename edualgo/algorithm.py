@@ -552,11 +552,13 @@ class string_algorithms:
                         index1+=1
                         index2+=1
                 return True
-                
+
         """
         print_msg_box(message)
 
-    def compressedString(self,input1):
+    def compressedString(self,input1,hint=False):
+        if(hint == True):
+            self.compressedString_hint()
         mapp = {}
         output = ""
         for i in range(len(input1)):
@@ -572,7 +574,76 @@ class string_algorithms:
         else:
             return input1
 
-    def rotateImage(self,img_arr,n):
+    def compressedString_hint(self):
+        message = """
+        Compress The String
+        ------------------------------------
+
+        Purpose :To compress the size of string by making a summary of the
+        repeatation of the characters
+        Method : string manipulation, python dictionary
+
+        Time Complexity : Worst Case - O(n), n = length of the string
+
+        Hint :
+        Make a dictionary of characters and their repeatations. Finaally forge a
+        new string and return it
+
+        Pseudocode :
+        --> Take a blank dictionary
+        --> Take a blank string output
+        --> for i in [0,length of input string]
+                key = input[i]
+                if(key in dictionary)
+                    dictionary[key]+=1
+                else
+                    push {key:1} inside dictionary
+        --> prepare the output string
+
+        Visualization:
+
+        Given String :
+
+        "aabbcccdddeeef"
+
+        Making a table using dictionary :
+
+        Step 1 - create a blank dictionary - {}
+
+        Step 2 - check if the key exists
+
+                yes --> add 1
+
+                no  --> push {key:1} inside the dictionary
+
+        Step 3 - You have the following table
+
+        +----------+----------------+
+        |   key    |  repeatations  |
+        +----------+----------------+
+        |    a     |       2        |
+        -----------------------------
+        |    b     |       2        |
+        -----------------------------
+        |    c     |       3        |
+        -----------------------------
+        |    d     |       3        |
+        -----------------------------
+        |    e     |       3        |
+        -----------------------------
+        |    f     |       1        |
+        -----------------------------
+
+        Step 4 - prepare the output string as "a2b2c3d3e3f1"
+
+        Learn More about Python Dictionaries Below -
+        https://www.w3schools.com/python/python_dictionaries.asp
+        """
+        print_msg_box(message)
+
+    def rotateImage(self,img_arr,n,hint=False):
+        if(hint==True):
+            self.rotateImage_hint()
         for layer in range(int(n/2)):
             first = layer
             last = n-1-layer
@@ -584,5 +655,74 @@ class string_algorithms:
                 img_arr[last][last - offset] = img_arr[i][last]
                 img_arr[i][last] = top
 
-ping = string_algorithms()
-ping.oneEditAway_hint()
+    def rotateImage_hint(self):
+        message = """
+        Rotate The Image
+        ------------------------------------
+
+        Purpose :To rotate a N x N 2D array representing an image without
+        using any external space
+        Method : 2D array, time-space complexity
+
+        Time Complexity : Worst Case - O(n^2), n = number of rows in a matrix
+        Space Complexity : O(1)
+
+        Hint :
+        Try implementing rotation in layers
+
+        Pseudocode :
+        for layer in range(int(n/2)):
+            first = layer
+            last = n-1-layer
+            for i in range(first,last):
+                offset = i - first
+                top = img_arr[first][i]
+                img_arr[first][i] = img_arr[last - offset][first]
+                img_arr[last - offset][first] = img_arr[last][last - offset]
+                img_arr[last][last - offset] = img_arr[i][last]
+                img_arr[i][last] = top
+
+        Visualization:
+
+        Given image :
+
+        1  2  3           1  4  1
+        4  8  9    --->   8  8  2
+        1  8  9           9  9  3
+
+        Find the pivot (if any) :
+
+            1     2     3
+
+                +---+
+            4   | 8 |   9      ---> 8 is the constant position
+                +---+
+
+            1     8     9
+
+
+        Rotate Layer Wise using temp variable :
+
+                +---+
+            1   | 2 |   3
+                +---+
+          +---+       +---+
+          | 4 |   8   | 9 |   -----> rotate the highlighted layer in 90 degree
+          +---+       +---+
+                +---+
+            1   | 8 |   9
+                +---+
+
+        Rotate Next layer :
+
+            +---+       +---+
+            | 1 |   4   | 3 |
+            +---+       +---+
+              8     8     2      -----> rotate the highlighted layer in 90 degree
+            +---+       +---+
+            | 1 |   9   | 9 |
+            +---+       +---+
+
+        Finally you have the desired rotated array.
+        """
+        print_msg_box(message)
