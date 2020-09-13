@@ -399,7 +399,9 @@ class string_algorithms:
         """
         print_msg_box(message)
 
-    def isPalindromicPermutation(self,input1):
+    def isPalindromicPermutation(self,input1,hint=False):
+        if(hint == True):
+            self.isPalindromicPermutation_hint()
         mapp = {}
         for i in range(len(input1)):
             key = input1[i]
@@ -412,6 +414,67 @@ class string_algorithms:
             if(mapp[i] %2 == 1):
                 flag+=1
         return flag<=1
+
+    def isPalindromicPermutation_hint(self):
+        message = """
+        Palindromic Permutation
+        ------------------------------------
+
+        Purpose :To check if the permutation of the characters in a string can
+        make it palindromic
+        Method : string manipulation, palindromic behaviour
+
+        Time Complexity : Worst Case - O(n), n = length of the string
+
+        Hint :
+        Make a dictionary of characters and their repeatations.
+
+        Pseudocode :
+        --> Take a blank dictionary
+        --> for i in [0,length of input string]
+                key = input[i]
+                if(key in dictionary)
+                    dictionary[key]+=1
+                else
+                    push {key:1} inside dictionary
+        --> Check if dictioary[i] %2 == 1
+
+        Visualization:
+
+        Given String :
+
+        "abbca"
+
+        Making a table using dictionary :
+
+        Step 1 - create a blank dictionary - {}
+
+        Step 2 - check if the key exists
+
+                yes --> add 1
+
+                no  --> push {key:1} inside the dictionary
+
+        Step 3 - You have the following table
+
+        +----------+----------------+
+        |   key    |  repeatations  |
+        +----------+----------------+
+        |    a     |       2        |   --> rem = 0, flag = 0
+        -----------------------------
+        |    b     |       2        |   --> rem = 0, flag = 0
+        -----------------------------
+        |    c     |       1        |   --> rem = 0, flag = 1
+        -----------------------------
+
+        Step 4 - check reminder, set flag = 0, initially
+
+        Step 5 - return boolean
+
+        Learn More about Python Dictionaries Below -
+        https://www.w3schools.com/python/python_dictionaries.asp
+        """
+        print_msg_box(message)
 
     def oneEditAwayInsert(self,input1,input2):
         index1 = 0
@@ -471,3 +534,6 @@ class string_algorithms:
                 img_arr[last - offset][first] = img_arr[last][last - offset]
                 img_arr[last][last - offset] = img_arr[i][last]
                 img_arr[i][last] = top
+
+ping = string_algorithms()
+ping.isPalindromicPermutation_hint()
