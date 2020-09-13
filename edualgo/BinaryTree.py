@@ -37,7 +37,7 @@ class Node:
 class BinaryTreeAlgorithms:
     def print_tree(self,root,hint=False):
         if(hint==True):
-            print_tree_hint()
+            self.print_tree_hint()
         if root == None:
             return
         print(root.val,end =":")
