@@ -1,3 +1,17 @@
+def print_msg_box(msg, indent=1, width=None, title=None):
+    """Print message-box with optional title."""
+    lines = msg.split('\n')
+    space = " " * indent
+    if not width:
+        width = max(map(len, lines))
+    box = f'╔{"═" * (width + indent * 2)}╗\n'  # upper_border
+    if title:
+        box += f'║{space}{title:<{width}}{space}║\n'  # title
+        box += f'║{space}{"-" * len(title):<{width}}{space}║\n'  # underscore
+    box += ''.join([f'║{space}{line:<{width}}{space}║\n' for line in lines])
+    box += f'╚{"═" * (width + indent * 2)}╝'  # lower_border
+    print(box)
+
 class Node:
     def __init__(self, val):
 
@@ -21,7 +35,9 @@ class Node:
             self.val = val
 
 class BinaryTreeAlgorithms:
-    def print_tree(self,root):
+    def print_tree(self,root,hint=False):
+        if(hint==True):
+            print_tree_hint()
         if root == None:
             return
         print(root.val,end =":")
@@ -32,6 +48,107 @@ class BinaryTreeAlgorithms:
         print("\n")
         self.print_tree(root.left)
         self.print_tree(root.right)
+
+    def print_tree_hint(self):
+        message = """
+        Printing A Binary Tree
+        ------------------------------------
+
+        Purpose : Printing a Binary Tree(Both Left and Right Node)
+        Method : Recursion, Binary Tree
+
+        Time Complexity : Worst Case - O(n), n = Number of nodes in a Binary Tree
+
+        Hint :
+        Print the root, use recursion and call into the left and right
+
+        Pseudocode :
+        --> if(root == None) return
+        --> print(root.value)
+        --> print(root.left.value)
+        --> print(root.right.value)
+        --> make recursion calls,
+            print_tree(root.left)
+            print.tree(root.right)
+
+        Visualization:
+
+        Given Binart Tree :
+
+                            +------+
+                            |  12  |         <-- root
+                            +------+
+                            /      \\
+                           /        \\
+                   +------+          +------+
+    root.left -->  |  6   |          |  14  |   <-- root.right
+                   +------+          +------+
+                   /      \\          /      \\
+                  /        \\        /        \\
+          +------+     +------+   +------+    +------+
+          |  3   |     |  7   |   |  12  |    |  15  |
+          +------+     +------+   +------+    +------+
+
+
+           Step 1: print root, root.left and root.right
+
+                12 : L:6, R: 14
+
+           Step 2 : call recursive functions
+
+           f(root.left) :
+
+                           +------+
+                           |  6   |    <-- root
+                           +------+
+                           /      \\
+                          /        \\
+                  +------+         +------+
+   root.left -->  |  3   |         |  7   |  <-- root.right
+                  +------+         +------+
+
+          +------------------------+
+          | Repeat Step 1 & Step 2 |   <-- recursion calls
+          +------------------------+
+
+          f(root.right) :
+
+                          +------+
+                          |  14  |    <-- root
+                          +------+
+                          /      \\
+                         /        \\
+                 +------+         +------+
+  root.left -->  |  12  |         |  15  |  <-- root.right
+                 +------+         +------+
+
+         +------------------------+
+         | Repeat Step 1 & Step 2 |      <-- recursion calls
+         +------------------------+
+
+         Finally The Output :
+
+         -------------------------
+        |    12:L: 6 ,R: 14 ,     |
+        |                         |
+        |    6:L: 3 ,R: 7 ,       |
+        |                         |
+        |    3:                   |
+        |                         |
+        |    7:                   |
+        |                         |
+        |    14:L: 12 ,R: 15 ,    |
+        |                         |
+        |    12:                  |
+        |                         |
+        |    15:                  |
+         -------------------------
+
+        Learn More:
+        - Binary Trees - https://en.wikipedia.org/wiki/Binary_tree
+        - Recursion - https://en.wikipedia.org/wiki/Recursion_(computer_science)
+        """
+        print_msg_box(message)
 
     def rangeSumBST(self, root,L,R):
         if(root == None):
@@ -109,26 +226,23 @@ class BinaryTreeAlgorithms:
 # root1.insert(3)
 # root1.insert(7)
 # root1.insert(15)
-# root1.insert(9)
 # root1.insert(12)
-# root1.insert(2)
-# root1.insert(17)
-#
-# root2 = Node(11)
-# root2.insert(5)
-# root2.insert(24)
-# root2.insert(2)
-# root2.insert(8)
-# root2.insert(12)
-# root2.insert(19)
-# root2.insert(1)
-# root2.insert(20)
-# root2.insert(7)
-#
+# #
+# # root2 = Node(11)
+# # root2.insert(5)
+# # root2.insert(24)
+# # root2.insert(2)
+# # root2.insert(8)
+# # root2.insert(12)
+# # root2.insert(19)
+# # root2.insert(1)
+# # root2.insert(20)
+# # root2.insert(7)
+# #
 # ping = BinaryTreeAlgorithms()
-# # ping.print_tree(root1)
+# ping.print_tree_hint()
 # # print("Second Tree")
 # # ping.print_tree(root2)
-#
-# root3 = ping.mergeTrees(root1,root2)
-# ping.print_tree(root3)
+# #
+# # root3 = ping.mergeTrees(root1,root2)
+# # ping.print_tree(root3)
