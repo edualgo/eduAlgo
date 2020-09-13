@@ -498,7 +498,9 @@ class string_algorithms:
                 flag = True
         return True
 
-    def oneEditAway(self,input1,input2):
+    def oneEditAway(self,input1,input2,hint=False):
+        if(hint==True):
+            self.oneEditAway_hint()
         if(len(input1)==len(input2)):
             return self.oneEditAwayReplace(input1,input2)
         elif(len(input1)+1==len(input2)):
@@ -506,6 +508,53 @@ class string_algorithms:
         elif(len(input1)-1==len(input2)):
             return self.oneEditAwayInsert(input2,input1)
         return False
+
+    def oneEditAway_hint(self):
+        message = """
+        Palindromic Permutation
+        ------------------------------------
+
+        Purpose : Check if two strings are one edit (or zero) away,where edit
+        means the following three methods,
+            - inserting a character
+            - removing a character
+            - replacing a character
+
+        Method : string manipulation
+
+        Time Complexity : Worst Case - O(n), n = length of the greater string
+
+        Hint :
+        Divide the problem in three cases of insert, remove and replace
+        and solve the problem.
+
+        Pseudocode :
+
+        For checking "replace" :
+
+        --> flag = False
+        --> for i in range(len(input1)):
+                if(input2[i]!=input1[i]):
+                    if(flag):
+                        return False
+                    flag = True
+
+        For checking "insert" & "remove" :
+
+        --> index1 = 0
+        --> index2 = 0
+        --> while((index2 < len(input2)) and (index1 < len(input1))):
+                if(input1[index1] != input2[index2]):
+                    if(index1 != index2):
+                        return False
+                        index2+=1
+                    else:
+                        index1+=1
+                        index2+=1
+                return True
+                
+        """
+        print_msg_box(message)
 
     def compressedString(self,input1):
         mapp = {}
@@ -536,4 +585,4 @@ class string_algorithms:
                 img_arr[i][last] = top
 
 ping = string_algorithms()
-ping.isPalindromicPermutation_hint()
+ping.oneEditAway_hint()
