@@ -399,7 +399,9 @@ class string_algorithms:
         """
         print_msg_box(message)
 
-    def isPalindromicPermutation(self,input1):
+    def isPalindromicPermutation(self,input1,hint=False):
+        if(hint == True):
+            self.isPalindromicPermutation_hint()
         mapp = {}
         for i in range(len(input1)):
             key = input1[i]
@@ -412,6 +414,67 @@ class string_algorithms:
             if(mapp[i] %2 == 1):
                 flag+=1
         return flag<=1
+
+    def isPalindromicPermutation_hint(self):
+        message = """
+        Palindromic Permutation
+        ------------------------------------
+
+        Purpose :To check if the permutation of the characters in a string can
+        make it palindromic
+        Method : string manipulation, palindromic behaviour
+
+        Time Complexity : Worst Case - O(n), n = length of the string
+
+        Hint :
+        Make a dictionary of characters and their repeatations.
+
+        Pseudocode :
+        --> Take a blank dictionary
+        --> for i in [0,length of input string]
+                key = input[i]
+                if(key in dictionary)
+                    dictionary[key]+=1
+                else
+                    push {key:1} inside dictionary
+        --> Check if dictioary[i] %2 == 1
+
+        Visualization:
+
+        Given String :
+
+        "abbca"
+
+        Making a table using dictionary :
+
+        Step 1 - create a blank dictionary - {}
+
+        Step 2 - check if the key exists
+
+                yes --> add 1
+
+                no  --> push {key:1} inside the dictionary
+
+        Step 3 - You have the following table
+
+        +----------+----------------+
+        |   key    |  repeatations  |
+        +----------+----------------+
+        |    a     |       2        |   --> rem = 0, flag = 0
+        -----------------------------
+        |    b     |       2        |   --> rem = 0, flag = 0
+        -----------------------------
+        |    c     |       1        |   --> rem = 0, flag = 1
+        -----------------------------
+
+        Step 4 - check reminder, set flag = 0, initially
+
+        Step 5 - return boolean
+
+        Learn More about Python Dictionaries Below -
+        https://www.w3schools.com/python/python_dictionaries.asp
+        """
+        print_msg_box(message)
 
     def oneEditAwayInsert(self,input1,input2):
         index1 = 0
@@ -435,7 +498,9 @@ class string_algorithms:
                 flag = True
         return True
 
-    def oneEditAway(self,input1,input2):
+    def oneEditAway(self,input1,input2,hint=False):
+        if(hint==True):
+            self.oneEditAway_hint()
         if(len(input1)==len(input2)):
             return self.oneEditAwayReplace(input1,input2)
         elif(len(input1)+1==len(input2)):
@@ -444,7 +509,56 @@ class string_algorithms:
             return self.oneEditAwayInsert(input2,input1)
         return False
 
-    def compressedString(self,input1):
+    def oneEditAway_hint(self):
+        message = """
+        Palindromic Permutation
+        ------------------------------------
+
+        Purpose : Check if two strings are one edit (or zero) away,where edit
+        means the following three methods,
+            - inserting a character
+            - removing a character
+            - replacing a character
+
+        Method : string manipulation
+
+        Time Complexity : Worst Case - O(n), n = length of the greater string
+
+        Hint :
+        Divide the problem in three cases of insert, remove and replace
+        and solve the problem.
+
+        Pseudocode :
+
+        For checking "replace" :
+
+        --> flag = False
+        --> for i in range(len(input1)):
+                if(input2[i]!=input1[i]):
+                    if(flag):
+                        return False
+                    flag = True
+
+        For checking "insert" & "remove" :
+
+        --> index1 = 0
+        --> index2 = 0
+        --> while((index2 < len(input2)) and (index1 < len(input1))):
+                if(input1[index1] != input2[index2]):
+                    if(index1 != index2):
+                        return False
+                        index2+=1
+                    else:
+                        index1+=1
+                        index2+=1
+                return True
+
+        """
+        print_msg_box(message)
+
+    def compressedString(self,input1,hint=False):
+        if(hint == True):
+            self.compressedString_hint()
         mapp = {}
         output = ""
         for i in range(len(input1)):
@@ -460,7 +574,76 @@ class string_algorithms:
         else:
             return input1
 
-    def rotateImage(self,img_arr,n):
+    def compressedString_hint(self):
+        message = """
+        Compress The String
+        ------------------------------------
+
+        Purpose :To compress the size of string by making a summary of the
+        repeatation of the characters
+        Method : string manipulation, python dictionary
+
+        Time Complexity : Worst Case - O(n), n = length of the string
+
+        Hint :
+        Make a dictionary of characters and their repeatations. Finaally forge a
+        new string and return it
+
+        Pseudocode :
+        --> Take a blank dictionary
+        --> Take a blank string output
+        --> for i in [0,length of input string]
+                key = input[i]
+                if(key in dictionary)
+                    dictionary[key]+=1
+                else
+                    push {key:1} inside dictionary
+        --> prepare the output string
+
+        Visualization:
+
+        Given String :
+
+        "aabbcccdddeeef"
+
+        Making a table using dictionary :
+
+        Step 1 - create a blank dictionary - {}
+
+        Step 2 - check if the key exists
+
+                yes --> add 1
+
+                no  --> push {key:1} inside the dictionary
+
+        Step 3 - You have the following table
+
+        +----------+----------------+
+        |   key    |  repeatations  |
+        +----------+----------------+
+        |    a     |       2        |
+        -----------------------------
+        |    b     |       2        |
+        -----------------------------
+        |    c     |       3        |
+        -----------------------------
+        |    d     |       3        |
+        -----------------------------
+        |    e     |       3        |
+        -----------------------------
+        |    f     |       1        |
+        -----------------------------
+
+        Step 4 - prepare the output string as "a2b2c3d3e3f1"
+
+        Learn More about Python Dictionaries Below -
+        https://www.w3schools.com/python/python_dictionaries.asp
+        """
+        print_msg_box(message)
+
+    def rotateImage(self,img_arr,n,hint=False):
+        if(hint==True):
+            self.rotateImage_hint()
         for layer in range(int(n/2)):
             first = layer
             last = n-1-layer
@@ -471,3 +654,94 @@ class string_algorithms:
                 img_arr[last - offset][first] = img_arr[last][last - offset]
                 img_arr[last][last - offset] = img_arr[i][last]
                 img_arr[i][last] = top
+
+    def rotateImage_hint(self):
+        message = """
+        Rotate The Image
+        ------------------------------------
+
+        Purpose :To rotate a N x N 2D array representing an image without
+        using any external space
+        Method : 2D array, time-space complexity
+
+        Time Complexity : Worst Case - O(n^2), n = number of rows in a matrix
+        Space Complexity : O(1)
+
+        Hint :
+        Try implementing rotation in layers
+
+        Pseudocode :
+        for layer in range(int(n/2)):
+            first = layer
+            last = n-1-layer
+            for i in range(first,last):
+                offset = i - first
+                top = img_arr[first][i]
+                img_arr[first][i] = img_arr[last - offset][first]
+                img_arr[last - offset][first] = img_arr[last][last - offset]
+                img_arr[last][last - offset] = img_arr[i][last]
+                img_arr[i][last] = top
+
+        Visualization:
+
+        Given image :
+
+        1  2  3           1  4  1
+        4  8  9    --->   8  8  2
+        1  8  9           9  9  3
+
+        Find the pivot (if any) :
+
+            1     2     3
+
+                +---+
+            4   | 8 |   9      ---> 8 is the constant position
+                +---+
+
+            1     8     9
+
+
+        Rotate Layer Wise using temp variable :
+
+                +---+
+            1   | 2 |   3
+                +---+
+          +---+       +---+
+          | 4 |   8   | 9 |   -----> rotate the highlighted layer in 90 degree
+          +---+       +---+
+                +---+
+            1   | 8 |   9
+                +---+
+
+        Rotate Next layer :
+
+            +---+       +---+
+            | 1 |   4   | 3 |
+            +---+       +---+
+              8     8     2      -----> rotate the highlighted layer in 90 degree
+            +---+       +---+
+            | 1 |   9   | 9 |
+            +---+       +---+
+
+        Finally you have the desired rotated array.
+        """
+        print_msg_box(message)
+
+    def setZeros(self,matrix,row,column):
+        row_arr = [False] * row
+        col_arr = [False] * column
+        for i in range(row):
+            for j in range(column):
+                if(matrix[i][j] == 0):
+                    row_arr[i] = True
+                    col_arr[j] = True
+
+        for i in range(row):
+            if(row_arr[i]):
+                for j in range(column):
+                    matrix[i][j] = 0
+
+        for i in range(column):
+            if(row_arr[i]):
+                for j in range(row):
+                    matrix[j][i] = 0
