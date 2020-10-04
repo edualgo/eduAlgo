@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Abhaskar1",
+      "name": "Akshay Bhaskar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/32983071?v=4",
+      "profile": "https://github.com/Abhaskar1",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "eduAlgo",
+  "projectOwner": "Abhijit2505",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
