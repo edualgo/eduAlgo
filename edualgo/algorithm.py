@@ -1,4 +1,7 @@
+
 import time
+import numpy as np
+from itertools import permutations
 
 def print_msg_box(msg, indent=1, width=None, title=None):
     """Print message-box with optional title."""
@@ -163,6 +166,103 @@ class sort:
 
         Learn More Here - https://en.wikipedia.org/wiki/Selection_sort
         """
+        print_msg_box(message)
+        
+    def bogo_sort(self, arr, asc=True, hint=False):
+        n = len(arr)
+        
+        def is_sorted(n, arr, ascend=asc):
+            if ascend:
+                for i in range(n-1):
+                    if array[i] > array[i+1]:
+                        return False
+            else:
+                for i in range(n-1):
+                    if array[i] < array[i+1]:
+                    return False
+            return True
+        
+        permut = permutations([i for i in range(n)], n)
+        
+        start = time.time()
+        for seq in permut:
+            tmp = np.array(arr)
+            
+            if is_sorted(n, tmp[list(seq)], asc):
+                sorted_arr = tmp[list(seq)]
+        end = time.time()
+        print("Bogo Sort Runtime = {}".format(end-start))
+        
+        if hint:
+            self.bogo_sort_hint()
+        
+        return sorted_arr
+    
+    def bogo_sort_hint(self):
+        message ="""
+        Bogo Sort
+        ------------------------------------
+
+        Purpose : Sorting in increasing/decreasing order as specified by asc argument
+        Method : Choose the sorted one among all the permutations
+
+        Time Complexity: Worst Case - O(n!)
+
+        Hint :
+        Generate all the possible permutations of the elements in the array
+        and check which is sorted.
+
+        Pseudocode:
+        --> for sequence in all_permutations
+                if is_sorted(array[sequence])
+                    return array[sequence]
+
+        Visualization:
+
+        Given Array :
+
+        +-----+-----+-----+
+        |  5  |  4  |  3  |
+        +-----+-----+-----+
+
+        First Permutation :
+
+        +-----+-----+-----+
+        |  5  |  4  |  3  |
+        +-----+-----+-----+
+        Is it sorted? NO
+
+        Second Permutation :
+
+        +-----+-----+-----+
+        |  5  |  3  |  4  |
+        +-----+-----+-----+
+        Is it sorted? NO
+
+        Third Permutation :
+
+        +-----+-----+-----+
+        |  4  |  5  |  3  |
+        +-----+-----+-----+
+        Is it sorted? NO
+
+        Third Permutation :
+
+        +-----+-----+-----+
+        |  4  |  3  |  5  |
+        +-----+-----+-----+
+        Is it sorted? NO
+        
+        Third Permutation :
+
+        +-----+-----+-----+
+        |  3  |  4  |  5  |
+        +-----+-----+-----+
+        Is it sorted? YES
+
+        Learn More Here - https://en.wikipedia.org/wiki/Bogosort
+        """
+        
         print_msg_box(message)
 
 class string_algorithms:
