@@ -1,6 +1,6 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "250">
 
@@ -121,6 +121,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/Abhaskar1"><img src="https://avatars0.githubusercontent.com/u/32983071?v=4" width="100px;" alt=""/><br /><sub><b>Akshay Bhaskar</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Abhaskar1" title="Code">💻</a></td>
     <td align="center"><a href="http://linkedin.com/in/24apurv"><img src="https://avatars3.githubusercontent.com/u/47186059?v=4" width="100px;" alt=""/><br /><sub><b>Apurv Deshpande</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=24apurv" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/KanakKvdi"><img src="https://avatars2.githubusercontent.com/u/30854138?v=4" width="100px;" alt=""/><br /><sub><b>Kanak Kavadi</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=KanakKvdi" title="Code">💻</a></td>
   </tr>
 </table>
 
