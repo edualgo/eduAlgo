@@ -14,20 +14,20 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)   [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 ## Objective
-A python package published at [PyPi](https://pypi.org/). The project can be viewed here - [PyPi - eduAlgo](https://pypi.org/project/eduAlgo/).
+A python package published at [PyPi](https://pypi.org/). The project can be viewed here => [PyPi - eduAlgo](https://pypi.org/project/eduAlgo/).
 
 ## Aim Of The Package
 
-This is a very simple python package made with python script to study different algorithms for educational purposes. This package is under **planning** version and aims to achieve the following,
+This is a very simple python package made up with python script to study different algorithms for educational purposes. This package is currently under **planning** version and aims to achieve the following :-
 
-* Contain All the available algorithms
+* Put together all the available algorithms
 * Help students with learning space and time complexity
-* Visualizing Algorithms
-* Getting resources, articles etc to study about python and Algorithms
+* Visualize Algorithms
+* Getting resources, articles etc. to study about python and Algorithms
 * Become a handy tool for the programmers while using different algorithms on daily basis
 
 ## Documentation
-The documentation for the included methods and their implementations can be found here - <a href = "https://edualgo.github.io/documentation/index.html">eduAlgo-Documentation</a>
+The documentation for the included methods and their implementations can be found here => <a href = "https://edualgo.github.io/documentation/index.html">eduAlgo-Documentation</a>
 
 ## Algorithms Yet to Publish
 
