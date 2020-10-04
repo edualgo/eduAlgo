@@ -198,7 +198,7 @@ class sort:
         current position.
 
         Pseudocode:
-        --> for i in [0,length of array]
+        --> for i in [1,length of array]
                 key = arr[i]
                 j = i-1
                 while j >= 0 and key < arr[j] : 
