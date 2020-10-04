@@ -1,4 +1,3 @@
-
 class Node:
     def __init__(self,val):
         self.val = val
@@ -208,3 +207,8 @@ class list_algorithms:
             result[i] = next
             i-=1
         return result
+
+# ping = linkedlist()
+# ping.append(1)
+# ping.append(2)
+# ping.printLL()

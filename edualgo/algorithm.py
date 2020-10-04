@@ -511,7 +511,7 @@ class string_algorithms:
 
     def oneEditAway_hint(self):
         message = """
-        Palindromic Permutation
+        One Edit Away
         ------------------------------------
 
         Purpose : Check if two strings are one edit (or zero) away,where edit
