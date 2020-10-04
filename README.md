@@ -75,6 +75,19 @@ Output:
 
       1 2 2 3 3 4
 
+## Communities/Hackathong/Conferences (In which the project was a part)
+
+### FOSS Hack - 2020 (12th & 13th September 2020)
+This project has been a part of FOSS hack and can be viewed here - [FOSS Hack eduAlgo](https://fossunited.org/project?project=eduAlgo)
+
+<img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/Foss%20Hack%202020.JPG" height="300">
+
+### PyCon - 2020 Devsprint ( 04th & 05th October 2020)
+This project has been a part of the devsprint by PyCon 2020 and can be viewed here - [PyCon Devsprint](https://github.com/pythonindia/inpycon2020/wiki/List-of-PyCon-India-2020-Projects)
+
+<img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/PyconIndia-Full-lite.png" height="300">
+
+
 ## Demo Video Link
 
 The Video link of the demo can be viewed here - [FOSS Hack 2020 Software Demo](https://www.youtube.com/watch?v=j4A3OV8KJEQ)
