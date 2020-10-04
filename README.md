@@ -75,7 +75,7 @@ Output:
 
       1 2 2 3 3 4
 
-## Communities/Hackathong/Conferences (In which the project was a part)
+## Communities/Hackathon/Conferences (In which the project was a part of)
 
 ### FOSS Hack - 2020 (12th & 13th September 2020)
 This project has been a part of FOSS hack and can be viewed here - [FOSS Hack eduAlgo](https://fossunited.org/project?project=eduAlgo)
