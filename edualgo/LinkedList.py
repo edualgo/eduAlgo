@@ -207,6 +207,24 @@ class list_algorithms:
             result[i] = next
             i-=1
         return result
+    def removeNthNodeFromEnd(self,head,n):
+        first = head 
+        second = head 
+        for i in range(n): 
+            if(second.next == None): 
+                if(i == n - 1): 
+                    self.head = self.head.next
+                return self.head 
+            second = second.next
+          
+        while(second.next != None): 
+            second = second.next
+            first = first.next
+          
+        first.next = first.next.next
+        
+            
+
 
 # ping = linkedlist()
 # ping.append(1)
