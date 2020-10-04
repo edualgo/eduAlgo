@@ -207,6 +207,54 @@ class list_algorithms:
             result[i] = next
             i-=1
         return result
+    def removeNthNodeFromEnd(self,head,n):
+        first = head 
+        second = head 
+        for i in range(n): 
+            if(second.next == None): 
+                if(i == n - 1): 
+                    self.head = self.head.next
+                return self.head 
+            second = second.next
+        while(second.next != None): 
+            second = second.next
+            first = first.next
+          
+        first.next = first.next.next
+
+    def removeNthNodeFromEnd_hint(self):
+        message=""" 
+        Remove Nth Node from end of a linked list
+        ------------------------------------
+         Purpose : to remove the Nth node from end of the linked list
+         Approach: We use a two pointer approach. The first and second pointer both start by refering to head.
+         We then move the second pointer by N steps without moving the first pointer. 
+         Now both the pointers have a distance of N nodes between them.
+         Now, we move both the pointer by a step each until the second pointer reaches the end of linked list.
+         Since both the pointers will still be at a distacne of N nodes , when the second pointer reaches the end of linked list , 
+         the first pointer will be at a distance of N nodes from the end i.e at the Nth node from the end.
+         So we delete the node pointed by the first pointer.
+
+         Edge Case: There are 2 possible edge cases in the above mentioned approach
+         ---------------------------------------------------
+         While moving the second pointer by N nodes , we keep checking if the "next" of the second pointer is null
+         If it is null then 2 cases may arise:
+         1) The length of linked list is exactly N and in that case the value of the loop variable i would be N-1 
+         and the Nth node from end would be the head. So in that case we update the head by setting the head to head.next
+         2) The length of list is < n :
+         In this case, since we can't delete the Nth node from the end, we simply return head .
+         
+
+
+         Time Complexity:
+         --------------------
+         O(L): where L is the length of the Linked List
+        """
+        print(message)
+        
+        
+            
+
 
 # ping = linkedlist()
 # ping.append(1)
