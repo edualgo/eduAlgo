@@ -165,6 +165,73 @@ class sort:
         """
         print_msg_box(message)
 
+    # insertion Sort Algorithm
+    def insertion_sort(self,arr,hint=False):
+        start = time.time()
+        for i in range(1,len(arr)):
+            key = arr[i]
+            j = i-1
+            while j >= 0 and key < arr[j] : 
+                arr[j+1] = arr[j]
+                j -= 1
+            arr[j+1] = key
+            print(arr)
+        end = time.time()
+        print("Insertion Sort Runtime = {}".format(end-start))
+        if(hint==True):
+            self.insertion_sort_hint()
+        return arr
+
+    def insertion_sort_hint(self):
+        message ="""
+        Insertion Sort
+        ------------------------------------
+
+        Purpose : sorting in increasing order
+        Method : insert element in correct position, pushing greater elements ahead
+
+        Time Complexity: Worst Case - O(n^2)
+
+        Hint :
+        In every iteration the ith element is inserted into the correct place 
+        and the elements greater than ith element are moved one position ahead of 
+        current position.
+
+        Pseudocode:
+        --> for i in [0,length of array]
+                key = arr[i]
+                j = i-1
+                while j >= 0 and key < arr[j] : 
+                    arr[j+1] = arr[j]
+                    j -= 1
+                arr[j+1] = key
+
+        Visualization:
+
+        Given Array :
+
+        +-----+-----+-----+
+        |  5  |  4  |  3  |
+        +-----+-----+-----+
+
+        First Iteration :
+
+        +-----+-----+-----+
+        |  4  |  5  |  3  |
+        +-----+-----+-----+
+
+        Second Iteration :
+
+        +-----+-----+-----+
+        |  3  |  4  |  5  |
+        +-----+-----+-----+
+
+        Finally you have the sorted array.
+
+        Learn More Here - https://en.wikipedia.org/wiki/Insertion_sort
+        """
+        print_msg_box(message)
+
 class string_algorithms:
 
     def isUnique(self,input_string,hint=False):
