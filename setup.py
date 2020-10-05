@@ -6,7 +6,7 @@ with open('README.md', encoding='utf-8') as file:
 
 
 # specify requirements of your package here
-REQUIREMENTS = ['requests']
+REQUIREMENTS = ['requests', 'tabulate']
 
 # some more details
 CLASSIFIERS = [
