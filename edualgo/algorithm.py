@@ -165,6 +165,109 @@ class sort:
         """
         print_msg_box(message)
 
+        def merge_sorted_lists(self, l1, l2):
+        arr=list()
+        i=j=0
+        while i < len(l1) or j < len(l2):
+                if j >= len(l2):
+                    arr.append(l1[i])
+                    i += 1
+                    continue
+                if i >= len(l1):
+                    arr.append(l2[j])
+                    j += 1
+                    continue;
+
+                if l1[i] < l2[j]:
+                    arr.append(l1[i])
+                    i += 1
+                else:
+                    arr.append(l2[j])
+                    j += 1
+        return arr
+
+    def merge_sort_impl(self, arr):
+        if len(arr) <= 1:
+            return arr
+        else:
+            return self.merge_sorted_lists(self.merge_sort_impl(arr[:(len(arr)//2)]), self.merge_sort_impl(arr[(len(arr)//2):]))
+
+    def merge_sort(self, arr, hint=False):
+        start = time.time()
+        result = self.merge_sort_impl(arr)
+        end = time.time()
+        print("Merge Sort Runtime = {}".format(end-start))
+        if(hint==True):
+            self.merge_sort_hint()
+        return result
+
+
+    def merge_sort_hint(self):
+        message ="""
+        merge Sort
+        ------------------------------------
+
+        Purpose : sorting in increasing order
+        Method : Break into two halves and get these lists sorted, then merge these sorted halves into one sorted list.
+
+        Time Complexity: Worst Case - O(n*log(n))
+
+        Hint :
+        We break the list into halfs until we have single element lists(since there is only one elemnt they are sorted.)
+        then we merge these lists pair by pair such that the merged list is sorted.
+
+        Pseudocode:
+        --> if len(arr) <= 1:
+                return arr
+            else:
+                return merge(merge_sort(arr[:mid]), merge_sort(arr[mid:]))
+
+        Visualization:
+
+        Given Array :
+
+        +-----+-----+-----+-----+-----+
+        |  5  |  4  |  3  |  7  |  2  |
+        +-----+-----+-----+-----+-----+
+
+        Break list into halves until you have one list for each array
+
+        +-----+-----+    +-----+-----+-----+
+        |  5  |  4  |    |  3  |  7  |  2  |
+        +-----+-----+    +-----+-----+-----+
+
+        +-----+    +-----+    +-----+    +-----+-----+
+        |  5  |    |  4  |    |  3  |    |  7  |  2  |
+        +-----+    +-----+    +-----+    +-----+-----+
+
+        +-----+    +-----+    +-----+    +-----+    +-----+
+        |  5  |    |  4  |    |  3  |    |  7  |    |  2  |
+        +-----+    +-----+    +-----+    +-----+    +-----+
+
+        Now we merge pair and maintain the sorted order:
+
+        +-----+    +-----+    +-----+    +-----+-----+
+        |  5  |    |  4  |    |  3  |    |  2  |  7  |
+        +-----+    +-----+    +-----+    +-----+-----+
+
+        +-----+-----+    +-----+    +-----+-----+
+        |  4  |  5  |    |  3  |    |  2  |  7  |
+        +-----+-----+    +-----+    +-----+-----+
+
+        +-----+-----+    +-----+-----+-----+
+        |  4  |  5  |    |  2  |  3  |  7  |
+        +-----+-----+    +-----+-----+-----+
+
+        +-----+-----+-----+-----+-----+
+        |  2  |  3  |  4  |  5  |  7  |
+        +-----+-----+-----+-----+-----+
+
+        Finally you have the sorted array.
+
+        Learn More Here - https://en.wikipedia.org/wiki/Merge_sort
+        """
+        print_msg_box(message)
+
 class string_algorithms:
 
     def isUnique(self,input_string,hint=False):
