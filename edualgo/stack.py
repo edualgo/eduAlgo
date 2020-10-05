@@ -80,7 +80,7 @@ class Stack(object):
         return len(self.data)
 
     def is_empty(self):
-        """Returns boolean False if data is empty or True"""
+        """Returns boolean False if the data is not empty else True"""
         return len(self.data) == 0
 
     def push(self, value):
