@@ -257,7 +257,7 @@ def insertion_sort(arr,hint=False):
     for i in range(1,len(arr)):
         key = arr[i]
         j = i-1
-        while j >= 0 and key < arr[j] : 
+        while j >= 0 and key < arr[j] :
             arr[j+1] = arr[j]
             j -= 1
         arr[j+1] = key
@@ -279,15 +279,15 @@ def insertion_sort_hint():
     Time Complexity: Worst Case - O(n^2)
 
     Hint :
-    In every iteration the ith element is inserted into the correct place 
-    and the elements greater than ith element are moved one position ahead of 
+    In every iteration the ith element is inserted into the correct place
+    and the elements greater than ith element are moved one position ahead of
     current position.
 
     Pseudocode:
     --> for i in [1,length of array]
             key = arr[i]
             j = i-1
-            while j >= 0 and key < arr[j] : 
+            while j >= 0 and key < arr[j] :
                 arr[j+1] = arr[j]
                 j -= 1
             arr[j+1] = key
@@ -318,3 +318,103 @@ def insertion_sort_hint():
     """
     print_msg_box(message)
 
+def merge_sorted_lists(l1, l2):
+    arr=list()
+    i=j=0
+    while i < len(l1) or j < len(l2):
+        if j >= len(l2):
+            arr.append(l1[i])
+            i += 1
+            continue
+        if i >= len(l1):
+            arr.append(l2[j])
+            j += 1
+            continue;
+        if l1[i] < l2[j]:
+            arr.append(l1[i])
+            i += 1
+        else:
+            arr.append(l2[j])
+            j += 1
+        return arr
+
+def merge_sort_impl(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        return self.merge_sorted_lists(self.merge_sort_impl(arr[:(len(arr)//2)]), self.merge_sort_impl(arr[(len(arr)//2):]))
+
+def merge_sort(arr, hint=False):
+    start = time.time()
+    result = self.merge_sort_impl(arr)
+    end = time.time()
+    print("Merge Sort Runtime = {}".format(end-start))
+    if(hint==True):
+        self.merge_sort_hint()
+    return result
+
+def merge_sort_hint():
+    message ="""
+    merge Sort
+    ------------------------------------
+
+    Purpose : sorting in increasing order
+    Method : Break into two halves and get these lists sorted, then merge these sorted halves into one sorted list.
+
+    Time Complexity: Worst Case - O(n*log(n))
+
+    Hint :
+    We break the list into halfs until we have single element lists(since there is only one elemnt they are sorted.)
+    then we merge these lists pair by pair such that the merged list is sorted.
+
+    Pseudocode:
+    --> if len(arr) <= 1:
+            return arr
+        else:
+            return merge(merge_sort(arr[:mid]), merge_sort(arr[mid:]))
+
+    Visualization:
+
+    Given Array :
+
+    +-----+-----+-----+-----+-----+
+    |  5  |  4  |  3  |  7  |  2  |
+    +-----+-----+-----+-----+-----+
+
+    Break list into halves until you have one list for each array
+
+    +-----+-----+    +-----+-----+-----+
+    |  5  |  4  |    |  3  |  7  |  2  |
+    +-----+-----+    +-----+-----+-----+
+
+    +-----+    +-----+    +-----+    +-----+-----+
+    |  5  |    |  4  |    |  3  |    |  7  |  2  |
+    +-----+    +-----+    +-----+    +-----+-----+
+
+    +-----+    +-----+    +-----+    +-----+    +-----+
+    |  5  |    |  4  |    |  3  |    |  7  |    |  2  |
+    +-----+    +-----+    +-----+    +-----+    +-----+
+
+    Now we merge pair and maintain the sorted order:
+
+    +-----+    +-----+    +-----+    +-----+-----+
+    |  5  |    |  4  |    |  3  |    |  2  |  7  |
+    +-----+    +-----+    +-----+    +-----+-----+
+
+    +-----+-----+    +-----+    +-----+-----+
+    |  4  |  5  |    |  3  |    |  2  |  7  |
+    +-----+-----+    +-----+    +-----+-----+
+
+    +-----+-----+    +-----+-----+-----+
+    |  4  |  5  |    |  2  |  3  |  7  |
+    +-----+-----+    +-----+-----+-----+
+
+    +-----+-----+-----+-----+-----+
+    |  2  |  3  |  4  |  5  |  7  |
+    +-----+-----+-----+-----+-----+
+
+    Finally you have the sorted array.
+
+    Learn More Here - https://en.wikipedia.org/wiki/Merge_sort
+    """
+    print_msg_box(message)
