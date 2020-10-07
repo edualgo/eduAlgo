@@ -1,6 +1,6 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "250">
 
@@ -126,6 +126,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://gnurenga.github.io"><img src="https://avatars1.githubusercontent.com/u/3196294?v=4" width="100px;" alt=""/><br /><sub><b>Rengaraj</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=gnurenga" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/gopalngk"><img src="https://avatars2.githubusercontent.com/u/11174107?v=4" width="100px;" alt=""/><br /><sub><b>gopalngk</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=gopalngk" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/nihilistdbanana"><img src="https://avatars2.githubusercontent.com/u/29499251?v=4" width="100px;" alt=""/><br /><sub><b>Nihilist D. Banana</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=nihilistdbanana" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/yash872"><img src="https://avatars3.githubusercontent.com/u/30313851?v=4" width="100px;" alt=""/><br /><sub><b>Yash Bhawsar</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=yash872" title="Code">💻</a></td>
   </tr>
 </table>
 
