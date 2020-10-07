@@ -149,6 +149,110 @@ class BinaryTreeAlgorithms:
         - Recursion - https://en.wikipedia.org/wiki/Recursion_(computer_science)
         """
         print_msg_box(message)
+    
+    def Inorder_print(self,root,hint=False):
+        if(hint==True):
+            self.Inorder_print_hint()
+        if root == None:
+            return
+        self.Inorder_print(root.left)
+        print(root.val,end =", ")
+        self.Inorder_print(root.right)
+
+    def Inorder_print_hint(self):
+        message = """
+        Printing A Binary Tree InOrder Traversal
+        ------------------------------------
+
+        Purpose : Printing a Binary Tree(InOrder Traversal)
+        Method : Recursion, Binary Tree
+
+        Time Complexity : Worst Case - O(n), n = Number of nodes in a Binary Tree
+
+        Hint :
+        print order ->  LEFT -- ROOT -- RIGHT
+        Call into left recursively till exist,Print the root, use recursion to call into the right
+
+        Pseudocode :
+        --> if(root == None) return
+        --> print(root.left.value)
+        --> print(root.value)
+        --> print(root.right.value)
+
+        Visualization:
+
+        Given Binary Tree :
+
+                            +------+
+                            |  12  |         <-- root
+                            +------+
+                            /      \\
+                           /        \\
+                   +------+          +------+
+    root.left -->  |  6   |          |  14  |   <-- root.right
+                   +------+          +------+
+                   /      \\          /      \\
+                  /        \\        /        \\
+          +------+     +------+   +------+    +------+
+          |  3   |     |  7   |   |  13  |    |  15  |
+          +------+     +------+   +------+    +------+
+
+
+        step : call recursive functions on root.left, print root, call on right
+
+                f(root.left) :
+
+                           +------+
+                           |  3   |    <-- root
+                           +------+
+                           /      \\
+                          /        \\
+                  +------+         +------+
+   root.left -->  | None |         | None |  <-- root.right
+                  +------+         +------+
+
+                output : LEFT -- ROOT -- RIGHT 
+                         None     3      None
+            
+
+                           +------+
+                           |  6   |    <-- root
+                           +------+
+                           /      \\
+                          /        \\
+                  +------+         +------+
+   root.left -->  |  3   |         |  7   |  <-- root.right
+                  +------+         +------+
+
+                output : LEFT -- ROOT -- RIGHT 
+                          3       6        7
+
+          f(root.right) :
+
+                          +------+
+                          |  14  |    <-- root
+                          +------+
+                          /      \\
+                         /        \\
+                 +------+         +------+
+  root.left -->  |  13  |         |  15  |  <-- root.right
+                 +------+         +------+
+
+               output : LEFT -- ROOT -- RIGHT 
+                         13      14      15
+
+         Finally The Output :
+
+         ---------------------------------
+        |    3, 6, 7, 12, 13, 14, 15,     |
+         ---------------------------------
+
+        Learn More:
+        - Binary Trees - https://en.wikipedia.org/wiki/Binary_tree
+        - Recursion - https://en.wikipedia.org/wiki/Recursion_(computer_science)
+        """
+        print_msg_box(message)
+    
 
     def rangeSumBST(self, root,L,R):
         if(root == None):
@@ -220,13 +324,16 @@ class BinaryTreeAlgorithms:
 
 
 
-# root1 = Node(12)
-# root1.insert(6)
-# root1.insert(14)
-# root1.insert(3)
-# root1.insert(7)
-# root1.insert(15)
-# root1.insert(12)
+#root1 = Node(12)
+#root1.insert(6)
+#root1.insert(14)
+#root1.insert(3)
+#root1.insert(7)
+#root1.insert(15)
+#root1.insert(13)
+#ping = BinaryTreeAlgorithms()
+#ping.Inorder_print(root1,hint=True)
+
 # #
 # # root2 = Node(11)
 # # root2.insert(5)
