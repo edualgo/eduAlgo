@@ -252,7 +252,6 @@ class BinaryTreeAlgorithms:
         - Recursion - https://en.wikipedia.org/wiki/Recursion_(computer_science)
         """
         print_msg_box(message)
-    
 
     def Preorder_print(self,root,hint=False):
         if(hint==True):
@@ -501,13 +500,13 @@ class BinaryTreeAlgorithms:
 
 
 
-# root1 = Node(12)
-# root1.insert(6)
-# root1.insert(14)
-# root1.insert(3)
-# root1.insert(7)
-# root1.insert(15)
-# root1.insert(13)
+#root1 = Node(12)
+#root1.insert(6)
+#root1.insert(14)
+#root1.insert(3)
+#root1.insert(7)
+#root1.insert(15)
+#root1.insert(13)
 # ping = BinaryTreeAlgorithms()
 # ping.Inorder_print(root1)
 # ping.Preorder_print(root1)
