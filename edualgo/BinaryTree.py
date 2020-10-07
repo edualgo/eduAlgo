@@ -287,58 +287,58 @@ class BinaryTreeAlgorithms:
 
         Given Binary Tree :
 
-                            +------+
-                            |  12  |         <-- root
-                            +------+
-                            /      \\
-                           /        \\
-                   +------+          +------+
-    root.left -->  |  6   |          |  14  |   <-- root.right
-                   +------+          +------+
-                   /      \\          /      \\
-                  /        \\        /        \\
-          +------+     +------+   +------+    +------+
-          |  3   |     |  7   |   |  13  |    |  15  |
-          +------+     +------+   +------+    +------+
+                                +------+
+                                |  12  |   <-- root
+                                +------+
+                                /      \\
+                               /        \\
+                        +------+          +------+
+         root.left -->  |  6   |          |  14  |   <-- root.right
+                        +------+          +------+
+                        /      \\          /      \\
+                       /        \\        /        \\
+                +------+     +------+   +------+    +------+
+                |  3   |     |  7   |   |  13  |    |  15  |
+                +------+     +------+   +------+    +------+
 
 
         step 1 : Print the root value
-            
-                           +------+
-                           |  6   |    <-- root
-                           +------+
-                           /      \\
-                          /        \\
-                  +------+         +------+
-   root.left -->  |  3   |         |  7   |  <-- root.right
-                  +------+         +------+
+                    
+                                +------+
+                                |  6   |    <-- root
+                                +------+
+                                /      \\
+                               /        \\
+                        +------+         +------+
+         root.left -->  |  3   |         |  7   |  <-- root.right
+                        +------+         +------+
 
                 output : 6
 
                 f(root.left) :
 
-                           +------+
-                           |  3   |    <-- root
-                           +------+
-                           /      \\
-                          /        \\
-                  +------+         +------+
-   root.left -->  | None |         | None |  <-- root.right
-                  +------+         +------+
+                                +------+
+                                |  3   |    <-- root
+                                +------+
+                                /      \\
+                               /        \\
+                        +------+         +------+
+         root.left -->  | None |         | None |  <-- root.right
+                        +------+         +------+
 
                 output : ROOT -- LEFT -- RIGHT 
                           3      None     None
 
           f(root.right) :
 
-                          +------+
-                          |  14  |    <-- root
-                          +------+
-                          /      \\
-                         /        \\
-                 +------+         +------+
-  root.left -->  |  13  |         |  15  |  <-- root.right
-                 +------+         +------+
+                                +------+
+                                |  14  |    <-- root
+                                +------+
+                                /      \\
+                               /        \\
+                        +------+         +------+
+         root.left -->  |  13  |         |  15  |  <-- root.right
+                        +------+         +------+
 
                output : ROOT -- LEFT -- RIGHT 
                          14      13      15
@@ -347,6 +347,82 @@ class BinaryTreeAlgorithms:
 
          ---------------------------------
         |    12, 6, 3, 7, 14, 13, 15,     |
+         ---------------------------------
+
+        Learn More:
+        - Binary Trees - https://en.wikipedia.org/wiki/Binary_tree
+        - Recursion - https://en.wikipedia.org/wiki/Recursion_(computer_science)
+        """
+        print_msg_box(message)
+
+    def Postorder_print(self,root,hint=False):
+        if(hint==True):
+            self.Postorder_print_hint()
+        if root == None:
+            return
+        self.Postorder_print(root.left)
+        self.Postorder_print(root.right)
+        print(root.val,end =", ")
+
+    def Postorder_print_hint(self):
+        message = """
+        Printing A Binary Tree PostOrder Traversal
+        ------------------------------------
+
+        Purpose : Printing a Binary Tree(PostOrder Traversal)
+        Method : Recursion, Binary Tree
+
+        Time Complexity : Worst Case - O(n), n = Number of nodes in a Binary Tree
+
+        Hint :
+        print order ->  LEFT -- RIGHT -- ROOT
+        use recursion to call into the left and the right subtree, Print the root
+
+        Pseudocode :
+        --> if(root == None) return
+        --> print(root.left.value)
+        --> print(root.right.value)
+        --> print(root.value)
+
+        Visualization:
+
+        Given Binary Tree :
+
+                                +------+
+                                |  12  |   <-- root
+                                +------+
+                                /      \\
+                               /        \\
+                        +------+          +------+
+         root.left -->  |  6   |          |  14  |   <-- root.right
+                        +------+          +------+
+                        /      \\          /      \\
+                       /        \\        /        \\
+                +------+     +------+   +------+    +------+
+                |  3   |     |  7   |   |  13  |    |  15  |
+                +------+     +------+   +------+    +------+
+
+
+        step 1 : Print the left, print right, print root
+                    
+                                +------+
+                                |  6   |    <-- root
+                                +------+
+                                /      \\
+                               /        \\
+                        +------+         +------+
+         root.left -->  |  3   |         |  7   |  <-- root.right
+                        +------+         +------+
+
+
+                output : LEFT -- RIGHT -- ROOT 
+                          3        7        6
+
+
+         Finally The Output :
+
+         ---------------------------------
+        |    3, 7, 6, 13, 15, 14, 12     |
          ---------------------------------
 
         Learn More:
@@ -434,25 +510,7 @@ class BinaryTreeAlgorithms:
 # root1.insert(13)
 # ping = BinaryTreeAlgorithms()
 # ping.Inorder_print(root1)
-# print("---")
 # ping.Preorder_print(root1)
+# ping.Postorder_print(root1)
 
-# #
-# # root2 = Node(11)
-# # root2.insert(5)
-# # root2.insert(24)
-# # root2.insert(2)
-# # root2.insert(8)
-# # root2.insert(12)
-# # root2.insert(19)
-# # root2.insert(1)
-# # root2.insert(20)
-# # root2.insert(7)
-# #
-# ping = BinaryTreeAlgorithms()
-# ping.print_tree_hint()
-# # print("Second Tree")
-# # ping.print_tree(root2)
-# #
-# # root3 = ping.mergeTrees(root1,root2)
-# # ping.print_tree(root3)
+
