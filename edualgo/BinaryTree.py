@@ -254,6 +254,107 @@ class BinaryTreeAlgorithms:
         print_msg_box(message)
     
 
+    def Preorder_print(self,root,hint=False):
+        if(hint==True):
+            self.Preorder_print_hint()
+        if root == None:
+            return
+        print(root.val,end =", ")
+        self.Preorder_print(root.left)
+        self.Preorder_print(root.right)
+
+    def Preorder_print_hint(self):
+        message = """
+        Printing A Binary Tree PreOrder Traversal
+        ------------------------------------
+
+        Purpose : Printing a Binary Tree(PreOrder Traversal)
+        Method : Recursion, Binary Tree
+
+        Time Complexity : Worst Case - O(n), n = Number of nodes in a Binary Tree
+
+        Hint :
+        print order ->  ROOT -- LEFT -- RIGHT
+        Print the root, use recursion to call into the left and the right subtree
+
+        Pseudocode :
+        --> if(root == None) return
+        --> print(root.value)
+        --> print(root.left.value)
+        --> print(root.right.value)
+
+        Visualization:
+
+        Given Binary Tree :
+
+                            +------+
+                            |  12  |         <-- root
+                            +------+
+                            /      \\
+                           /        \\
+                   +------+          +------+
+    root.left -->  |  6   |          |  14  |   <-- root.right
+                   +------+          +------+
+                   /      \\          /      \\
+                  /        \\        /        \\
+          +------+     +------+   +------+    +------+
+          |  3   |     |  7   |   |  13  |    |  15  |
+          +------+     +------+   +------+    +------+
+
+
+        step 1 : Print the root value
+            
+                           +------+
+                           |  6   |    <-- root
+                           +------+
+                           /      \\
+                          /        \\
+                  +------+         +------+
+   root.left -->  |  3   |         |  7   |  <-- root.right
+                  +------+         +------+
+
+                output : 6
+
+                f(root.left) :
+
+                           +------+
+                           |  3   |    <-- root
+                           +------+
+                           /      \\
+                          /        \\
+                  +------+         +------+
+   root.left -->  | None |         | None |  <-- root.right
+                  +------+         +------+
+
+                output : ROOT -- LEFT -- RIGHT 
+                          3      None     None
+
+          f(root.right) :
+
+                          +------+
+                          |  14  |    <-- root
+                          +------+
+                          /      \\
+                         /        \\
+                 +------+         +------+
+  root.left -->  |  13  |         |  15  |  <-- root.right
+                 +------+         +------+
+
+               output : ROOT -- LEFT -- RIGHT 
+                         14      13      15
+
+         Finally The Output :
+
+         ---------------------------------
+        |    12, 6, 3, 7, 14, 13, 15,     |
+         ---------------------------------
+
+        Learn More:
+        - Binary Trees - https://en.wikipedia.org/wiki/Binary_tree
+        - Recursion - https://en.wikipedia.org/wiki/Recursion_(computer_science)
+        """
+        print_msg_box(message)
+
     def rangeSumBST(self, root,L,R):
         if(root == None):
             return 0
@@ -324,15 +425,17 @@ class BinaryTreeAlgorithms:
 
 
 
-#root1 = Node(12)
-#root1.insert(6)
-#root1.insert(14)
-#root1.insert(3)
-#root1.insert(7)
-#root1.insert(15)
-#root1.insert(13)
-#ping = BinaryTreeAlgorithms()
-#ping.Inorder_print(root1,hint=True)
+# root1 = Node(12)
+# root1.insert(6)
+# root1.insert(14)
+# root1.insert(3)
+# root1.insert(7)
+# root1.insert(15)
+# root1.insert(13)
+# ping = BinaryTreeAlgorithms()
+# ping.Inorder_print(root1)
+# print("---")
+# ping.Preorder_print(root1)
 
 # #
 # # root2 = Node(11)
