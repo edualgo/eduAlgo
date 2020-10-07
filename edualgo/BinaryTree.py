@@ -324,15 +324,15 @@ class BinaryTreeAlgorithms:
 
 
 
-root1 = Node(12)
-root1.insert(6)
-root1.insert(14)
-root1.insert(3)
-root1.insert(7)
-root1.insert(15)
-root1.insert(13)
-ping = BinaryTreeAlgorithms()
-ping.Inorder_print(root1,hint=True)
+#root1 = Node(12)
+#root1.insert(6)
+#root1.insert(14)
+#root1.insert(3)
+#root1.insert(7)
+#root1.insert(15)
+#root1.insert(13)
+#ping = BinaryTreeAlgorithms()
+#ping.Inorder_print(root1,hint=True)
 
 # #
 # # root2 = Node(11)
