@@ -499,6 +499,30 @@ class BinaryTreeAlgorithms:
                 level = set()
         return False
 
+    def countNode(self,root):
+        '''
+        countNode will take root node 
+        as input and return the number 
+        node present in the tree.
+        '''
+        if (root == None):
+            return 0
+        return 1 + self.countNode(root.left) + self.countNode(root.right)
+
+    def KthLevel(self,root, k):
+        '''
+        KthLevel will take root node and level value (k),
+        and print the element present at that level 
+        Note: level for the root node is 1
+        '''
+        if (root == None):
+            return
+        if (k ==1):
+            print(root.data,end=', ')
+            return
+        self.KthLevel(root.left, k-1)
+        self.KthLevel(root.right, k-1)
+        return
 
 
 # root1 = Node(12)
