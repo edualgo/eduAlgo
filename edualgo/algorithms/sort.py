@@ -364,7 +364,7 @@ def merge_sort_hint():
     Time Complexity: Worst Case - O(n*log(n))
 
     Hint :
-    We break the list into halfs until we have single element lists(since there is only one elemnt they are sorted.)
+    We break the list into halves until we have single element lists(since there is only one element they are sorted.)
     then we merge these lists pair by pair such that the merged list is sorted.
 
     Pseudocode:
@@ -419,29 +419,114 @@ def merge_sort_hint():
     """
     print_msg_box(message)
   
-# Quick Sort Algorithm     
+# Quick Sort Partitioning Logic.
 def partition(arr, low, high):
-    i = (low-1)        
-    pivot = arr[high]     
+    # pivot is the element which will be placed at the correct position.
+    pivot = arr[high]
+    i = low-1
 
     for j in range(low, high):
-        if arr[j] <= pivot:
-           i = i+1
+        if arr[j] < pivot:
+           i += 1
            arr[i], arr[j] = arr[j], arr[i]
 
     arr[i+1], arr[high] = arr[high], arr[i+1]
-    return (i+1)
+    return i+1
 
-
-# Function to do Quick sort
-def quickSort(arr, low, high):
+# Function to perform Quick sort.
+def quick_sort(arr, low, high, hint=False):
     if len(arr) == 1:
         return arr
     if low < high:
+        partition_index = partition(arr, low, high)
 
+        quick_sort(arr, low, partition_index-1) # Before the partition index
+        quick_sort(arr, partition_index+1, high) # After the partition index
 
-        pi = partition(arr, low, high)
+    if hint:
+        quick_sort_hint()
 
-        quickSort(arr, low, pi-1)
-        quickSort(arr, pi+1, high)
+# Helper function to call the algorithm, and calculate the computation time.
+def quick_sort_helper():
+    arr = [10, 7, 8, 9, 1, 5]
+    start = time.time()
+    quick_sort(arr, 0, len(arr)-1)
+    end = time.time()
+    print("Quick Sort Runtime = {}".format(end-start))
 
+def quick_sort_hint():
+    message = """
+    Quick Sort
+    ------------------------------------
+
+    Purpose : sorting in increasing order
+    Method : Given an array and an element x of array as pivot, put x at its correct position in sorted array and put
+    all smaller elements (smaller than x) before x, and put all greater elements (greater than x) after x.
+
+    Time Complexity: Worst Case - O(n^2): The worst case occurs when the partition process always picks greatest or
+    smallest element as pivot.
+
+    Time Complexity: Average Case - O(n*log(n))
+
+    Hint :
+    Take the last element as pivot, place the pivot element at its correct position in sorted array, and place all
+    smaller (smaller than pivot) to left of pivot and all greater elements to right of pivot
+
+    Pseudo Code:
+    --> partition_index = partition(arr, low, high)
+
+        quick_sort(arr, low, pi-1) # Before the partition index
+        quick_sort(arr, pi+1, high) # After the partition index
+
+    --> Partitioning Hint:
+        for j in range(low, high):
+            if arr[j] < pivot:
+               i += 1
+               swap (arr[i], arr[j])
+               arr[i], arr[j] = arr[j], arr[i]
+
+        swap (arr[i+1], arr[high])
+        return i+1
+
+    Visualization: (Illustrating the partition logic)
+
+    Given Array :
+
+    +-----+-----+-----+-----+-----+
+    |  5  |  3  |  2  |  7  |  4  |
+    +-----+-----+-----+-----+-----+
+
+    Initializing i = -1, j = 0, pivot = arr[high] = 4. Traverse the array from low to high - 1 (ie 0 to 3).
+
+    j = 0. i = -1. Since arr[j] > pivot, do nothing. No change in arr and i.
+    +-----+-----+-----+-----+-----+
+    |  5  |  3  |  2  |  7  |  4  |
+    +-----+-----+-----+-----+-----+
+
+    j = 1. i = -1. Since arr[j] <= pivot, do i++ and swap(arr[i], arr[j]) ie swap (5, 3).
+    +-----+-----+-----+-----+-----+
+    |  3  |  5  |  2  |  7  |  4  |
+    +-----+-----+-----+-----+-----+
+
+    j = 2. i = 0. Since arr[j] <= pivot, do i++ and swap(arr[i], arr[j]) ie swap (5, 2).
+    +-----+-----+-----+-----+-----+
+    |  3  |  2  |  5  |  7  |  4  |
+    +-----+-----+-----+-----+-----+
+
+    j = 3. i = 1. Since arr[j] > pivot, do nothing. No change in arr and i.
+    +-----+-----+-----+-----+-----+
+    |  3  |  2  |  5  |  7  |  4  |
+    +-----+-----+-----+-----+-----+
+
+    We come out of loop because j is now equal to high-1. Now we place pivot at correct position by swapping arr[i+1]
+    and arr[high] (or pivot).
+    +-----+-----+-----+-----+-----+
+    |  3  |  2  |  4  |  7  |  5  |
+    +-----+-----+-----+-----+-----+
+
+    Now 4 is at its correct place. All elements smaller than 4 are before it and all elements greater than 4 are after
+    it. Repeat this process for left and right side of partition index.
+
+    Learn More Here - https://en.wikipedia.org/wiki/Quicksort
+    """
+    print_msg_box(message)
