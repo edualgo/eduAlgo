@@ -2,11 +2,13 @@ import time
 from . import print_msg_box
 
 
-def isUnique(input_string,hint=False):
-    mapp = []
+def isUnique(input_string,ignore_case=False, hint=False):
+    if ignore_case:
+        input_string = input_string.lower()
+    mapp = set()
     for i in input_string:
         if i not in mapp:
-            mapp.append(i)
+            mapp.add(i)
     if(hint == True):
          isUnique_hint()
     return len(mapp) == len(input_string)
