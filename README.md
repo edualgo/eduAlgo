@@ -90,7 +90,7 @@ This project has been a part of the devsprint by PyCon 2020 and can be viewed he
 
 ## Demo Video Link
 
-The Video link of the demo can be viewed here - [FOSS Hack 2020 Software Demo](https://www.youtube.com/watch?v=j4A3OV8KJEQ)
+<a href = "https://www.youtube.com/embed/j4A3OV8KJEQ"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/FOSSyt.PNG" height = "300"></a>
 
 ## License
 
