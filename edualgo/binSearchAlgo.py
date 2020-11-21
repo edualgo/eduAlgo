@@ -1,4 +1,4 @@
-#message=""""""
+from __init__ import print_msg_box
 
 def print_msg_box(msg, indent=1, width=None, title=None):
     """Print message-box with optional title."""

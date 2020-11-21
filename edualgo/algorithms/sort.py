@@ -2,7 +2,7 @@ import time
 import numpy as np
 from itertools import permutations
 
-from . import print_msg_box
+from __init__ import print_msg_box
 
 
 # bubble sort algorithm
