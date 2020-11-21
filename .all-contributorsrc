@@ -1,0 +1,96 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Abhaskar1",
+      "name": "Akshay Bhaskar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/32983071?v=4",
+      "profile": "https://github.com/Abhaskar1",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "24apurv",
+      "name": "Apurv Deshpande",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/47186059?v=4",
+      "profile": "http://linkedin.com/in/24apurv",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "KanakKvdi",
+      "name": "Kanak Kavadi",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/30854138?v=4",
+      "profile": "https://github.com/KanakKvdi",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "sramsubbu",
+      "name": "Ramasubramanian Seetharaman",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/8492937?v=4",
+      "profile": "https://github.com/sramsubbu",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "gnurenga",
+      "name": "Rengaraj",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3196294?v=4",
+      "profile": "http://gnurenga.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "gopalngk",
+      "name": "gopalngk",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11174107?v=4",
+      "profile": "https://github.com/gopalngk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "nihilistdbanana",
+      "name": "Nihilist D. Banana",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/29499251?v=4",
+      "profile": "https://github.com/nihilistdbanana",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "yash872",
+      "name": "Yash Bhawsar",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/30313851?v=4",
+      "profile": "https://github.com/yash872",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "nyctophiliacme",
+      "name": "Pransh Tiwari",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/17355873?v=4",
+      "profile": "https://www.linkedin.com/in/pransh-tiwari/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "eduAlgo",
+  "projectOwner": "Abhijit2505",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
