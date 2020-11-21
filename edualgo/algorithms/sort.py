@@ -2,7 +2,7 @@ import time
 import numpy as np
 from itertools import permutations
 
-from . import print_msg_box
+from __init__ import print_msg_box
 
 
 # bubble sort algorithm
@@ -528,5 +528,134 @@ def quick_sort_hint():
     it. Repeat this process for left and right side of partition index.
 
     Learn More Here - https://en.wikipedia.org/wiki/Quicksort
+    """
+    print_msg_box(message)
+
+# Heap Sort
+
+def heapify(arr, n, i): 
+    largest = i # Initialize largest as root 
+    l = 2 * i + 1     # left = 2*i + 1 
+    r = 2 * i + 2     # right = 2*i + 2 
+  
+    # See if left child of root exists and is 
+    # greater than root 
+    if l < n and arr[i] < arr[l]: 
+        largest = l 
+  
+    # See if right child of root exists and is 
+    # greater than root 
+    if r < n and arr[largest] < arr[r]: 
+        largest = r 
+  
+    # Change root, if needed 
+    if largest != i: 
+        arr[i],arr[largest] = arr[largest],arr[i] # swap 
+  
+        # Heapify the root. 
+        heapify(arr, n, largest)
+
+def heap_sort(arr,hint=False):
+    start = time.time()
+    n = len(arr) 
+  
+    # Build a maxheap. 
+    for i in range(n//2 - 1, -1, -1): 
+        heapify(arr, n, i) 
+  
+    # One by one extract elements 
+    for i in range(n-1, 0, -1): 
+        arr[i], arr[0] = arr[0], arr[i] # swap 
+        heapify(arr, i, 0)
+    
+    print(arr)
+    end = time.time()
+    print("Heap Sort Runtime = {}".format(end-start))
+    if(hint == True):
+        heap_sort_hint()
+    return arr
+
+def heap_sort_hint():
+    message ="""
+    Heap Sort
+    ------------------------------------
+
+    Purpose : sorting in increasing order
+    Method : Create Max Heap, Remove max root element and swap with last element, Repeat process
+
+    Time Complexity: Time complexity of heapify is O(Logn). 
+                     Time complexity of createAndBuildHeap() is O(n) 
+                     and overall time complexity of Heap Sort is O(nLogn).
+
+    Hint :
+    1. Build a max heap from the input data.
+    2. At this point, the largest item is stored at the root of the heap. 
+       Replace it with the last item of the heap followed by reducing the size of heap by 1. 
+       Finally, heapify the root of the tree.
+    3. Repeat step 2 while size of heap is greater than 1.  
+
+
+    Visualization:
+
+    Given Array :   +-----+-----+-----+-----+-----+
+                    |  4  | 10  |  3  |  5  |  1  |
+                    +-----+-----+-----+-----+-----+
+
+                             ( 0 )
+                            +------+
+                            |  4   |         
+                            +------+
+                            /      \\
+                    ( 1 )  /        \\ ( 2 )
+                   +------+          +------+
+                   |  10  |          |  3   |   
+                   +------+          +------+
+                   /      \\      
+                  /        \\     
+             +------+     +------+   
+     ( 3 )   |  5   |     |  1   |  ( 4 ) 
+             +------+     +------+                   
+
+    -> The numbers in bracket represent the indices in the array 
+       representation of data.
+
+    Applying heapify procedure to index 1 :
+
+                             ( 0 )
+                            +------+
+                            |  4   |         
+                            +------+
+                            /      \\
+                    ( 1 )  /        \\ ( 2 )
+                   +------+          +------+
+                   |  10  |          |  3   |   
+                   +------+          +------+
+                   /      \\      
+                  /        \\     
+             +------+     +------+   
+     ( 3 )   |  5   |     |  1   |  ( 4 ) 
+             +------+     +------+                   
+
+    Applying heapify procedure to index 0 :
+
+                             ( 0 )
+                            +------+
+                            |  10  |         
+                            +------+
+                            /      \\
+                    ( 1 )  /        \\ ( 2 )
+                   +------+          +------+
+                   |  5   |          |  3   |   
+                   +------+          +------+
+                   /      \\      
+                  /        \\     
+             +------+     +------+   
+     ( 3 )   |  4   |     |  1   |  ( 4 ) 
+             +------+     +------+                   
+
+    -> The heapify procedure calls itself recursively to build heap
+       in top down manner.
+    
+    Learn More Here - https://en.wikipedia.org/wiki/Heapsort
     """
     print_msg_box(message)
