@@ -154,7 +154,7 @@ def selection_sort_hint():
     """
     print_msg_box(message)
 
-def bogo_sort( arr, asc=False, hint=False):
+def bogo_sort( arr, asc=True, hint=False):
     n = len(arr)
 
     def is_sorted(n, array, ascend=asc):
