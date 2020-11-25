@@ -1,7 +1,11 @@
-def MinProductSubset(input_arr, hint=False):
-    arr = list(array(int, input().strip().split()))
-    n = len(arr)  # length of the array
-    print(arr)
+from __init__ import print_msg_box
+
+#Minimun product subset of an array
+
+def min_product_subset(array, hint=False):
+   
+    n = len(array)  # length of the array
+    print(array)
 
     int_neg = 0
     int_pos = 0
@@ -11,28 +15,25 @@ def MinProductSubset(input_arr, hint=False):
     prod = 1
 
     if n == 1:
-        print("arr[0]")
+        print(array[0])
 
     for i in range(0, n):
-
         # counting number of zero
-        if (arr[i] == 0): ]
-        count_zero = count_zero + 1
-        continue
+        if array[i] == 0:
+            int_zero = int_zero + 1
+            continue
 
         # counting number of negative numbers
-        if (arr[i] < 0):
+        if array[i] < 0:
             int_neg = int_neg + 1
-            max_neg = max(max_neg, arr[i])
+            max_neg = max(max_neg, array[i])
 
         # counting number of positive numbers
-        if (arr[i] > 0):
+        if array[i] > 0:
             int_pos = int_pos + 1
-            min_pos = min(min_pos, arr[i])
+            min_pos = min(min_pos, array[i])
 
-        prod = prod * arr[i]
-
-
+        prod = prod * array[i]
 
     if int_zero == n or (int_neg == 0 and int_zero > 0):
         print(0)
@@ -40,12 +41,12 @@ def MinProductSubset(input_arr, hint=False):
     if int_neg == 0:
         print(min_pos)
 
-    if (int_neg % 2 == 0):
+    if int_neg % 2 == 0:
         prod = int(prod / max_neg)
     print(prod)
 
 
-def MinProductSubset_hint():
+def min_product_subset_hint():
     message = """
     Minimum Product Subset of an Array 
     ----------------------------------------------
@@ -72,7 +73,7 @@ def MinProductSubset_hint():
                                 Print ith element from set for this subset
                                 Update product_temp by multiplying with  ith element
                         (iii) Set max_product to min(min_product, product_temp)
-                    (b) Print seperator for subsets i.e., newline
+                    (b) Print separator for subsets i.e., newline
 
     Visualization:
     
@@ -86,20 +87,21 @@ def MinProductSubset_hint():
         Yes --> Minimum sum product = arr[0]
         No --> Push to Step-2
         
-    Step-2: Intializing 
+    Step-2: Initializing 
             int_neg = 0(No.of negative numbers in array)  
             int_pos = 0(No.of positive numbers in array)
-            int_zero = 0(No.of zeroes in array),  max_neg = float('-inf'),min_pos = float('inf'),prod = 1(intial product of subset)
+            int_zero = 0(No.of zeroes in array),  max_neg = float('-inf'),min_pos = float('inf'),
+            prod = 1(initial product of subset)
             
-        Intializing i = 0 :
+        Initializing i = 0 :
             int_neg = 1, max_neg = -1,product = 1*(-1) = -1
-        Intializing i = 1 :
+        Initializing i = 1 :
             int_neg = 2, max_neg = -1,product = (-1)*(-1) = 1
-        Intializing i = 2 :
+        Initializing i = 2 :
             int_neg = 3, max_neg = -2,product = 1*(-2) = -2
-        Intializing i = 3 :
+        Initializing i = 3 :
             int_pos = 1, min_pos = 4,product = (-2)*4 = -8
-        Intializing i = 4 :
+        Initializing i = 4 :
             int_pos = 2, min_pos = 3,product = (-8)*4 = -24
             
     Step-3:
@@ -110,11 +112,11 @@ def MinProductSubset_hint():
                 Yes --> Minimum sum product = min_pos
                 No --> Go to (c)
        c) Check If there are even number of negative numbers :
-                Yes --> Minimun sum product = Product/max_neg 
+                Yes --> Minimum sum product = Product/max_neg 
                 No --> Minimum sum product = product
                 
     Step-4:
         Prepare the output as "-24"      
        
-   """
+    """
     print_msg_box(message)
