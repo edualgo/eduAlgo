@@ -1,4 +1,4 @@
-from __init__ import print_msg_box
+from .__init__ import print_msg_box
 
 class Node:
     def __init__(self,val):

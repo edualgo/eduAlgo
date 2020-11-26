@@ -1,6 +1,6 @@
 import time
 
-from __init__ import print_msg_box
+from .__init__ import print_msg_box
 
 
 def isUnique(input_string,hint=False):
