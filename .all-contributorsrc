@@ -85,6 +85,33 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "pragatipal",
+      "name": "Pragati Pal ",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/71111053?v=4",
+      "profile": "https://github.com/pragatipal",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "charlie219",
+      "name": "Akash Kumar Bhagat",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/43098511?v=4",
+      "profile": "http://fubble.tk",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "HarshCasper",
+      "name": "Harsh Bardhan Mishra",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/47351025?v=4",
+      "profile": "http://harshcasper.github.io",
+      "contributions": [
+        "mentoring"
+      ]
     }
   ],
   "contributorsPerLine": 7,
