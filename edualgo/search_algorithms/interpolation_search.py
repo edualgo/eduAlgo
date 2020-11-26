@@ -1,41 +1,34 @@
 import time
 
-
 from __init__ import print_msg_box
+
 
 # interpolation search algorithm
 def interpolation_search(array, x, hint=False):
-    array = sorted(array)
+    # array is sorted
+    flag= -1
     start = time.time()
-    low= 0
-    high= len(array)-1
-    while low<=high and array[low]<=array[high]:
+    low = 0
+    high = len(array) - 1
+    while low <= high and array[low] <= array[high]:
         if array[low] == x:
-            end = time.time()
-            if (hint == True):
-                interpolation_search_hint()
-            print("Interpolation Search Runtime = {}".format(end - start))
-            return low
+            flag= low
 
-        probe_pos = low + int(((float(high - low) /(array[high] - array[low])) * (x - array[low])))
+        probe_pos = low + int(((float(high - low) / (array[high] - array[low])) * (x - array[low])))
 
-        if array[probe_pos]==x:
-            end = time.time()
-            if (hint == True):
-                interpolation_search_hint()
-            print("Interpolation Search Runtime = {}".format(end - start))
-            return probe_pos
+        if array[probe_pos] == x:
+            flag= probe_pos
 
         if array[probe_pos] < x:
-            low= probe_pos + 1
+            low = probe_pos + 1
 
         else:
-            high= probe_pos - 1
+            high = probe_pos - 1
     end = time.time()
     if (hint == True):
         interpolation_search_hint()
     print("Interpolation Search Runtime = {}".format(end - start))
-    return -1
+    return flag
 
 
 def interpolation_search_hint():
@@ -47,14 +40,14 @@ def interpolation_search_hint():
     Method : Searching first in the position(index) that has maximum probability of having required element.
     Time Complexity: Best case- Ω(log(log(n)))
                      Worst case- O(n)
-                     
+
     Hint :
     Starting from 0th element of array[] and comparing every element to x search one by one.
- 
+
     Formula used :                                (x-arr[low])
             Probable position(pos) =   low +  ------------------- X (high-low)
                                              (arr[high]-arr[low])
-                                                   
+
                                 where low is the lowest index 
                                       high is the highest index 
                                       x is the number to be searched 
@@ -72,7 +65,7 @@ def interpolation_search_hint():
     Visualization:
     Number to search => x=3
     Given Array : arr[]
-    
+
 index-   0     1     2     3
       +-----+-----+-----+-----+
       |  1  |  3  |  4  |  6  |
@@ -99,8 +92,3 @@ index-   0     1     2     3
     Learn More Here - https://www.geeksforgeeks.org/interpolation-search/
     """
     print_msg_box(message)
-
-arr = [10, 12, 13, 16, 18, 19, 20, 21, 22, 23, 24, 33, 35, 42, 47]
-x = 18  # Element to be searched
-index = interpolation_search(arr, x, True)
-print(index)
