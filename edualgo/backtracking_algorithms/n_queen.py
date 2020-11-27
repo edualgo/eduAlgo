@@ -2,35 +2,29 @@
 
 from __init__ import print_msg_box
 from time import time as ti
-n=0                                             #Size of the Board
-ans=[]                                          #Answer in the form of list of co-ordinates to place the Queens
-
-#Occupied Diagonals and Columns
-diagonal1={};diagonal2={}                       #For right and left Diagonal respectively
-Col={}                                          #For Column which are already alloted to some queen 
 
 def n_queens(board_size,hint=False):            #Main function argument =size of the board
-    global n
 
     st=ti()
-    n=board_size
-    place_queen(0,[])                      
+    
+    #Occupied Diagonals and Columns
+    diagonal1={};diagonal2={}                       #For right and left Diagonal respectively
+    Col={}                                          #For Column which are already alloted to some queen 
+    ans=place_queen(0,[],board_size,diagonal1,diagonal2,Col)                      
     print(ti()-st)
 
-    if(len(ans)==0):
+    if(ans==False):
         return -1
 
-    if(hint==True):
+    if hint:
         n_queens_hint()
 
     return ans
 
-def place_queen(row,a):                         #Recursive Function to check and place the queens
-    global ans
+def place_queen(row,a,n,diagonal1,diagonal2,Col):                         #Recursive Function to check and place the queens
     #If the answer is found, row will be equal to the size of the board i.e. n
-    if(row==n):                                 
-        ans=a
-        return True
+    if(row==n):                             
+        return a
     R=row+1
 
     for C in range(1,n+1):
@@ -41,9 +35,9 @@ def place_queen(row,a):                         #Recursive Function to check and
             #Add the Column and their respective Diagonals to the dictionary to mark they are Occupied
             Col[C]=0
             diagonal1[R+C]=0;diagonal2[R-C]=0
-
-            if place_queen(row+1,a+[(row,C-1)]):            #If the answer is found, Stop the recursion
-                return 1
+            chk=place_queen(row+1,a+[(row,C-1)],n,diagonal1,diagonal2,Col)
+            if chk:            #If the answer is found, Stop the recursion
+                return chk
             
             #Deleaating the Column and Diagonals to vacant that place
             del diagonal1[R+C];del Col[C]
@@ -64,7 +58,7 @@ def n_queens_hint():
     Time Complexity : 
         Worst Case - O(n!)
         Best Case  - O(n^2)
-
+        
     Hint : Since we can put only one queen in a particular row/column, we can assume the 
         board to be a 1-d array where the index number of the array is the row number 
         and the value in that position is the column of the placed Queen. We must also 
@@ -129,7 +123,6 @@ def n_queens_hint():
             |       |       |       |
             +-------+-------+-------+
                 Queen is safe
-
         For R=2
         Placing Queen at C=0, i.e at (2,0)
             +-------+-------+-------+
@@ -161,7 +154,7 @@ def n_queens_hint():
 
         But for a board_size =4, the following will be one of the answer,
             [(0, 1), (1, 3), (2, 0), (3, 2)]
-
+            
             +-------+-------+-------+-------+
             |       |       |       |       |
             |       |   X   |       |       |
@@ -182,6 +175,4 @@ def n_queens_hint():
             
     """
     print_msg_box(message) 
-#print(n_queens(4,hint=True))
-    
-    
+print(n_queens(4))
