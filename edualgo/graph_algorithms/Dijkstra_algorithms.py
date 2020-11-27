@@ -2,61 +2,61 @@ from .__init__ import print_msg_box
 
 import sys
 
-# Providing the graph
-size = int(input())  # Size of the Vertices & Edges
 
-vertices = []
-for x in range(size):
-    vertices.append([int(y) for y in input().split()])
+def dijkstra_algorithm(graph, hint=False):
 
-edges = []
-for x in range(size):
-    edges.append([int(y) for y in input().split()])
+    # Providing the graph
+    size = int(input())  # Size of the Vertices & Edges
 
+    vertices = []
+    for x in range(size):
+        vertices.append([int(y) for y in input().split()])
 
-# Find which vertex is to be visited next
+    edges = []
+    for x in range(size):
+        edges.append([int(y) for y in input().split()])
 
+    # Find which vertex is to be visited next
 
-def to_be_visited():
     global visited_and_distance
-    v = -10
-    for index in range(num_of_vertices):
-        if visited_and_distance[index][0] == 0 \
-            and (v < 0 or visited_and_distance[index][1] <=
-                 visited_and_distance[v][1]):
-            v = index
-    return v
 
+    def to_be_visited(graph, hint=False):
+        v = -10
+        for index in range(num_of_vertices):
+            if visited_and_distance[index][0] == 0 \
+                    and (v < 0 or visited_and_distance[index][1] <= visited_and_distance[v][1]):
+                v = index
+        return v
 
-num_of_vertices = len(vertices[0])
+    num_of_vertices = len(vertices[0])
 
-visited_and_distance = [[0, 0]]
-for i in range(num_of_vertices-1):
-    visited_and_distance.append([0, sys.maxsize])
+    visited_and_distance = [[0, 0]]
+    for i in range(num_of_vertices-1):
+        visited_and_distance.append([0, sys.maxsize])
 
-for vertex in range(num_of_vertices):
+    for vertex in range(num_of_vertices):
 
-    # Find next vertex to be visited
-    to_visit = to_be_visited()
-    for neighbor_index in range(num_of_vertices):
+        # Find next vertex to be visited
+        to_visit = to_be_visited()
+        for neighbor_index in range(num_of_vertices):
 
-        # Updating new distances
-        if vertices[to_visit][neighbor_index] == 1 and \
-                visited_and_distance[neighbor_index][0] == 0:
-            new_distance = visited_and_distance[to_visit][1] \
-                + edges[to_visit][neighbor_index]
-            if visited_and_distance[neighbor_index][1] > new_distance:
-                visited_and_distance[neighbor_index][1] = new_distance
+            # Updating new distances
+            if vertices[to_visit][neighbor_index] == 1 and \
+                    visited_and_distance[neighbor_index][0] == 0:
+                new_distance = visited_and_distance[to_visit][1] \
+                    + edges[to_visit][neighbor_index]
+                if visited_and_distance[neighbor_index][1] > new_distance:
+                    visited_and_distance[neighbor_index][1] = new_distance
 
-        visited_and_distance[to_visit][0] = 1
+            visited_and_distance[to_visit][0] = 1
 
-i = 0
+    i = 0
 
-# Printing the distance
-for distance in visited_and_distance:
-    print("Distance of ", chr(ord('a') + i),
-          " from source vertex: ", distance[1])
-    i = i + 1
+    # Printing the distance
+    for distance in visited_and_distance:
+        print("Distance of ", chr(ord('a') + i),
+              " from source vertex: ", distance[1])
+        i = i + 1
 
 
 def print_Dijkstras_hint(self):
