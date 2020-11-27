@@ -5,28 +5,21 @@ import sys
 
 def dijkstra_algorithm(graph, hint=False):
 
+    global visited_and_distance
+
     # Providing the graph
-    size = int(input())  # Size of the Vertices & Edges
 
     vertices = []
-    for x in range(size):
+    for x in graph:
         vertices.append([int(y) for y in input().split()])
 
     edges = []
-    for x in range(size):
+    for x in graph:
         edges.append([int(y) for y in input().split()])
 
     # Find which vertex is to be visited next
 
-    global visited_and_distance
-
-    def to_be_visited(graph, hint=False):
-        v = -10
-        for index in range(num_of_vertices):
-            if visited_and_distance[index][0] == 0 \
-                    and (v < 0 or visited_and_distance[index][1] <= visited_and_distance[v][1]):
-                v = index
-        return v
+    to_be_visited()
 
     num_of_vertices = len(vertices[0])
 
@@ -57,6 +50,17 @@ def dijkstra_algorithm(graph, hint=False):
         print("Distance of ", chr(ord('a') + i),
               " from source vertex: ", distance[1])
         i = i + 1
+
+
+# Function to Find which vertex is to be visited next
+
+def to_be_visited(num_of_vertices):
+    v = -10
+    for index in range(num_of_vertices):
+        if visited_and_distance[index][0] == 0 \
+                and (v < 0 or visited_and_distance[index][1] <= visited_and_distance[v][1]):
+            v = index
+    return v
 
 
 def print_Dijkstras_hint(self):
