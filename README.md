@@ -87,8 +87,11 @@ This project has been a part of the devsprint by PyCon 2020 and can be viewed he
 
 <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/PyconIndia-Full-lite.png" height="300">
 
+## Short Demo Video Link
 
-## Demo Video Link
+<a href = "https://www.youtube.com/embed/C39M8KwwZ6U"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/short_demo.PNG" height = "300"></a>
+
+## Long Demo Video Link
 
 <a href = "https://www.youtube.com/embed/j4A3OV8KJEQ"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/FOSSyt.PNG" height = "300"></a>
 
