@@ -3,21 +3,16 @@ from .__init__ import print_msg_box
 import sys
 
 # Providing the graph
-vertices = [[0, 0, 1, 1, 0, 0, 0],
-            [0, 0, 1, 0, 0, 1, 0],
-            [1, 1, 0, 1, 1, 0, 0],
-            [1, 0, 1, 0, 0, 0, 1],
-            [0, 0, 1, 0, 0, 1, 0],
-            [0, 1, 0, 0, 1, 0, 1],
-            [0, 0, 0, 1, 0, 1, 0]]
+size = int(input())  # Size of the Vertices & Edges
 
-edges = [[0, 0, 1, 2, 0, 0, 0],
-         [0, 0, 2, 0, 0, 3, 0],
-         [1, 2, 0, 1, 3, 0, 0],
-         [2, 0, 1, 0, 0, 0, 1],
-         [0, 0, 3, 0, 0, 2, 0],
-         [0, 3, 0, 0, 2, 0, 1],
-         [0, 0, 0, 1, 0, 1, 0]]
+vertices = []
+for x in range(size):
+    vertices.append([int(y) for y in input().split()])
+
+edges = []
+for x in range(size):
+    edges.append([int(y) for y in input().split()])
+
 
 # Find which vertex is to be visited next
 
@@ -64,7 +59,7 @@ for distance in visited_and_distance:
     i = i + 1
 
 
-def print_Dijkstras(self):
+def print_Dijkstras_hint(self):
     message = """
     Dijkstra's algorithm allows us to find the shortest path between any two vertices of a graph.
     -+-+-+-+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+
