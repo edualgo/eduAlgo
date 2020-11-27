@@ -97,13 +97,19 @@ This project has been a part of the devsprint by PyCon 2020 and can be viewed he
 
 <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/PyconIndia-Full-lite.png" height="300">
 
+
+## Latest Winter Update (Package Demo)
+
+<a href = "https://www.youtube.com/embed/ly_GYSBGL2g"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/winterupdate.PNG" height = "200"></a>
+
+
 ## Short Demo Video Link
 
-<a href = "https://www.youtube.com/embed/C39M8KwwZ6U"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/short_demo.PNG" height = "300"></a>
+<a href = "https://www.youtube.com/embed/C39M8KwwZ6U"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/short_demo.PNG" height = "200"></a>
 
 ## Long Demo Video Link
 
-<a href = "https://www.youtube.com/embed/j4A3OV8KJEQ"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/FOSSyt.PNG" height = "300"></a>
+<a href = "https://www.youtube.com/embed/j4A3OV8KJEQ"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/FOSSyt.PNG" height = "200"></a>
 
 ## License
 
