@@ -13,7 +13,7 @@ def n_queens(board_size,hint=False):            #Main function argument =size of
     ans=place_queen(0,[],board_size,diagonal1,diagonal2,Col)                      
     print(ti()-st)
 
-    if(ans==False):
+    if not ans:
         return -1
 
     if hint:
@@ -154,7 +154,7 @@ def n_queens_hint():
 
         But for a board_size =4, the following will be one of the answer,
             [(0, 1), (1, 3), (2, 0), (3, 2)]
-            
+
             +-------+-------+-------+-------+
             |       |       |       |       |
             |       |   X   |       |       |
@@ -175,4 +175,4 @@ def n_queens_hint():
             
     """
     print_msg_box(message) 
-print(n_queens(4))
+#print(n_queens(4))
