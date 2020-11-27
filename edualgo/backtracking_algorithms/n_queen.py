@@ -11,13 +11,14 @@ def n_queens(board_size,hint=False):            #Main function argument =size of
     diagonal1={};diagonal2={}                       #For right and left Diagonal respectively
     Col={}                                          #For Column which are already alloted to some queen 
     ans=place_queen(0,[],board_size,diagonal1,diagonal2,Col)                      
-    print(ti()-st)
+    print("Time Taken := "ti()-st)
+
+    if hint:
+        n_queens_hint()
 
     if not ans:
         return -1
 
-    if hint:
-        n_queens_hint()
 
     return ans
 
