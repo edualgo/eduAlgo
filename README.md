@@ -1,6 +1,6 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
@@ -132,6 +132,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Monisha-23"><img src="https://avatars3.githubusercontent.com/u/67052670?v=4" width="100px;" alt=""/><br /><sub><b>Monisha-23</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Monisha-23" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/vedantgoswami"><img src="https://avatars0.githubusercontent.com/u/56600948?v=4" width="100px;" alt=""/><br /><sub><b>vedantgoswami</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=vedantgoswami" title="Code">💻</a></td>
   </tr>
 </table>
 
