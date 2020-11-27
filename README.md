@@ -26,6 +26,13 @@ This is a very simple python package made up with python script to study differe
 * Getting resources, articles etc. to study about python and Algorithms
 * Become a handy tool for the programmers while using different algorithms on daily basis
 
+## Organization
+
+This project is a part of the organization <a href="https://edualgo.github.io/organization/">eduAlgo</a>.
+
+> We are an opensource organization having a few open-sourced projects on github related to Data structures and Algorithms in Python, Flutter Development & Frontend Development.
+chek the organization here - <a href="https://github.com/eduAlgo">eduAlgo</a>
+
 ## Documentation
 The documentation for the included methods and their implementations can be found here => <a href = "https://edualgo.github.io/documentation/index.html">eduAlgo-Documentation</a>
 
