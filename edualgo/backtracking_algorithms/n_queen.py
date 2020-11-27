@@ -64,7 +64,7 @@ def n_queens_hint():
     Time Complexity : 
         Worst Case - O(n!)
         Best Case  - O(n^2)
-        
+
     Hint : Since we can put only one queen in a particular row/column, we can assume the 
         board to be a 1-d array where the index number of the array is the row number 
         and the value in that position is the column of the placed Queen. We must also 
@@ -182,6 +182,6 @@ def n_queens_hint():
             
     """
     print_msg_box(message) 
-print(n_queens(4,hint=True))
+#print(n_queens(4,hint=True))
     
     
