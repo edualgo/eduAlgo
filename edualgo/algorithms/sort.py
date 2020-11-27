@@ -329,7 +329,7 @@ def merge_sorted_lists(l1, l2):
         if i >= len(l1):
             arr.append(l2[j])
             j += 1
-            continue;
+            continue
         if l1[i] < l2[j]:
             arr.append(l1[i])
             i += 1
