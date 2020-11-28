@@ -1,6 +1,6 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
@@ -97,13 +97,19 @@ This project has been a part of the devsprint by PyCon 2020 and can be viewed he
 
 <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/PyconIndia-Full-lite.png" height="300">
 
+
+## Latest Winter Update (Package Demo)
+
+<a href = "https://www.youtube.com/embed/ly_GYSBGL2g"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/winterupdate.PNG" height = "200"></a>
+
+
 ## Short Demo Video Link
 
-<a href = "https://www.youtube.com/embed/C39M8KwwZ6U"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/short_demo.PNG" height = "300"></a>
+<a href = "https://www.youtube.com/embed/C39M8KwwZ6U"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/short_demo.PNG" height = "200"></a>
 
 ## Long Demo Video Link
 
-<a href = "https://www.youtube.com/embed/j4A3OV8KJEQ"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/FOSSyt.PNG" height = "300"></a>
+<a href = "https://www.youtube.com/embed/j4A3OV8KJEQ"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/FOSSyt.PNG" height = "200"></a>
 
 ## License
 
@@ -132,6 +138,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Monisha-23"><img src="https://avatars3.githubusercontent.com/u/67052670?v=4" width="100px;" alt=""/><br /><sub><b>Monisha-23</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Monisha-23" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/vedantgoswami"><img src="https://avatars0.githubusercontent.com/u/56600948?v=4" width="100px;" alt=""/><br /><sub><b>vedantgoswami</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=vedantgoswami" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/siddhantkhare24/"><img src="https://avatars0.githubusercontent.com/u/55068936?v=4" width="100px;" alt=""/><br /><sub><b>Siddhant Khare</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Siddhant-K-code" title="Code">💻</a></td>
   </tr>
 </table>
 
