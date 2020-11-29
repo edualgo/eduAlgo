@@ -1,5 +1,5 @@
 from __init__ import print_msg_box
-from time import time 
+import time 
 
 def permute(lst, l, r):
     global total_permutations
@@ -17,11 +17,14 @@ def permute(lst, l, r):
 result = []  # Storing total permutations of a string
 total_permutations = 0  # Count total permutations
 def string_permutaions(string,hint=False):
+    start = time.time()
     if hint:
         string_permutaions_hint()
     n = len(string)
     lst = list(string) #covert string to list
     permute(lst,0,n-1) 
+    end = time.time()
+    print("Time Taken: ",end-start)
     print("Total Permutations: ",total_permutations)
     return result
 
@@ -73,5 +76,5 @@ def string_permutaions_hint():
     """
     print_msg_box(message)
 
-print(string_permutaions("ABCA",True))
+# print(string_permutaions("ABCA",True))
   
