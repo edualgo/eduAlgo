@@ -9,6 +9,7 @@ def linear_search(array, x, hint=False):
     for i in range(len(array)):
         if array[i] == x:
             flag=i
+            break
     end = time.time()
     if (hint == True):
         linear_search_hint()

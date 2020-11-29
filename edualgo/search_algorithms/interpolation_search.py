@@ -10,14 +10,16 @@ def interpolation_search(array, x, hint=False):
     start = time.time()
     low = 0
     high = len(array) - 1
-    while low <= high and array[low] <= array[high]:
+    while low <= high and x>=array[low] and x<=array[high]:
         if array[low] == x:
             flag= low
+            break
 
         probe_pos = low + int(((float(high - low) / (array[high] - array[low])) * (x - array[low])))
 
         if array[probe_pos] == x:
             flag= probe_pos
+            break
 
         if array[probe_pos] < x:
             low = probe_pos + 1
