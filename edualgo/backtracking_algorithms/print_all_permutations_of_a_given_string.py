@@ -2,11 +2,10 @@ from __init__ import print_msg_box
 import time 
 
 def permute(lst, l, r):
-    global total_permutations
     if l==r:            
         solution = ''.join(lst)
         if solution not in result:  #if characters in the strings are not duplicate
-            total_permutations+=1
+            total_permutations[0]+=1
             result.append(''.join(lst))
     else:
         for i in range(l,r+1):
@@ -15,7 +14,7 @@ def permute(lst, l, r):
             lst[l], lst[i] = lst[i], lst[l]  # backtrack 
 
 result = []  # Storing total permutations of a string
-total_permutations = 0  # Count total permutations
+total_permutations = [0]  # Count total permutations
 def string_permutaions(string,hint=False):
     start = time.time()
     if hint:
