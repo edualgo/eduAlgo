@@ -34,7 +34,7 @@ def jump_search(arr, n, search, hint=False):
 
 def jump_search_hint():
     message = """
-    Linear Search
+    Jump Search
     ------------------------------------
     Purpose: Searching a required number
     Method: Iterating, Comparing
