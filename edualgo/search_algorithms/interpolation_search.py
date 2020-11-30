@@ -46,9 +46,9 @@ def interpolation_search_hint():
     Hint :
     Starting from 0th element of array[] and comparing every element to x search one by one.
 
-    Formula used :                                (x-arr[low])
-            Probable position(pos) =   low +  ------------------- X (high-low)
-                                             (arr[high]-arr[low])
+Formula used :                                    (high-low)
+       Probable position(pos) =   low + int (--------------------) X (x-arr[low])
+                                              (arr[high]-arr[low])
 
                                 where low is the lowest index 
                                       high is the highest index 
@@ -61,7 +61,7 @@ def interpolation_search_hint():
             *calculate probable position(pos) with formula above
             if array[pos]< x
                 low = pos+1
-            if array[pos]< x
+            else
                 high = pos-1 
 
     Visualization:
@@ -77,15 +77,15 @@ index-   0     1     2     3
     +-----+-----+-----+-----+    low = 0            high = 3
     |  1  |  3  |  4  |  6  |    arr[low] = 1       arr[high] = 6
     +-----+-----+-----+-----+
-    pos = 0+((3-1)/(6-3))*(3-0) = 2 
-  =>It will check at arr[pos]==x or not which is not and x<arr[pos] 
+    pos = 0+int((3-0)/(6-1))*(3-1) = 0 
+  =>It will check at arr[pos]==x or not which is not and arr[pos]<x 
   => low = pos+1 = 1
 
     Second Iteration :
     +-----+-----+-----+-----+    low = 1            high = 3
     |  1  |  3  |  4  |  6  |    arr[low] = 3       arr[high] = 6
     +-----+-----+-----+-----+
-    pos = 1+((3-3)/(6-3))*(3-0) = 1 
+    pos = 1+((3-1)/(6-3))*(3-3) = 1 
   =>It will check at arr[pos]==x which is true 
   => It will return 1
 
