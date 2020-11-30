@@ -1,4 +1,3 @@
-
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -18,6 +17,7 @@
 
 ## Objective
 A python package published at [PyPi](https://pypi.org/). The project can be viewed here => [PyPi - eduAlgo](https://pypi.org/project/eduAlgo/).
+**Don't forget to create an ISSUE before making a PR and always make PR to this repo - [Main eduAlgo](https://github.com/Abhijit2505/eduAlgo)**
 
 ## Aim Of The Package
 
