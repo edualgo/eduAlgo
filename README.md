@@ -1,6 +1,6 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
@@ -140,6 +140,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Monisha-23"><img src="https://avatars3.githubusercontent.com/u/67052670?v=4" width="100px;" alt=""/><br /><sub><b>Monisha-23</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Monisha-23" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/vedantgoswami"><img src="https://avatars0.githubusercontent.com/u/56600948?v=4" width="100px;" alt=""/><br /><sub><b>vedantgoswami</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=vedantgoswami" title="Code">💻</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/siddhantkhare24/"><img src="https://avatars0.githubusercontent.com/u/55068936?v=4" width="100px;" alt=""/><br /><sub><b>Siddhant Khare</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Siddhant-K-code" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.cbkm.in/"><img src="https://avatars2.githubusercontent.com/u/41920289?v=4" width="100px;" alt=""/><br /><sub><b>Prakhar Mangal</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Prakhar-Mangal" title="Code">💻</a></td>
   </tr>
 </table>
 
@@ -164,7 +165,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/yash872"><img src="https://avatars3.githubusercontent.com/u/30313851?v=4" width="100px;" alt=""/><br /><sub><b>Yash Bhawsar</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=yash872" title="Code">💻</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/pransh-tiwari/"><img src="https://avatars3.githubusercontent.com/u/17355873?v=4" width="100px;" alt=""/><br /><sub><b>Pransh Tiwari</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=nyctophiliacme" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/pragatipal"><img src="https://avatars3.githubusercontent.com/u/71111053?v=4" width="100px;" alt=""/><br /><sub><b>Pragati Pal </b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=pragatipal" title="Code">💻</a></td>
-    <td align="center"><a href="http://fubble.tk"><img src="https://avatars2.githubusercontent.com/u/43098511?v=4" width="100px;" alt=""/><br /><sub><b>Akash Kumar Bhagat</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=charlie219" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/charlie219"><img src="https://avatars2.githubusercontent.com/u/43098511?v=4" width="100px;" alt=""/><br /><sub><b>Akash Kumar Bhagat</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=charlie219" title="Code">💻</a></td>
     <td align="center"><a href="http://harshcasper.github.io"><img src="https://avatars1.githubusercontent.com/u/47351025?v=4" width="100px;" alt=""/><br /><sub><b>Harsh Bardhan Mishra</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=HarshCasper" title="Code">🧠</a></td>
   </tr>
 </table>
