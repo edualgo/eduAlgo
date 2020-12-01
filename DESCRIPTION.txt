@@ -1,0 +1,6 @@
+
+eduAlgo
+
+A simple python module to use different algorithms for educational purposes.
+This package is under development and planning process and it aims to hold many algorithms
+along with their implementations and complexities that can be used in educational purpose for all.
