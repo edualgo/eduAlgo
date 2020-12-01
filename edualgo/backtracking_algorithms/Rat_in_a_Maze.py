@@ -21,15 +21,15 @@ def rat_in_a_maze(maze, way=1, hint=False):                     # Main Function 
     visited=[[0]*m for i in range(n)]                           # To maintain the already visited spot
     
     # Base Condition to check whether the source or destination contains a wall
-    if(maze[0][0]==wall or maze[n-1][m-1]==wall):               
+    if wall in (maze[0][0], maze[n-1][m-1]):               
         return 'Not Possible'
     
-    temp=move_rat(0,0, n, m, maze, visited,way,direction)
+    temp=move_rat(0,0, n, m, maze, visited,way,direction,[])
     ans="".join(temp[1]) if temp[0] else 'Not Possible'
     print("Time Taken := ", time()-start)
     return ans
 
-def move_rat(xx, yy, n, m, maze, visited,way, direction,ans=[]):
+def move_rat(xx, yy, n, m, maze, visited,way, direction,ans):
     visited[xx][yy]=1
     # If the rat reached the destination 
     if(xx == n-1 and yy == m-1):
