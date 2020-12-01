@@ -1,4 +1,4 @@
-from .__init__ import print_msg_box
+from __init__ import print_msg_box
 import time
 import numpy as np
 from itertools import permutations
@@ -1474,8 +1474,31 @@ class greedy_algorithms:
         """
         print_msg_box(message)
 
+class recursion:
+    def step_problem(self,n,hint=False):
+        if(n <0):
+            return 0
+        if(n==0):
+            return 1
+        return self.step_problem(n-1) + self.step_problem(n-2) + self.step_problem(n-3)
 
-# ping = search_algorithms()
-# arr = [10,9,8,7,6]
-# p = ping.interpolation_search(arr,10)
-# print(p)
+class dynamic_programming:
+    def step_problem(self,n,hint=False):
+        arr = [0]*(n+1)
+        arr[0] = 1
+        arr[1] = 1
+        arr[2] = 2
+        arr[3] = 4
+        for i in range(4,n+1):
+            arr[i] = arr[i-1] + arr[i-2] + arr[i-3]
+        return arr[n]
+
+
+# don't forget to add a dot for the init import before publishing the package to the PYPI
+
+# ping1 = recursion()
+# ping2 = dynamic_programming()
+
+# print(ping2.step_problem(100))
+# print(ping1.step_problem(100))
+
