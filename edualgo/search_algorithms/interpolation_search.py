@@ -6,6 +6,8 @@ from __init__ import print_msg_box
 # interpolation search algorithm
 def interpolation_search(array, x, hint=False):
     # array is sorted
+    dict1 = {array[i]: i for i in range(len(array))}
+    array = sorted(array)
     flag= -1
     start = time.time()
     low = 0
@@ -30,7 +32,7 @@ def interpolation_search(array, x, hint=False):
     if (hint == True):
         interpolation_search_hint()
     print("Interpolation Search Runtime = {}".format(end - start))
-    return flag
+    return dict1[array[flag]]
 
 
 def interpolation_search_hint():
