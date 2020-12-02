@@ -6,11 +6,17 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "250">
 
+[![Downloads](https://pepy.tech/badge/edualgo)](https://pepy.tech/project/edualgo)
+[![Downloads](https://pepy.tech/badge/edualgo/month)](https://pepy.tech/project/edualgo)
+[![Downloads](https://pepy.tech/badge/edualgo/week)](https://pepy.tech/project/edualgo)
+
 # eduAlgo
 
 <img src="https://img.shields.io/github/license/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/languages/code-size/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src = "https://img.shields.io/github/contributors/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/last-commit/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src="https://img.shields.io/pypi/wheel/eduAlgo?style=for-the-badge">
 
 <img src = "https://img.shields.io/pypi/status/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/pypi/v/eduAlgo?style=for-the-badge&logo=PyPi">&nbsp;<img src ="https://img.shields.io/github/release-date/Abhijit2505/eduAlgo?style=for-the-badge">
+
+
 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)   [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
