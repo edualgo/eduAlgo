@@ -1,5 +1,5 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
@@ -141,6 +141,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/vedantgoswami"><img src="https://avatars0.githubusercontent.com/u/56600948?v=4" width="100px;" alt=""/><br /><sub><b>vedantgoswami</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=vedantgoswami" title="Code">💻</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/siddhantkhare24/"><img src="https://avatars0.githubusercontent.com/u/55068936?v=4" width="100px;" alt=""/><br /><sub><b>Siddhant Khare</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Siddhant-K-code" title="Code">💻</a></td>
     <td align="center"><a href="https://www.cbkm.in/"><img src="https://avatars2.githubusercontent.com/u/41920289?v=4" width="100px;" alt=""/><br /><sub><b>Prakhar Mangal</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Prakhar-Mangal" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/priyaa-agrawal"><img src="https://avatars1.githubusercontent.com/u/46539661?v=4" width="100px;" alt=""/><br /><sub><b>Priya Agrawal</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Priyaa-Agrawal" title="Code">💻</a></td>
   </tr>
 </table>
 
