@@ -4,17 +4,23 @@
 <img src = "https://img.shields.io/pypi/status/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/pypi/v/eduAlgo?style=for-the-badge&logo=PyPi">&nbsp;<img src ="https://img.shields.io/github/release-date/Abhijit2505/eduAlgo?style=for-the-badge">
 <p>
 
-                  
+## Objective
+A python package published at [PyPi](https://pypi.org/). The project can be viewed here => [PyPi - eduAlgo](https://pypi.org/project/eduAlgo/).
+**Don't forget to create an ISSUE before making a PR and always make PR to this repo - [Main eduAlgo](https://github.com/Abhijit2505/eduAlgo)**
+
+## Stats
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Abhijit2505/eduAlgo/graphs/commit-activity)
+[![PyPI format](https://img.shields.io/pypi/format/eduAlgo.svg)](https://pypi.python.org/pypi/eduAlgo/)
+[![GitHub contributors](https://img.shields.io/github/contributors/Abhijit2505/eduAlgo.svg)](https://GitHub.com/Abhijit2505/eduAlgo/graphs/contributors/)
+                
+                
 [![Downloads](https://static.pepy.tech/personalized-badge/edualgo?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads/total)](https://pepy.tech/project/edualgo)
 [![Downloads](https://static.pepy.tech/personalized-badge/edualgo?period=month&units=international_system&left_color=black&right_color=green&left_text=Downloads/month)](https://pepy.tech/project/edualgo)
 [![Downloads](https://static.pepy.tech/personalized-badge/edualgo?period=week&units=international_system&left_color=black&right_color=blue&left_text=Downloads/week)](https://pepy.tech/project/edualgo)
 
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)   [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-
-## Objective
-A python package published at [PyPi](https://pypi.org/). The project can be viewed here => [PyPi - eduAlgo](https://pypi.org/project/eduAlgo/).
-**Don't forget to create an ISSUE before making a PR and always make PR to this repo - [Main eduAlgo](https://github.com/Abhijit2505/eduAlgo)**
 
 ## Aim Of The Package
 
