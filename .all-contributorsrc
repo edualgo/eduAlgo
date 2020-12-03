@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Abhijit2505",
+      "name": "Abhijit Tripathy",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/52751963?v=4",
+      "profile": "https://abhijit2505.github.io/portfolio-site/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "eduAlgo",
+  "projectOwner": "Abhijit2505",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
