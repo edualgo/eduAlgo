@@ -1,5 +1,3 @@
-
-
 <img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "250">
 
 # eduAlgo
