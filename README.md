@@ -1,11 +1,8 @@
-<img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "250">
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-[![Downloads](https://pepy.tech/badge/edualgo)](https://pepy.tech/project/edualgo)
-[![Downloads](https://pepy.tech/badge/edualgo/month)](https://pepy.tech/project/edualgo)
-[![Downloads](https://pepy.tech/badge/edualgo/week)](https://pepy.tech/project/edualgo)
+<img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "250">
 
 # eduAlgo
 
@@ -15,6 +12,9 @@
 
 
 
+[![Downloads](https://pepy.tech/badge/edualgo)](https://pepy.tech/project/edualgo)
+[![Downloads](https://pepy.tech/badge/edualgo/month)](https://pepy.tech/project/edualgo)
+[![Downloads](https://pepy.tech/badge/edualgo/week)](https://pepy.tech/project/edualgo)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)   [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
