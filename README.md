@@ -90,24 +90,24 @@ Output:
 
 ## Communities/Hackathon/Conferences (In which the project was a part of)
 
-<table>
+<table border="2">
   <tr>
     <td>
-      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/Foss%20Hack%202020.JPG" height="300"><br>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/Foss%20Hack%202020.JPG" height="200"><br>
       <b>FOSS Hack - 2020 (12th & 13th September 2020)<b>
     </td>
     <td>
-      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/PyconIndia-Full-lite.png" height="300"><br>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/PyconIndia-Full-lite.png" height="200"><br>
       <b>PyCon - 2020 Devsprint ( 04th & 05th October 2020)<b>
         </td>
         </tr>
       <tr>
     <td>
-      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/haccktoberfest.png" height="300"><br>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/haccktoberfest.png" height="200"><br>
       <b>Hacktoberfest 2020 (October 2020)</b>
     </td>
     <td>
-      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/woc.png" height="300"><br>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/woc.png" height="200"><br>
       <b>Winter of Code - DSC, NSEC</b>
     </td>
   </tr>
