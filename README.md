@@ -90,29 +90,39 @@ Output:
 
 ## Communities/Hackathon/Conferences (In which the project was a part of)
 
-### FOSS Hack - 2020 (12th & 13th September 2020)
-This project has been a part of FOSS hack and can be viewed here - [FOSS Hack eduAlgo](https://fossunited.org/project?project=eduAlgo)
-
-<img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/Foss%20Hack%202020.JPG" height="300">
-
-### PyCon - 2020 Devsprint ( 04th & 05th October 2020)
-This project has been a part of the devsprint by PyCon 2020 and can be viewed here - [PyCon Devsprint](https://github.com/pythonindia/inpycon2020/wiki/List-of-PyCon-India-2020-Projects)
-
-<img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/PyconIndia-Full-lite.png" height="300">
+<table>
+  <tr>
+    <td>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/Foss%20Hack%202020.JPG" height="300"><br>
+      <b>FOSS Hack - 2020 (12th & 13th September 2020)<b>
+    </td>
+    <td>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/PyconIndia-Full-lite.png" height="300"><br>
+      <b>PyCon - 2020 Devsprint ( 04th & 05th October 2020)<b>
+        </td>
+        </tr>
+      <tr>
+    <td>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/haccktoberfest.png" height="300"><br>
+      <b>Hacktoberfest 2020 (October 2020)</b>
+    </td>
+    <td>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/woc.png" height="300"><br>
+      <b>Winter of Code - DSC, NSEC</b>
+    </td>
+  </tr>
+  
+  </table>
 
 
 ## Latest Winter Update (Package Demo)
 
 <a href = "https://www.youtube.com/embed/ly_GYSBGL2g"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/winterupdate.PNG" height = "200"></a>
 
+## Tutorials
 
-## Short Demo Video Link
+<a href = "https://www.youtube.com/embed/XlOx62W4Nxg"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/tutorial1.PNG" height = "300"></a>
 
-<a href = "https://www.youtube.com/embed/C39M8KwwZ6U"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/short_demo.PNG" height = "200"></a>
-
-## Long Demo Video Link
-
-<a href = "https://www.youtube.com/embed/j4A3OV8KJEQ"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/FOSSyt.PNG" height = "200"></a>
 
 ## License
 
