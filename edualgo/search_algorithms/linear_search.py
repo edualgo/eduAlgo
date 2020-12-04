@@ -9,6 +9,7 @@ def linear_search(array, x, hint=False):
     for i in range(len(array)):
         if array[i] == x:
             flag=i
+            break
     end = time.time()
     if (hint == True):
         linear_search_hint()
@@ -51,7 +52,7 @@ def linear_search_hint():
     |  5  |  4  |  3  |
     +-----+-----+-----+
     [checking if 3==x, which is true so the search returns location of x in the array ]
-    If no element in the array matched x=3 then it would return "Not found"
+    If no element in the array matched x=3 then it would return -1
     Learn More Here - https://en.wikipedia.org/wiki/Linear_search
     """
     print_msg_box(message)

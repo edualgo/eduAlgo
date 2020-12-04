@@ -1,23 +1,26 @@
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-<img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "250">
-
-# eduAlgo
-
+<p align = "center">
+<img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "200"><br>
 <img src="https://img.shields.io/github/license/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/languages/code-size/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src = "https://img.shields.io/github/contributors/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/last-commit/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src="https://img.shields.io/pypi/wheel/eduAlgo?style=for-the-badge">
-
 <img src = "https://img.shields.io/pypi/status/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/pypi/v/eduAlgo?style=for-the-badge&logo=PyPi">&nbsp;<img src ="https://img.shields.io/github/release-date/Abhijit2505/eduAlgo?style=for-the-badge">
-
-
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)   [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+<p>
 
 ## Objective
 A python package published at [PyPi](https://pypi.org/). The project can be viewed here => [PyPi - eduAlgo](https://pypi.org/project/eduAlgo/).
+**Don't forget to create an ISSUE before making a PR and always make PR to this repo - [Main eduAlgo](https://github.com/Abhijit2505/eduAlgo)**
+
+## Stats
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Abhijit2505/eduAlgo/graphs/commit-activity)
+[![PyPI format](https://img.shields.io/pypi/format/eduAlgo.svg)](https://pypi.python.org/pypi/eduAlgo/)
+[![GitHub contributors](https://img.shields.io/github/contributors/Abhijit2505/eduAlgo.svg)](https://GitHub.com/Abhijit2505/eduAlgo/graphs/contributors/)
+                
+                
+[![Downloads](https://static.pepy.tech/personalized-badge/edualgo?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads/total)](https://pepy.tech/project/edualgo)
+[![Downloads](https://static.pepy.tech/personalized-badge/edualgo?period=month&units=international_system&left_color=black&right_color=green&left_text=Downloads/month)](https://pepy.tech/project/edualgo)
+[![Downloads](https://static.pepy.tech/personalized-badge/edualgo?period=week&units=international_system&left_color=black&right_color=blue&left_text=Downloads/week)](https://pepy.tech/project/edualgo)
+
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)   [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
 ## Aim Of The Package
 
@@ -87,29 +90,39 @@ Output:
 
 ## Communities/Hackathon/Conferences (In which the project was a part of)
 
-### FOSS Hack - 2020 (12th & 13th September 2020)
-This project has been a part of FOSS hack and can be viewed here - [FOSS Hack eduAlgo](https://fossunited.org/project?project=eduAlgo)
-
-<img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/Foss%20Hack%202020.JPG" height="300">
-
-### PyCon - 2020 Devsprint ( 04th & 05th October 2020)
-This project has been a part of the devsprint by PyCon 2020 and can be viewed here - [PyCon Devsprint](https://github.com/pythonindia/inpycon2020/wiki/List-of-PyCon-India-2020-Projects)
-
-<img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/PyconIndia-Full-lite.png" height="300">
+<table border="2">
+  <tr>
+    <td>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/Foss%20Hack%202020.JPG" height="200"><br>
+      <b>FOSS Hack - 2020 (12th & 13th September 2020)<b>
+    </td>
+    <td>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/PyconIndia-Full-lite.png" height="200"><br>
+      <b>PyCon - 2020 Devsprint ( 04th & 05th October 2020)<b>
+        </td>
+        </tr>
+      <tr>
+    <td>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/haccktoberfest.png" height="200"><br>
+      <b>Hacktoberfest 2020 (October 2020)</b>
+    </td>
+    <td>
+      <img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/woc.png" height="200"><br>
+      <b>Winter of Code - DSC, NSEC</b>
+    </td>
+  </tr>
+  
+  </table>
 
 
 ## Latest Winter Update (Package Demo)
 
 <a href = "https://www.youtube.com/embed/ly_GYSBGL2g"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/winterupdate.PNG" height = "200"></a>
 
+## Tutorials
 
-## Short Demo Video Link
+<a href = "https://www.youtube.com/embed/XlOx62W4Nxg"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/tutorial1.PNG" height = "300"></a>
 
-<a href = "https://www.youtube.com/embed/C39M8KwwZ6U"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/short_demo.PNG" height = "200"></a>
-
-## Long Demo Video Link
-
-<a href = "https://www.youtube.com/embed/j4A3OV8KJEQ"><img src = "https://github.com/Abhijit2505/eduAlgo/blob/master/assets/FOSSyt.PNG" height = "200"></a>
 
 ## License
 
@@ -128,49 +141,3 @@ This package is under **MIT License** copyright @<a href = "https://github.com/A
         </td>
         </tr>
     </table>
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/Monisha-23"><img src="https://avatars3.githubusercontent.com/u/67052670?v=4" width="100px;" alt=""/><br /><sub><b>Monisha-23</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Monisha-23" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/vedantgoswami"><img src="https://avatars0.githubusercontent.com/u/56600948?v=4" width="100px;" alt=""/><br /><sub><b>vedantgoswami</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=vedantgoswami" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/siddhantkhare24/"><img src="https://avatars0.githubusercontent.com/u/55068936?v=4" width="100px;" alt=""/><br /><sub><b>Siddhant Khare</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Siddhant-K-code" title="Code">💻</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/Abhaskar1"><img src="https://avatars0.githubusercontent.com/u/32983071?v=4" width="100px;" alt=""/><br /><sub><b>Akshay Bhaskar</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Abhaskar1" title="Code">💻</a></td>
-    <td align="center"><a href="http://linkedin.com/in/24apurv"><img src="https://avatars3.githubusercontent.com/u/47186059?v=4" width="100px;" alt=""/><br /><sub><b>Apurv Deshpande</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=24apurv" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/KanakKvdi"><img src="https://avatars2.githubusercontent.com/u/30854138?v=4" width="100px;" alt=""/><br /><sub><b>Kanak Kavadi</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=KanakKvdi" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/sramsubbu"><img src="https://avatars3.githubusercontent.com/u/8492937?v=4" width="100px;" alt=""/><br /><sub><b>Ramasubramanian Seetharaman</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=sramsubbu" title="Code">💻</a></td>
-    <td align="center"><a href="http://gnurenga.github.io"><img src="https://avatars1.githubusercontent.com/u/3196294?v=4" width="100px;" alt=""/><br /><sub><b>Rengaraj</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=gnurenga" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/gopalngk"><img src="https://avatars2.githubusercontent.com/u/11174107?v=4" width="100px;" alt=""/><br /><sub><b>gopalngk</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=gopalngk" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/nihilistdbanana"><img src="https://avatars2.githubusercontent.com/u/29499251?v=4" width="100px;" alt=""/><br /><sub><b>Nihilist D. Banana</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=nihilistdbanana" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/yash872"><img src="https://avatars3.githubusercontent.com/u/30313851?v=4" width="100px;" alt=""/><br /><sub><b>Yash Bhawsar</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=yash872" title="Code">💻</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/pransh-tiwari/"><img src="https://avatars3.githubusercontent.com/u/17355873?v=4" width="100px;" alt=""/><br /><sub><b>Pransh Tiwari</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=nyctophiliacme" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/pragatipal"><img src="https://avatars3.githubusercontent.com/u/71111053?v=4" width="100px;" alt=""/><br /><sub><b>Pragati Pal </b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=pragatipal" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/charlie219"><img src="https://avatars2.githubusercontent.com/u/43098511?v=4" width="100px;" alt=""/><br /><sub><b>Akash Kumar Bhagat</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=charlie219" title="Code">💻</a></td>
-    <td align="center"><a href="http://harshcasper.github.io"><img src="https://avatars1.githubusercontent.com/u/47351025?v=4" width="100px;" alt=""/><br /><sub><b>Harsh Bardhan Mishra</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=HarshCasper" title="Code">🧠</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
