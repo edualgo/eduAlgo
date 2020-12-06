@@ -25,11 +25,11 @@ A python package published at [PyPi](https://pypi.org/). The project can be view
 
 This is a very simple python package made up with python script to study different algorithms for educational purposes. This package is currently under **planning** version and aims to achieve the following :-
 
-* To put together all the available algorithms
-* Help students with learning space and time complexity
-* Visualizing Algorithms
-* Getting resources, articles etc. to study about python and Algorithms
-* Become a handy tool for the programmers while using different algorithms on daily basis
+* To put together all the available algorithms.
+* Help students with learning space and time complexity.
+* Visualizing Algorithms.
+* Getting resources, articles etc. to study about python and Algorithms.
+* Become a handy tool for the programmers while using different algorithms on daily basis.
 
 ## Organization
 
