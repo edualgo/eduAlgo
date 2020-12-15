@@ -659,3 +659,24 @@ def heap_sort_hint():
     Learn More Here - https://en.wikipedia.org/wiki/Heapsort
     """
     print_msg_box(message)
+
+def learn():
+    while(1):
+        print('Enter your Choice\n 1. Bubble Sort\n 2. Selection Sort\n 3. Bogo Sort\n 4. Insertion Sort\n 5. Merge Sort\n 6. Quick Sort\n 7. Heap Sort\n 8. Exit')
+        ch = int(input())
+        if ch == 1:
+            bubble_sort_hint()
+        elif ch == 2:
+            selection_sort_hint()
+        elif ch == 3:
+            bogo_sort_hint()
+        elif ch == 4:
+            insertion_sort_hint()
+        elif ch == 5:
+            merge_sort_hint()
+        elif ch == 6:
+            quick_sort_hint()
+        elif ch == 7:
+            heap_sort_hint() 
+        else:
+            exit()
