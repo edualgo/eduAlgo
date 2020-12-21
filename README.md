@@ -10,6 +10,8 @@ A python package published at [PyPi](https://pypi.org/). The project can be view
 
 ## Stats
 
+<img src="https://github.com/Abhijit2505/eduAlgo/blob/master/assets/eduAlgo-def.png">
+
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Abhijit2505/eduAlgo/graphs/commit-activity)
 [![PyPI format](https://img.shields.io/pypi/format/eduAlgo.svg)](https://pypi.python.org/pypi/eduAlgo/)
 [![GitHub contributors](https://img.shields.io/github/contributors/Abhijit2505/eduAlgo.svg)](https://GitHub.com/Abhijit2505/eduAlgo/graphs/contributors/)
