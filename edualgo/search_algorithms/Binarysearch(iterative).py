@@ -1,4 +1,4 @@
-divide and conquer: [iterative]
+#divide and conquer: [iterative]
 def bin(arr,x):
     low=0
     high=len(arr)-1
