@@ -1,11 +1,6 @@
 from __init__ import print_msg_box
 import time 
 
-# m = length of the coins array
-# n = amount
-# Time: O(mn)
-# Space: O(n)
-
 def coin_change(coins, amount,hint=False):
     start = time.time()
     if hint:
