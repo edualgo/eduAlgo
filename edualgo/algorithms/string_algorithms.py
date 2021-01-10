@@ -475,3 +475,163 @@ def compressedString_hint():
     https://www.w3schools.com/python/python_dictionaries.asp
     """
     print_msg_box(message)
+
+# boyer moore algorithm 
+NO_OF_CHARACTERS = 256
+
+def badCharHeuristic(string, size): 
+    badChar = [-1] * NO_OF_CHARACTERS 
+    for i in range(size): 
+        badChar[ord(string[i])] = i; 
+    return badChar 
+
+def boyer_moore(text, pattern, hint = False): 
+    m = len(pattern) 
+    n = len(text) 
+    badChar = badCharHeuristic(pattern, m)  
+    s = 0
+    while(s <= n - m): 
+        j = m - 1
+        while j >= 0 and pattern[j] == text[s + j]: 
+            j -= 1 
+        if j < 0: 
+            print("Pattern occurs at shift = {}".format(s)) 
+            s += (m - badChar[ord(text[s + m])] if s + m < n else 1) 
+        else: 
+            s += max(1, j - badChar[ord(text[s + j])]) 
+    if(hint == True):
+        boyer_moore_hint()
+
+def boyer_moore_hint():
+    message ="""
+    Boyer Moore Algorithm
+    ------------------------------------
+    Boyer Moore algorithm is considered as the most efficient string searching algorithm. 
+    This algorithm takes a 'backward' approach. A simplified version of it or the entire 
+    algorithm is used in text editors for search and substitute commands.
+
+    Purpose : Efficient string searching
+
+    Method : The pattern string (P) is aligned with the start of the text string (T), and 
+             then compares the characters of the pattern from right to left, beginning with 
+             the rightmost character.
+
+    Time Complexity : Best Case - O(m) preprocessing + O(n/m) matching 
+                      {n = length of pattern, m = length of text}
+
+                      Worst Case - O(m) preprocessing + O(m*n) matching 
+                      {n = length of pattern, m = length of text}
+
+    Hint : 
+        - The algorithm scans the characters of the pattern from right to left beginning with 
+          the rightmost one. In case of a mismatch (or a complete match of the whole pattern) 
+          it uses two pre-computed functions to shift the window to the right.
+
+        - If a character is compared that is not within the pattern, no match can be found by
+          analyzing any further aspects at this position so the pattern can be changed 
+          entirely past the mismatching character.
+
+    Pseoducode :
+        -- fullSuffixMatch(shiftArray, borderArray, pattern)
+        
+        Begin
+        n := pattern length
+        j := n
+        j := n+1
+        borderArray[i] := j
+        while i > 0, do
+            while j <= n AND pattern[i - 1] ≠ pattern[j - 1], do
+                if shiftArray[j] = 0, then
+                shiftArray[j] := j - i;
+            j := borderArray[j];
+            done
+            decrease i and j by 1
+            borderArray[i] := j
+        done
+        End
+ 
+        -- partialSuffixMatch(shiftArray, borderArray, pattern)
+
+        Begin
+        n := pattern length
+        j := borderArray[0]
+        for index of all characters ‘i’ of pattern, do
+            if shiftArray[i] = 0, then
+                shiftArray[i] := j
+            if i = j then
+                j := borderArray[j]
+        done
+        End
+
+        -- boyer_moore(text, pattern)
+        
+        Begin
+        patLen := pattern length
+        strLen := text size
+
+        for all entries of shiftArray, do
+            set all entries to 0
+        done
+
+        call fullSuffixMatch(shiftArray, borderArray, pattern)
+        call partialSuffixMatch(shiftArray, borderArray, pattern)
+        shift := 0
+
+        while shift <= (strLen - patLen), do
+            j := patLen -1
+            while j >= 0 and pattern[j] = text[shift + j], do
+            decrease j by 1
+        done
+
+        if j < 0, then
+            print the shift as, there is a match
+            shift := shift + shiftArray[0]
+        else
+            shift := shift + shiftArray[j + 1]
+        done
+        End
+
+    Visualization :
+
+        Given Text - ABAAABCD
+        Given Pattern - ABC
+
+        +-----+-----+-----+-----+-----+-----+-----+-----+
+        |  A  |  B  |  A  |  A  |  A  |  B  |  C  |  D  |
+        +-----+-----+-----+-----+-----+-----+-----+-----+
+                       |
+                       X
+                       |
+        +-----+-----+-----+
+        |  A  |  B  |  C  |
+        +-----+-----+-----+   
+
+        -------------------------------------------------
+
+        +-----+-----+-----+-----+-----+-----+-----+-----+
+        |  A  |  B  |  A  |  A  |  A  |  B  |  C  |  D  |
+        +-----+-----+-----+-----+-----+-----+-----+-----+
+                                   |
+                                   X
+                                   |
+                    +-----+-----+-----+
+                    |  A  |  B  |  C  |
+                    +-----+-----+-----+   
+      
+        -------------------------------------------------
+
+        +-----+-----+-----+-----+-----+-----+-----+-----+
+        |  A  |  B  |  A  |  A  |  A  |  B  |  C  |  D  |
+        +-----+-----+-----+-----+-----+-----+-----+-----+
+                                   |     |     |
+                                   |     |     |
+                                   |     |     |
+                                +-----+-----+-----+
+                                |  A  |  B  |  C  |
+                                +-----+-----+-----+ 
+
+        Hence, the pattern occurs at shift 4.
+
+    Learn more here - https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_string-search_algorithm
+    """
+    print_msg_box(message)
