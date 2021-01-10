@@ -659,3 +659,121 @@ def heap_sort_hint():
     Learn More Here - https://en.wikipedia.org/wiki/Heapsort
     """
     print_msg_box(message)
+
+# cycle sort algorithm
+def cycle_sort(array, size, hint = False):
+    start = time.time()
+    i = 0 
+    while i < size:
+        if array[i] == i + 1:
+            i += 1
+        else: 
+            temp1 = array[i]
+            temp2 = array[array[i] - 1]
+            array[i] = temp2
+            array[temp1 - 1] = temp1
+    for i in range(size):
+        print(array[i], end = ' ')
+    end = time.time()
+    print("\nCycle Sort Runtime = {}".format((end - start)))
+    if(hint == True):
+        cycle_sort_hint()
+    return array
+
+def cycle_sort_hint():
+    message = """
+    Cycle Sort
+    ------------------------------------
+    Cycle sort is an in-place unstable sorting algorithm, a comparison sort 
+    that is theoretically optimal in terms of the total number of writes to 
+    the original array.
+
+    Purpose : sorting in increasing order
+
+    Method : It is based on the idea that array to be sorted can 
+             be divided into cycles. Cycles can be visualized as a graph. 
+  
+    Time Complexity : Best Case - O(n^2)
+                      Average Case - O(n^2)
+                      Worst Case - O(n^2)
+
+    Hint :
+        - Consider an array of 'n' distinct elements.
+        - An element 'a' is given, index of 'a' can be calculated 
+          by counting the number of elements that are smaller than 'a'. 
+        - If the element is found to be at its correct position, simply leave it as it is.
+        - Otherwise, find the correct position of a by counting the total number of elements 
+          that are less than 'a', where it must be present in the sorted array. 
+        - The other element b which is replaced is to be moved to its correct position. 
+        - This process continues till we get an element at the original position of 'a'.
+  
+    Pseudocode :
+        Begin
+        for start := 0 to n – 2 do
+            key := array[start]
+            location := start
+            for i := start + 1 to n - 1 do
+                if array[i] < key then
+                    location := location + 1
+            done
+
+            if location = start then
+                ignore lower part, go for next iteration
+            while key = array[location] do
+                location := location + 1
+            done
+
+            if location ≠ start then
+                swap array[location] with key
+            while location ≠ start do
+                location := start
+                for i := start + 1 to n - 1 do
+                    if array[i] < key then
+                        location := location + 1
+                done
+
+                while key = array[location]
+                    location := location + 1
+                if key ≠ array[location]
+                    swap array[location] and key
+            done
+        done
+    End
+
+    Visualization : 
+
+    Given Array : 
+
+    +-----+-----+-----+-----+-----+
+    |  2  |  0  |  3  |  4  |  1  |
+    +-----+-----+-----+-----+-----+
+
+    First Iteration : 
+
+    +-----+-----+-----+-----+-----+
+    |  3  |  0  |  2  |  4  |  1  |
+    +-----+-----+-----+-----+-----+   
+
+    Second Iteration : 
+
+    +-----+-----+-----+-----+-----+
+    |  4  |  0  |  2  |  3  |  1  |
+    +-----+-----+-----+-----+-----+ 
+
+    Third Iteration : 
+
+    +-----+-----+-----+-----+-----+
+    |  1  |  0  |  2  |  3  |  4  |
+    +-----+-----+-----+-----+-----+     
+
+    Fourth Iteration : 
+
+    +-----+-----+-----+-----+-----+
+    |  0  |  1  |  2  |  3  |  4  |
+    +-----+-----+-----+-----+-----+   
+
+    Finally you have the sorted array.
+
+    Learn more here - https://en.wikipedia.org/wiki/Cycle_sort
+    """
+    print_msg_box(message)
