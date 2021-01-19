@@ -1,4 +1,4 @@
-from __init__ import print_msg_box
+from .__init__ import print_msg_box,file_output
 import time
 import numpy as np
 from itertools import permutations
@@ -67,14 +67,14 @@ class matrices:
 
         Rotate Layer Wise using temp variable :
 
+                 +---+
+            1    | 2 |     3
+                 +---+
+        +---+           +---+
+        | 4 |     8     | 9 |   -----> rotate the highlighted layer in 90 degree
+        +---+           +---+
                 +---+
-            1   | 2 |   3
-                +---+
-        +---+       +---+
-        | 4 |   8   | 9 |   -----> rotate the highlighted layer in 90 degree
-        +---+       +---+
-                +---+
-            1   | 8 |   9
+            1   | 8 |     9
                 +---+
 
         Rotate Next layer :
@@ -82,7 +82,7 @@ class matrices:
             +---+       +---+
             | 1 |   4   | 3 |
             +---+       +---+
-            8     8     2      -----> rotate the highlighted layer in 90 degree
+              8     8     2      -----> rotate the highlighted layer in 90 degree
             +---+       +---+
             | 1 |   9   | 9 |
             +---+       +---+
@@ -106,14 +106,14 @@ class matrices:
                     matrix[i][j] = 0
 
         for i in range(column):
-            if(row_arr[i]):
+            if(col_arr[i]):
                 for j in range(row):
                     matrix[j][i] = 0
 
 class sorting:
 
     # bubble sort algorithm
-    def bubble_sort(self,arr,hint=False):
+    def bubble_sort(self,arr,file_name,hint=False,file=False):
         start = time.time()
         for i in range(len(arr)-1):
             for j in range(len(arr)-i-1):
@@ -123,10 +123,10 @@ class sorting:
         end = time.time()
         print("Bubble Sort Runtime = {} seconds".format(end-start))
         if(hint == True):
-            self.bubble_sort_hint()
+            self.bubble_sort_hint(file_name,file)
         return arr
 
-    def bubble_sort_hint(self):
+    def bubble_sort_hint(self,file_name,flag=False):
         message ="""
         Bubble Sort
         ------------------------------------
@@ -174,7 +174,10 @@ class sorting:
 
         Learn More Here - https://en.wikipedia.org/wiki/Bubble_sort
         """
-        print_msg_box(message)
+        if(flag == True):
+            file_output(message,file_name)
+        else:
+            print_msg_box(message)
 
     # selection Sort Algorithm
     def selection_sort(self,arr,hint=False):
@@ -1502,3 +1505,14 @@ class dynamic_programming:
 # print(ping2.step_problem(100))
 # print(ping1.step_problem(100))
 
+# img_arr = [[1,0,3],[2,3,4],[5,6,7]]
+
+# ping = matrices()
+
+# ping.setZeros(img_arr,3,3)
+# print(img_arr)
+
+# ping1 = sorting()
+# arr = [7,53,35,2356,2,3,5,2]
+
+# arr = ping1.bubble_sort(arr,'output.txt',True,True)
