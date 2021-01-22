@@ -127,7 +127,7 @@ Output:
 
 ## License
 
-This package is under **MIT License** copyright @<a href = "https://github.com/Abhijit2505">Abhijit Tripathy</a>
+This package is under **MIT License** copyright @<a href = "https://github.com/Abhijit2505">Abhijit Tripathy</a>. The production code can be checked at the *production* branch of this repository.
 
 ## Our sponsors
 
