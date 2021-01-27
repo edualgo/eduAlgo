@@ -156,7 +156,7 @@ This package is under **MIT License** copyright @<a href = "https://github.com/A
 <table>
     <tr>
         <td>
-            <img src = "https://edualgo.github.io/documentation/assets/images/Abhijit23.jpeg" height = "100">
+            <img src = "https://avatars.githubusercontent.com/u/52751963?s=460&u=60168fa0f71cca5b1d3d2e1ee11c47cbda8662c3&v=4" height = "100">
         </td>
             <td>
                 <a href="https://github.com/Abhijit2505">Abhijit Tripathy</a></br>
