@@ -131,12 +131,25 @@ This package is under **MIT License** copyright @<a href = "https://github.com/A
 
 ## Our sponsors
 
-<p>This project is supported by:</p>
+<table>
+  <p>This project is supported by:</p>
+  <tr>
+    <td>
 <p>
   <a href="https://www.digitalocean.com/">
     <img src="https://opensource.nyc3.cdn.digitaloceanspaces.com/attribution/assets/SVG/DO_Logo_horizontal_blue.svg" width="201px">
   </a>
 </p>
+    </td>
+    <td>
+      <p>
+  <a href="https://www.discourse.org/">
+    <img src="https://d11a6trkgmumsb.cloudfront.net/original/3X/1/0/101f03af29f12ea30e1226eb96a02c3ed2f6d2ef.png" width="201px">
+  </a>
+</p>
+    </td>
+  </tr>
+  </table>
 
 ## About The Creator
 
