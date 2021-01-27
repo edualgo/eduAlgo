@@ -1,7 +1,3 @@
-
-
-
-
 <p align = "center">
 <img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "200"><br>
 <img src="https://img.shields.io/github/license/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/languages/code-size/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src = "https://img.shields.io/github/contributors/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/last-commit/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src="https://img.shields.io/pypi/wheel/eduAlgo?style=for-the-badge">
@@ -168,3 +164,11 @@ This package is under **MIT License** copyright @<a href = "https://github.com/A
         </td>
         </tr>
     </table>
+
+## Our contributors
+
+<a href="https://github.com/Abhijit2505/edualgo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Abhijit2505/edualgo" />
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
