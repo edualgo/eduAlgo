@@ -142,12 +142,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://abhijit2505.github.io/portfolio-site/"><img src="https://avatars3.githubusercontent.com/u/52751963?v=4" width="100px;" alt=""/><br /><sub><b>Abhijit Tripathy</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Abhijit2505" title="Code">💻</a></td>
+    <td align="center"><a href="https://abhijit2505.github.io/portfolio-site/"><img src="https://avatars3.githubusercontent.com/u/52751963?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abhijit Tripathy</b></sub></a><br /><a href="https://github.com/Abhijit2505/eduAlgo/commits?author=Abhijit2505" title="Code">💻</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
