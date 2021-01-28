@@ -148,6 +148,13 @@ This package is under **MIT License** copyright @<a href = "https://github.com/A
   </a>
 </p>
     </td>
+    <td>
+      <p>
+  <a href="https://balsamiq.com/">
+    <img src="https://balsamiq.com/assets/company/brandassets/balsamiq-logo-screen.png" width="201px">
+  </a>
+</p>
+    </td>
   </tr>
   </table>
 
