@@ -462,14 +462,16 @@ def partition_hoare(A, lo, hi):
         j = j - 1
         while A[j] > pivot:
             j -= 1
+        if i >= j:
+            return j
         A[i], A[j] = A[j], A[i]
 
 #quick_sort but with Hoare partition
 def quicksort_hoare(A, lo, hi):
     if lo < hi:
         p = partition_hoare(A, lo, hi)
-        quicksort(A, lo, p)
-        quicksort(A, p+1, hi)
+        quicksort_hoare(A, lo, p)
+        quicksort_hoare(A, p+1, hi)
 
         
 # Helper function to call the algorithm, and calculate the computation time.
