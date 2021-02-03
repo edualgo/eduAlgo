@@ -1,5 +1,6 @@
 import time
 import numpy as np
+from map import floor
 from itertools import permutations
 
 from .__init__ import print_msg_box
@@ -445,7 +446,34 @@ def quick_sort(arr, low, high, hint=False):
 
     if hint:
         quick_sort_hint()
+        
 
+
+#Hoare partition used in quick_sort(quick_sort_hoare)
+def partition_hoare(A, lo, hi):
+    pivot = A[floor((hi + lo) / 2)]
+    i = lo - 1
+    j = hi + 1
+
+    while True:
+        i = i + 1
+        while A[i] < pivot:
+            i += 1
+        j = j - 1
+        while A[j] > pivot:
+            j -= 1
+        if i >= j:
+            return j
+        A[i], A[j] = A[j], A[i]
+
+#quick_sort but with Hoare partition
+def quicksort_hoare(A, lo, hi):
+    if lo < hi:
+        p = partition_hoare(A, lo, hi)
+        quicksort_hoare(A, lo, p)
+        quicksort_hoare(A, p+1, hi)
+
+        
 # Helper function to call the algorithm, and calculate the computation time.
 def quick_sort_helper():
     arr = [10, 7, 8, 9, 1, 5]
