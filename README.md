@@ -158,7 +158,7 @@ This package is under **MIT License** copyright @<a href = "https://github.com/A
     <td>
       <p>
   <a href="https://www.jetbrains.com/">
-    <img src=" https://github.com/Abhijit2505/eduAlgo/blob/master/assets/jetbrains-variant-4.png" width="201px">
+    <img src="https://github.com/Abhijit2505/eduAlgo/blob/master/assets/jetbrains-variant-4.png" width="201px">
   </a>
 </p>
     </td>
