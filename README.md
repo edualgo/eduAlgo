@@ -162,6 +162,13 @@ This package is under **MIT License** copyright @<a href = "https://github.com/A
   </a>
 </p>
     </td>
+    <td>
+      <p>
+  <a href="https://www.browserstack.com/">
+    <img src="https://github.com/Abhijit2505/eduAlgo/blob/master/assets/brsstack-mod.png" width="201px">
+  </a>
+</p>
+    </td>
   </tr>
   </table>
 
