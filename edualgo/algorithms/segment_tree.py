@@ -1,23 +1,54 @@
 class SegmentTree:
-    def segment_tree_hint(self):
+    def build_tree_hint(self):
         message = """
-                Build Segment Tree
-                ------------------------------------
-                Purpose : Building a Segment tree for the given array and query
-                Method : Recursion
+            Build Segment Tree
+            ------------------------------------
+            Purpose : Building a Segment tree for the given array and query
+            Method : Recursion
 
-                Time Complexity : Worst Case - O(n)
+            Time Complexity : Worst Case - O(n)
 
-                Working Hint:
-                Initialize relevant leaf nodes with array elements, and assign result of the query to the parent node.
+            Working Hint:
+            Initialize relevant leaf nodes with array elements, and assign result of the query to the parent node.
 
-                Pseudocode :
-                --> if array_start_index == array_end_index:
-                -->     Assign the corresponding leaf node the value of array element at array_start_index 
-                -->     return leaf node value
-                --> Find middle element of the array range [array_start_index, array_end_index]
-                --> Perform query on leaf nodes values and assign result to parent node
-                --> Return Parent Node Value
+            Pseudocode :
+            --> if array_start_index == array_end_index:
+            -->     Assign the corresponding leaf node the value of array element at array_start_index 
+            -->     return leaf node value
+            --> Find middle element of the array range [array_start_index, array_end_index]
+            --> Perform query on leaf nodes values and assign result to parent node
+            --> Return Parent Node Value
+
+            Example:
+            --> obj = SegmentTree([1,2,3,4,5,6,7], 2, 5)  # (2,5) is the range of query to be performed on.
+            --> obj.build_tree(0,6)  # 0 and 6 are starting and ending index of array
+        """
+        print(message)
+
+    def get_result_hint(self):
+        message = """
+            Get Result of Range Query from Segment Tree
+            ------------------------------------
+            Purpose : Building a Segment tree for the given array and query
+            Method : Recursion
+
+            Time Complexity : Worst Case - O(logn)
+
+            Working Hint:
+            Reach child nodes for the corresponding range, and return result of the query to the parent node.
+
+            Pseudocode :
+            --> if array_start_index and array_ending_index are inside query range:
+            -->     return leaf node value
+            --> if array_start_index or array_ending_index is outside query range:
+            -->     return constant for corresponding function
+            --> Find middle element of the array range [array_start_index, array_end_index]
+            --> Perform query on leaf nodes values and return the result
+
+            Example:
+            --> obj = SegmentTree([1,2,3,4,5,6,7], 2, 5)  # (2,5) is the range of query to be performed on.
+            --> obj.build_tree(0,6)  # 0 and 6 are starting and ending index of array
+            --> obj.get_result(0,6)  # 0 and 6 are starting and ending index of array
         """
         print(message)
 
