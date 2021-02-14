@@ -1,4 +1,26 @@
 class SegmentTree:
+    def segment_tree_hint(self):
+        message = """
+                Build Segment Tree
+                ------------------------------------
+                Purpose : Building a Segment tree for the given array and query
+                Method : Recursion
+
+                Time Complexity : Worst Case - O(n)
+
+                Working Hint:
+                Initialize relevant leaf nodes with array elements, and assign result of the query to the parent node.
+
+                Pseudocode :
+                --> if array_start_index == array_end_index:
+                -->     Assign the corresponding leaf node the value of array element at array_start_index 
+                -->     return leaf node value
+                --> Find middle element of the array range [array_start_index, array_end_index]
+                --> Perform query on leaf nodes values and assign result to parent node
+                --> Return Parent Node Value
+        """
+        print(message)
+
     def __init__(self,arr,l,r,function = 'add'):
         self.tree = [None for _ in range(3*len(arr))]
         self.arr = arr
@@ -10,8 +32,7 @@ class SegmentTree:
     @property
     def get_function_list(self):
         """
-        Get The list of the avaliable functions
-        available to create the segment tree of.
+        Get The list of the avaliable functions available to create the segment tree of.
 
         Returns:
             tuple: Tuple of functions
@@ -46,8 +67,7 @@ class SegmentTree:
         return self.tree[idx]
 
     def get_result(self, ss, se, idx = 0):
-        """[summary]
-
+        """[
         Args:
             ss ([int]): Starting Index
             se ([int]): Ending Index
@@ -82,4 +102,3 @@ class SegmentTree:
             return self.get_result(ss,mid,2*idx+1) ^ self.get_result(mid+1,se,2*idx+2)
         elif self.func == 'product':
             return self.get_result(ss,mid,2*idx+1) * self.get_result(mid+1,se,2*idx+2)
-
