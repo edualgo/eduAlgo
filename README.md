@@ -6,7 +6,7 @@
 
 ## Objective
 A python package published at [PyPi](https://pypi.org/). The project can be viewed here => [PyPi - eduAlgo](https://pypi.org/project/eduAlgo/).
-**Don't forget to create an ISSUE before making a PR and always make PR to this repo - [Main eduAlgo](https://github.com/Abhijit2505/eduAlgo)**
+**Don't forget to create an ISSUE before making a PR and always make PR to this repo - [Main eduAlgo](https://github.com/edualgo/eduAlgo)**
 
 ## Stats
 
