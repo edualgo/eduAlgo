@@ -35,7 +35,7 @@ This is a very simple python package made up with python script to study differe
 
 ## Organization
 
-This project is a part of the organization <a href="https://edualgo.github.io/organization/">eduAlgo</a>.
+This project is a part of the organization <a href="https://www.edualgoacademy.com">Edualgo Academy</a>.
 
 > We are an opensource organization having a few open-sourced projects on github related to Data structures and Algorithms in Python, Flutter Development & Frontend Development.
 chek the organization here - <a href="https://github.com/eduAlgo">eduAlgo</a>
