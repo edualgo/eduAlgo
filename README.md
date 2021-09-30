@@ -1,7 +1,7 @@
 <p align = "center">
 <img src ="https://edualgo.github.io/documentation/assets/images/eduAlgo.png" height = "200"><br>
-<img src="https://img.shields.io/github/license/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/languages/code-size/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src = "https://img.shields.io/github/contributors/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/last-commit/Abhijit2505/eduAlgo?style=for-the-badge">&nbsp;<img src="https://img.shields.io/pypi/wheel/eduAlgo?style=for-the-badge">
-<img src = "https://img.shields.io/pypi/status/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/pypi/v/eduAlgo?style=for-the-badge&logo=PyPi">&nbsp;<img src ="https://img.shields.io/github/release-date/Abhijit2505/eduAlgo?style=for-the-badge">
+<img src="https://img.shields.io/github/license/eduAlgo/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/languages/code-size/eduAlgo/eduAlgo?style=for-the-badge">&nbsp;<img src = "https://img.shields.io/github/contributors/eduAlgo/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/github/last-commit/eduAlgo/eduAlgo?style=for-the-badge">&nbsp;<img src="https://img.shields.io/pypi/wheel/eduAlgo?style=for-the-badge">
+<img src = "https://img.shields.io/pypi/status/eduAlgo?style=for-the-badge">&nbsp;<img src ="https://img.shields.io/pypi/v/eduAlgo?style=for-the-badge&logo=PyPi">&nbsp;<img src ="https://img.shields.io/github/release-date/eduAlgo/eduAlgo?style=for-the-badge">
 <p>
 
 ## Objective
@@ -12,9 +12,9 @@ A python package published at [PyPi](https://pypi.org/). The project can be view
 
 <img src="https://github.com/Abhijit2505/eduAlgo/blob/master/assets/eduAlgo-def.png">
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Abhijit2505/eduAlgo/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/eduAlgo/eduAlgo/graphs/commit-activity)
 [![PyPI format](https://img.shields.io/pypi/format/eduAlgo.svg)](https://pypi.python.org/pypi/eduAlgo/)
-[![GitHub contributors](https://img.shields.io/github/contributors/Abhijit2505/eduAlgo.svg)](https://GitHub.com/Abhijit2505/eduAlgo/graphs/contributors/)
+[![GitHub contributors](https://img.shields.io/github/contributors/Abhijit2505/eduAlgo.svg)](https://GitHub.com/eduAlgo/eduAlgo/graphs/contributors/)
                 
                 
 [![Downloads](https://static.pepy.tech/personalized-badge/edualgo?period=total&units=international_system&left_color=black&right_color=orange&left_text=Downloads)](https://pepy.tech/project/edualgo)
@@ -35,7 +35,7 @@ This is a very simple python package made up with python script to study differe
 
 ## Organization
 
-This project is a part of the organization <a href="https://edualgo.github.io/organization/">eduAlgo</a>.
+This project is a part of the organization <a href="https://www.edualgoacademy.com">Edualgo Academy</a>.
 
 > We are an opensource organization having a few open-sourced projects on github related to Data structures and Algorithms in Python, Flutter Development & Frontend Development.
 chek the organization here - <a href="https://github.com/eduAlgo">eduAlgo</a>
@@ -188,8 +188,8 @@ This package is under **MIT License** copyright @<a href = "https://github.com/A
 
 ## Our contributors
 
-<a href="https://github.com/Abhijit2505/edualgo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Abhijit2505/edualgo" />
+<a href="https://github.com/edualgo/edualgo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=edualgo/edualgo" />
 </a>
 
 Made with [contributors-img](https://contrib.rocks).
