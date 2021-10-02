@@ -704,7 +704,7 @@ def cycle_sort(array, size, hint = False):
         print(array[i], end = ' ')
     end = time.time()
     print("\nCycle Sort Runtime = {}".format((end - start)))
-    if(hint == True):
+    if(hint is True):
         cycle_sort_hint()
     return array
 
