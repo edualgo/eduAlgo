@@ -15,7 +15,7 @@ class singleLinkedList:
 
         for data in elements:
 
-            if self.headValue == None:
+            if self.headValue is None:
                 self.headValue = Node(data)
                 self.temp  = self.headValue
             else:
@@ -26,7 +26,7 @@ class singleLinkedList:
 
     def insertFirst(self, *elements):
 
-        if self.headValue != None:
+        if self.headValue is not None:
             prevheadValue = self.headValue
             self.headValue = None
         else:
@@ -34,14 +34,14 @@ class singleLinkedList:
 
         for data in elements:
 
-            if self.headValue == None:
+            if self.headValue is None:
                 self.headValue = Node(data)
                 self.temp  = self.headValue
             else:
                 self.temp.next = Node(data)
                 self.temp = self.temp.next
 
-        if prevheadValue != None:
+        if prevheadValue is not None:
             self.temp.next = prevheadValue
             self.temp = self.temp.next
         while self.temp.next != prevheadValue:

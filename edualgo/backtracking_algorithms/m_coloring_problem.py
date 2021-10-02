@@ -18,15 +18,15 @@ class Graph():
 			return True
 
 		for c in range(1, m + 1):
-			if self.isSafe(v, colour, c) == True:
+			if self.isSafe(v, colour, c) is True:
 				colour[v] = c
-				if self.graphColourUtil(m, colour, v + 1) == True:
+				if self.graphColourUtil(m, colour, v + 1) is True:
 					return True
 				colour[v] = 0
 
 	def graphColouring(self, m):
 		colour = [0] * self.V
-		if self.graphColourUtil(m, colour, 0) == None:
+		if self.graphColourUtil(m, colour, 0) is None:
 			return "Not Possible"
     
 		return ' '.join(list(map(str,colour)))

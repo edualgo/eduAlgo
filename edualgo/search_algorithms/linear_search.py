@@ -11,7 +11,7 @@ def linear_search(array, x, hint=False):
             flag=i
             break
     end = time.time()
-    if (hint == True):
+    if (hint is True):
         linear_search_hint()
     print("Linear Search Runtime = {}".format(end - start))
     return flag

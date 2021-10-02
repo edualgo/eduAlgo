@@ -8,7 +8,7 @@ def isUnique(input_string,hint=False):
     for i in input_string:
         if i not in mapp:
             mapp.append(i)
-    if(hint == True):
+    if(hint is True):
          isUnique_hint()
     return len(mapp) == len(input_string)
 
@@ -81,7 +81,7 @@ def isUnique_hint():
     print_msg_box(message)
 
 def isPermutation(input1,input2,hint=False):
-    if(hint == True):
+    if(hint is True):
          isPermutation_hint()
     if(len(input1)!=len(input2)):
         return False
@@ -164,7 +164,7 @@ def isPermutation_hint():
     print_msg_box(message)
 
 def URLify(input_str,key,hint=False):
-    if(hint==True):
+    if(hint is True):
          URLify_hint()
     input2 = ""
     for i in range(len(input_str)):
@@ -235,7 +235,7 @@ def URLify_hint():
     print_msg_box(message)
 
 def isPalindromicPermutation(input1,hint=False):
-    if(hint == True):
+    if(hint is True):
          isPalindromicPermutation_hint()
     mapp = {}
     for i in range(len(input1)):
@@ -334,7 +334,7 @@ def oneEditAwayReplace(input1,input2):
     return True
 
 def oneEditAway(input1,input2,hint=False):
-    if(hint==True):
+    if(hint is True):
          oneEditAway_hint()
     if(len(input1)==len(input2)):
         return  oneEditAwayReplace(input1,input2)
@@ -392,7 +392,7 @@ def oneEditAway_hint():
     print_msg_box(message)
 
 def compressedString(input1,hint=False):
-    if(hint == True):
+    if(hint is True):
          compressedString_hint()
     mapp = {}
     output = ""
@@ -499,7 +499,7 @@ def boyer_moore(text, pattern, hint = False):
             s += (m - badChar[ord(text[s + m])] if s + m < n else 1) 
         else: 
             s += max(1, j - badChar[ord(text[s + j])]) 
-    if(hint == True):
+    if(hint is True):
         boyer_moore_hint()
 
 def boyer_moore_hint():

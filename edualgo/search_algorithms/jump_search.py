@@ -25,7 +25,7 @@ def jump_search(arr, n, search, hint=False):
                     
     end = time.time()
     
-    if (hint == True):
+    if (hint is True):
         jump_search_hint()
     print("Jump Search Runtime = {}".format(end - start))
     
