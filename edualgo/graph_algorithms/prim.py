@@ -17,7 +17,7 @@ class Graph():
         min = sys.maxsize
  
         for v in range(self.V):
-            if key[v] < min and mstSet[v] == False:
+            if key[v] < min and mstSet[v] is False:
                 min = key[v]
                 min_index = v
  
@@ -36,7 +36,7 @@ class Graph():
             u = self.minKey(key, mstSet)
             mstSet[u] = True
             for v in range(self.V):
-                if self.graph[u][v] > 0 and mstSet[v] == False and key[v] > self.graph[u][v]:
+                if self.graph[u][v] > 0 and mstSet[v] is False and key[v] > self.graph[u][v]:
                         key[v] = self.graph[u][v]
                         parent[v] = u
  

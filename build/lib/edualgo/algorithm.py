@@ -26,7 +26,7 @@ class sort:
                 print(arr)
         end = time.time()
         print("Bubble Sort Runtime = {}".format(end-start))
-        if(hint == True):
+        if(hint is True):
             self.bubble_sort_hint()
         return arr
 
@@ -92,7 +92,7 @@ class sort:
             print(arr)
         end = time.time()
         print("Selection Sort Runtime = {}".format(end-start))
-        if(hint==True):
+        if(hint is True):
             self.selection_sort_hint()
         return arr
 
@@ -172,7 +172,7 @@ class string_algorithms:
         for i in input_string:
             if i not in mapp:
                 mapp.append(i)
-        if(hint == True):
+        if(hint is True):
             self.isUnique_hint()
         return len(mapp) == len(input_string)
 
@@ -246,7 +246,7 @@ class string_algorithms:
 
 
     def isPermutation(self,input1,input2,hint=False):
-        if(hint == True):
+        if(hint is True):
             self.isPermutation_hint()
         if(len(input1)!=len(input2)):
             return False
@@ -329,7 +329,7 @@ class string_algorithms:
         print_msg_box(message)
 
     def URLify(self,input_str,key,hint=False):
-        if(hint==True):
+        if(hint is True):
             self.URLify_hint()
         input2 = ""
         for i in range(len(input_str)):
@@ -400,7 +400,7 @@ class string_algorithms:
         print_msg_box(message)
 
     def isPalindromicPermutation(self,input1,hint=False):
-        if(hint == True):
+        if(hint is True):
             self.isPalindromicPermutation_hint()
         mapp = {}
         for i in range(len(input1)):
@@ -499,7 +499,7 @@ class string_algorithms:
         return True
 
     def oneEditAway(self,input1,input2,hint=False):
-        if(hint==True):
+        if(hint is True):
             self.oneEditAway_hint()
         if(len(input1)==len(input2)):
             return self.oneEditAwayReplace(input1,input2)
@@ -557,7 +557,7 @@ class string_algorithms:
         print_msg_box(message)
 
     def compressedString(self,input1,hint=False):
-        if(hint == True):
+        if(hint is True):
             self.compressedString_hint()
         mapp = {}
         output = ""
@@ -642,7 +642,7 @@ class string_algorithms:
         print_msg_box(message)
 
     def rotateImage(self,img_arr,n,hint=False):
-        if(hint==True):
+        if(hint is True):
             self.rotateImage_hint()
         for layer in range(int(n/2)):
             first = layer

@@ -24,9 +24,9 @@ class Node:
 
 class BinaryTreeAlgorithms:
     def print_tree(self,root,hint=False):
-        if(hint==True):
+        if(hint is True):
             self.print_tree_hint()
-        if root == None:
+        if root is None:
             return
         print(root.val,end =":")
         if root.left:
@@ -51,7 +51,7 @@ class BinaryTreeAlgorithms:
         Print the root, use recursion and call into the left and right
 
         Pseudocode :
-        --> if(root == None) return
+        --> if(root is None) return
         --> print(root.value)
         --> print(root.left.value)
         --> print(root.right.value)
@@ -139,9 +139,9 @@ class BinaryTreeAlgorithms:
         print_msg_box(message)
     
     def Inorder_print(self,root,hint=False):
-        if(hint==True):
+        if(hint is True):
             self.Inorder_print_hint()
-        if root == None:
+        if root is None:
             return
         self.Inorder_print(root.left)
         print(root.val,end =", ")
@@ -162,7 +162,7 @@ class BinaryTreeAlgorithms:
         Call into left recursively till exist,Print the root, use recursion to call into the right
 
         Pseudocode :
-        --> if(root == None) return
+        --> if(root is None) return
         --> print(root.left.value)
         --> print(root.value)
         --> print(root.right.value)
@@ -242,9 +242,9 @@ class BinaryTreeAlgorithms:
         print_msg_box(message)
 
     def Preorder_print(self,root,hint=False):
-        if(hint==True):
+        if(hint is True):
             self.Preorder_print_hint()
-        if root == None:
+        if root is None:
             return
         print(root.val,end =", ")
         self.Preorder_print(root.left)
@@ -265,7 +265,7 @@ class BinaryTreeAlgorithms:
         Print the root, use recursion to call into the left and the right subtree
 
         Pseudocode :
-        --> if(root == None) return
+        --> if(root is None) return
         --> print(root.value)
         --> print(root.left.value)
         --> print(root.right.value)
@@ -343,9 +343,9 @@ class BinaryTreeAlgorithms:
         print_msg_box(message)
 
     def Postorder_print(self,root,hint=False):
-        if(hint==True):
+        if(hint is True):
             self.Postorder_print_hint()
-        if root == None:
+        if root is None:
             return
         self.Postorder_print(root.left)
         self.Postorder_print(root.right)
@@ -366,7 +366,7 @@ class BinaryTreeAlgorithms:
         use recursion to call into the left and the right subtree, Print the root
 
         Pseudocode :
-        --> if(root == None) return
+        --> if(root is None) return
         --> print(root.left.value)
         --> print(root.right.value)
         --> print(root.value)
@@ -419,7 +419,7 @@ class BinaryTreeAlgorithms:
         print_msg_box(message)
 
     def rangeSumBST(self, root,L,R):
-        if(root == None):
+        if(root is None):
             return 0
         sum1 = 0; sum2 = 0
         if(root.left):
@@ -432,11 +432,11 @@ class BinaryTreeAlgorithms:
             return sum1 + sum2
 
     def mergeTrees(self, t1, t2):
-        if(t1 == None and t2 == None):
+        if(t1 is None and t2 is None):
             return None
-        if(t2 == None):
+        if(t2 is None):
             return t1
-        if(t1 == None):
+        if(t1 is None):
             return t2
         t1.val = t1.val + t2.val
         t1.left = self.mergeTrees(t1.left,t2.left)
@@ -444,17 +444,17 @@ class BinaryTreeAlgorithms:
         return t1
 
     def sumOfLeftLeaves(self, root):
-        if(root == None):
+        if(root is None):
             return 0
         sum = 0
-        if(root.left != None and (root.left.left == None and root.left.right == None)):
+        if(root.left is not None and (root.left.left is None and root.left.right is None)):
             sum = root.left.val
         return sum + self.sumOfLeftLeaves(root.left)+self.sumOfLeftLeaves(root.right)
 
     def isSameTree(self, p, q):
-        if(p == None and q == None):
+        if(p is None and q is None):
             return True
-        if(p == None or q == None):
+        if(p is None or q is None):
             return False
         return (p.val == q.val) and (self.isSameTree(p.left,q.left)) and (self.isSameTree(p.right,q.right))
 
@@ -492,7 +492,7 @@ class BinaryTreeAlgorithms:
         as input and return the number 
         node present in the tree.
         '''
-        if (root == None):
+        if (root is None):
             return 0
         return 1 + self.countNode(root.left) + self.countNode(root.right)
 
@@ -502,7 +502,7 @@ class BinaryTreeAlgorithms:
         and print the element present at that level 
         Note: level for the root node is 1
         '''
-        if (root == None):
+        if (root is None):
             return
         if (k ==1):
             print(root.data,end=', ')

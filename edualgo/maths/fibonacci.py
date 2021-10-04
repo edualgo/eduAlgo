@@ -3,7 +3,7 @@ from __init__ import print_msg_box
 class fib_class:
 
     def __init__(self, num, hint=False):
-        if hint == True: 
+        if hint is True: 
             self.fib_hint()
         print([self.fib_cal(i) for i in range(num)])
 

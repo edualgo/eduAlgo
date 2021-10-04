@@ -45,7 +45,7 @@ def min_product_subset(array, hint=False):
         prod = int(prod / max_neg)
     print(prod)
           
-    if(hint == True):
+    if(hint is True):
         min_product_subset_hint()
     return prod
 

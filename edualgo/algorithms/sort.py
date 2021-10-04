@@ -16,7 +16,7 @@ def bubble_sort(arr,hint=False):
             print(arr)
     end = time.time()
     print("Bubble Sort Runtime = {}".format(end-start))
-    if(hint == True):
+    if(hint is True):
         bubble_sort_hint()
     return arr
 
@@ -82,7 +82,7 @@ def selection_sort(arr,hint=False):
         print(arr)
     end = time.time()
     print("Selection Sort Runtime = {}".format(end-start))
-    if(hint==True):
+    if(hint is True):
         selection_sort_hint()
     return arr
 
@@ -265,7 +265,7 @@ def insertion_sort(arr,hint=False):
         print(arr)
     end = time.time()
     print("Insertion Sort Runtime = {}".format(end-start))
-    if(hint==True):
+    if(hint is True):
         insertion_sort_hint()
     return arr
 
@@ -350,7 +350,7 @@ def merge_sort(arr, hint=False):
     result = merge_sort_impl(arr)
     end = time.time()
     print("Merge Sort Runtime = {}".format(end-start))
-    if(hint==True):
+    if(hint is True):
         merge_sort_hint()
     return result
 
@@ -599,7 +599,7 @@ def heap_sort(arr,hint=False):
     print(arr)
     end = time.time()
     print("Heap Sort Runtime = {}".format(end-start))
-    if(hint == True):
+    if(hint is True):
         heap_sort_hint()
     return arr
 
@@ -704,7 +704,7 @@ def cycle_sort(array, size, hint = False):
         print(array[i], end = ' ')
     end = time.time()
     print("\nCycle Sort Runtime = {}".format((end - start)))
-    if(hint == True):
+    if(hint is True):
         cycle_sort_hint()
     return array
 

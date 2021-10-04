@@ -1,7 +1,7 @@
 from .__init__ import print_msg_box
 
 def rotateImage(img_arr,n,hint=False):
-    if(hint==True):
+    if(hint is True):
          rotateImage_hint()
     for layer in range(int(n/2)):
         first = layer

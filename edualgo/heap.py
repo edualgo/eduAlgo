@@ -174,7 +174,7 @@ class Heap:
         Hint :
         Print the root, use recursion and call into the left and right
         Pseudocode :
-        --> if(root == None) return
+        --> if(root is None) return
         --> print(root.value)
         --> print(root.left.value)
         --> print(root.right.value)

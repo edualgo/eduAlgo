@@ -29,7 +29,7 @@ def interpolation_search(array, x, hint=False):
         else:
             high = probe_pos - 1
     end = time.time()
-    if (hint == True):
+    if (hint is True):
         interpolation_search_hint()
     print("Interpolation Search Runtime = {}".format(end - start))
     return dict1[array[flag]]

@@ -28,11 +28,11 @@ def isBoxSafe(board,row,col,num):
 
 # Function that check wether it is safe to place the number in this specific cell 
 def CanPlaceNum(board,row,col,num):
-    if(isRowSafe(board,row,num)==False):
+    if(isRowSafe(board,row,num) is False):
         return False
-    if(isColSafe(board,col,num)==False):
+    if(isColSafe(board,col,num) is False):
         return False
-    if(isBoxSafe(board,row,col,num)==False):
+    if(isBoxSafe(board,row,col,num) is False):
         return False
     return True
     
@@ -50,7 +50,7 @@ def Sudoku_Solver(board):
                 break
         if(isEmpty):
             break
-    if(isEmpty == False):
+    if(isEmpty is False):
         for i in range(0,9):
             for j in range(0,9):
                 print(board[i][j],end=" ")

@@ -32,7 +32,7 @@ def exponential_search(arr, n, search, hint=False):
                     
     end = time.time()
     
-    if (hint == True):
+    if (hint is True):
         exponential_search_hint()
     print("Exponential Search Runtime = {}".format(end - start))
 

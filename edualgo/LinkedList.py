@@ -36,19 +36,19 @@ class list_algorithms:
         return count
 
     def reverse_linked_recursive(self,head):
-        if(head == None or head.next == None):
+        if(head is None or head.next is None):
             return head
         small_head = self.reverse_linked_recursive(head.next)
         head.next = None
         temp = small_head
-        while(temp.next != None):
+        while(temp.next is not None):
             temp = temp.next
         temp.next = head
         head = small_head
         return head
 
     def reverse_linked_iterative(self,head):
-        if(head == None or head.next == None):
+        if(head is None or head.next is None):
             return head
         prev = None
         curr = head
@@ -91,7 +91,7 @@ class list_algorithms:
         head2 = prev
         if(len % 2 == 1):
             head = head.next
-        while((head2 != None) and (head != None)):
+        while((head2 is not None) and (head is not None)):
             if(head2.val != head.val):
                 return False
             head = head.next
@@ -99,10 +99,10 @@ class list_algorithms:
         return True
 
     def delete_sorted_duplicate(self,head):
-        if(head == None or head.next == None):
+        if(head is None or head.next is None):
             return head
         small_head = self.delete_sorted_duplicate(head.next)
-        while((small_head != None) and (head.val == small_head.val)):
+        while((small_head is not None) and (head.val == small_head.val)):
             temp = small_head
             small_head = small_head.next
             temp.next = None
@@ -122,15 +122,15 @@ class list_algorithms:
         return slow
 
     def mergeTwoLists(self, l1, l2):
-        if(l1==None):
+        if(l1 is None):
             return l2
-        if((l2 != None) and (l2.val < l1.val)):
+        if((l2 is not None) and (l2.val < l1.val)):
             l1,l2 = l2,l1
         l1.next = self.mergeTwoLists(l1.next,l2)
         return l1
 
     def removeElements(self,head,val):
-        if(head == None):
+        if(head is None):
             return head
         small_head = self.removeElements(head.next,val)
         if(head.val == val):
@@ -163,11 +163,11 @@ class list_algorithms:
             tempB = tempB.next
             lengthB -= 1
 
-        while((tempA != tempB) and (tempA != None)):
+        while((tempA != tempB) and (tempA is not None)):
             tempA = tempA.next
             tempB = tempB.next
 
-        if((tempA == tempB) and (tempA != None)):
+        if((tempA == tempB) and (tempA is not None)):
             return tempA
         else:
             return None
@@ -213,12 +213,12 @@ class list_algorithms:
         first = head 
         second = head 
         for i in range(n): 
-            if(second.next == None): 
+            if(second.next is None): 
                 if(i == n - 1): 
                     self.head = self.head.next
                 return self.head 
             second = second.next
-        while(second.next != None): 
+        while(second.next is not None): 
             second = second.next
             first = first.next
           
