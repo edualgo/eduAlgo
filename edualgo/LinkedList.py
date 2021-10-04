@@ -110,9 +110,27 @@ class list_algorithms:
         head.next = small_head
         return head
 
-    def delete_node(self,node):
-        node.val = node.next.val
-        node.next = node.next.next
+    def delete_node_by_value(self, head, value):
+        # if head is None 
+        if head is None:
+            return None
+        prev = None
+        current = head
+        # get node to delete
+        while current:
+            if current.val == value:
+                break
+            prev = current
+            current = current.next
+        # if the node is the head
+        if prev is None:
+            # return new head
+            return head.next
+        # if value not found
+        if current is None:
+            return head
+        prev.next = current.next
+        return head
 
     def middleNode(self,head):
         slow = fast = head
