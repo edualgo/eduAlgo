@@ -71,7 +71,7 @@ class Heap:
     Exception: Heap is empty !!! Please add elements to the heap
     """
     
-    def __init__(self, items=[]):
+    def __init__(self, items=()):
         """Initilise the heap with elements in list items"""
         self.heap = [None]
         self.rank = {}
