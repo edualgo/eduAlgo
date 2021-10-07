@@ -1,5 +1,5 @@
 def stack_sequence(pushes , pops):
-    # Stack Sequence Finder 
+    """Stack Sequence Finder using python""" 
     stack = []
     sequence = []
     i = 0
