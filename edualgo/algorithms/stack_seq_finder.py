@@ -1,4 +1,5 @@
-def stack_sequence(pushes : list , pops : list):
+def stack_sequence(pushes , pops):
+    # Stack Sequence Finder 
     stack = []
     sequence = []
     i = 0
@@ -15,9 +16,6 @@ def stack_sequence(pushes : list , pops : list):
 
 
 if __name__ == "__main__":
-    #Input format -> 1st line : integers with space
-    #2nd line : integers with space
-    #length(pushes)==length(pops)
     pushesin = list(map(int , input().split()))
     popsin = list(map(int , input().split()))
     output = stack_sequence(pushesin , popsin)
