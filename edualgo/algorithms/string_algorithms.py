@@ -402,7 +402,7 @@ def compressedString(input1,hint=False):
             mapp[key]+=1
         else:
             mapp.update({key:1})
-    for key,value in mapp.items():
+    for key, value in mapp.items():
         output = output + key + str(value)
     if(len(output) <= len(input1)):
         return output
