@@ -567,8 +567,8 @@ class string_algorithms:
                 mapp[key]+=1
             else:
                 mapp.update({key:1})
-        for key in mapp.keys():
-            output = output + key + str(mapp[key])
+        for key, value in mapp.items():
+            output = output + key + str(value)
         if(len(output) <= len(input1)):
             return output
         else:
