@@ -29,7 +29,7 @@ def binary_search(array, x, hint=False):
         else:
             high = mid - 1
     end = time.time()
-    if (hint == True):
+    if (hint is True):
         binary_hint()
     print("Binary Runtime = {}".format(end - start))
     return dict1[array[flag]]
