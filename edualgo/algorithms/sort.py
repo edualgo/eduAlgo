@@ -320,7 +320,7 @@ def insertion_sort_hint():
     print_msg_box(message)
 
 def merge_sorted_lists(l1, l2):
-    arr=list()
+    arr=[]
     i=j=0
     while i < len(l1) or j < len(l2):
         if j >= len(l2):
