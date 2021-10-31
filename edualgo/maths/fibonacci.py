@@ -29,4 +29,4 @@ class fib_class:
         print_msg_box(message)
 
 def fibonacci(num, hint=False):
-    obj_fib_class = fib_class(num, hint)
+    fib_class(num, hint)
