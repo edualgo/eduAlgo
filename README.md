@@ -188,8 +188,8 @@ This package is under **MIT License** copyright @<a href = "https://github.com/A
 
 ## Our contributors
 
-<a href="https://github.com/edualgo/edualgo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=edualgo/edualgo" />
+<a href="https://github.com/edualgo/eduAlgo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=edualgo/eduAlgo" />
 </a>
 
-Made with [contributors-img](https://contrib.rocks).
+Made with [contrib.rocks](https://contrib.rocks).
